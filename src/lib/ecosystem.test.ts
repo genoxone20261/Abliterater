@@ -5,7 +5,7 @@ import { readFileSync } from "node:fs";
 test("all researched sources are exposed through the application catalog", async () => {
   const { ecosystemSources } = await import("./ecosystem.ts");
   const expected = ["compute", "dataset", "method"].flatMap((kind) =>
-    JSON.parse(readFileSync(`docs/maximum-completion/${kind}-sources.json`, "utf8")),
+    JSON.parse(readFileSync(`src/data/${kind}-sources.json`, "utf8")),
   );
   assert.equal(ecosystemSources.length, expected.length);
   assert.equal(new Set(ecosystemSources.map((s) => `${s.category}:${s.id}`)).size, expected.length);

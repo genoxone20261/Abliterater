@@ -77,13 +77,13 @@ test("ecosystem unchecked checkboxes and table OPEN are separate", () => {
 test("live ledgers parse and formatter never sums", () => {
   const root = join(dirname(fileURLToPath(import.meta.url)), "../..");
   const docs = {
-    roadmap: readFileSync(join(root, "docs/maximum-completion/TODO-ROADMAP.md"), "utf8"),
+    roadmap: readFileSync(join(root, "src/data/TODO-ROADMAP.md"), "utf8"),
     workload: readFileSync(
-      join(root, "docs/maximum-completion/TODO-WORKLOAD-SPEC-20260912.md"),
+      join(root, "src/data/TODO-WORKLOAD-SPEC-20260912.md"),
       "utf8",
     ),
-    workflow: readFileSync(join(root, "docs/maximum-completion/WORKFLOW.md"), "utf8"),
-    ecosystem: readFileSync(join(root, "docs/maximum-completion/ECOSYSTEM-MASTER-TODO.md"), "utf8"),
+    workflow: readFileSync(join(root, "src/data/WORKFLOW.md"), "utf8"),
+    ecosystem: readFileSync(join(root, "src/data/ECOSYSTEM-MASTER-TODO.md"), "utf8"),
   };
   const report = reportLedgers(docs);
   assert.equal(report.neverSum, true);

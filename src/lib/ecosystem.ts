@@ -57,6 +57,6 @@ export function validateEcosystemSource(
   if (!isSource(value) || value.category !== category) throw new Error(ECOSYSTEM_ERROR.invalid);
   return { ...value, support: "catalog" };
 }
-import computeSources from "../../docs/maximum-completion/compute-sources.json" with { type: "json" };
-import datasetSources from "../../docs/maximum-completion/dataset-sources.json" with { type: "json" };
-import methodSources from "../../docs/maximum-completion/method-sources.json" with { type: "json" };
+import computeSources from "../data/compute-sources.json" with { type: "json" };
+import datasetSources from "../data/dataset-sources.json" with { type: "json" };
+import methodSources from "../data/method-sources.json" with { type: "json" };

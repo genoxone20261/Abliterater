@@ -33,7 +33,7 @@ test("SkyPilot/dstack stay pack-only; RunPod create is user-key capability not C
 });
 
 test("ecosystem table C-002–C-007 stay OPEN (no analog promotion)", () => {
-  const md = readFileSync("docs/maximum-completion/ECOSYSTEM-MASTER-TODO.md", "utf8");
+  const md = readFileSync("src/data/ECOSYSTEM-MASTER-TODO.md", "utf8");
   for (const id of ["C-002", "C-003", "C-004", "C-005", "C-006", "C-007"]) {
     assert.match(md, new RegExp(`\\| ${id} \\|[^\\n]*\\| OPEN`));
   }

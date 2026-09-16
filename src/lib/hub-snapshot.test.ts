@@ -4,7 +4,7 @@ import { readFileSync } from "node:fs";
 
 test("Hub snapshot covers every catalog BASE name from this-session fetch", () => {
   const snap = JSON.parse(
-    readFileSync("docs/maximum-completion/HUB-SNAPSHOT-20260912.json", "utf8"),
+    readFileSync("src/data/HUB-SNAPSHOT-20260912.json", "utf8"),
   );
   const studio = readFileSync("src/lib/studio.ts", "utf8");
   const block = studio.slice(

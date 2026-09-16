@@ -46,9 +46,6 @@ release-recommendations-20260911/
 docs/research-*/vast-*.json
 docs/research-*/connect*-list-read*.json
 docs/research-*/connection-list-read*.json
-docs/research*/
-docs/research-*
-docs/audit/
-docs/ablit-workbench/
+docs/
 public/reports/
 src/lib/runners.ts.export.txt
