@@ -2,14 +2,34 @@
 
 **교육 목적.** 거절 억제(*abliteration*)를 연구·방어하고 **불법 이용을 막는 대응**을 위해 **전 세계의 관심**을 구합니다. 공격 실행 매뉴얼이 아닙니다.
 
-영어: [README.md](./README.md)
-
 [![CI](https://github.com/genoxone20261/Abliterater_public/actions/workflows/ci.yml/badge.svg)](https://github.com/genoxone20261/Abliterater_public/actions/workflows/ci.yml)
 [![License: AGPL-3.0-or-later + AUP](https://img.shields.io/badge/license-AGPL--3.0--or--later%20%2B%20AUP-1C1D1F)](./LICENSE.md)
 
 **기여는 환영합니다.** 제3자 **상업 이용, 불법 이용, 악용은 라이선스되지 않습니다** — [ACCEPTABLE-USE.ko.md](./ACCEPTABLE-USE.ko.md). PR은 AGPL-3.0-or-later **와** 그 추가 조건에 대한 부여입니다.
 
 ![Abliterater 작업대](./workbench.png)
+
+## 언어
+
+앱 UI는 한국어/영어 토글입니다. 아래는 랜딩 README입니다.
+
+| 언어 | 파일 |
+| --- | --- |
+| 영어 | [README.md](./README.md) (한글 없음) |
+| 한국어 | [README.ko.md](./README.ko.md) (이 파일) |
+| 日本語 | [README.ja.md](./README.ja.md) |
+| 简体中文 | [README.zh-Hans.md](./README.zh-Hans.md) |
+| 繁體中文 | [README.zh-Hant.md](./README.zh-Hant.md) |
+| Español | [README.es.md](./README.es.md) |
+| Français | [README.fr.md](./README.fr.md) |
+| Deutsch | [README.de.md](./README.de.md) |
+| Português (Brasil) | [README.pt-BR.md](./README.pt-BR.md) |
+| Русский | [README.ru.md](./README.ru.md) |
+| العربية | [README.ar.md](./README.ar.md) |
+| Tiếng Việt | [README.vi.md](./README.vi.md) |
+| Bahasa Indonesia | [README.id.md](./README.id.md) |
+
+설치·남은 OPEN: [USER-GUIDE.ko.md](./USER-GUIDE.ko.md).
 
 ## 하는 일
 
@@ -20,7 +40,29 @@
 | 작업대 (탭 `1`) | 구성 · 탐색 · 연결 |
 | 연구 자료 (탭 `2`) | arXiv·GitHub 링크 (`target=_blank`) |
 
-가중치를 호스팅하지 않습니다. GPU를 대신 빌려 주지 않습니다. `npm test` 통과는 학습 실행이 아닙니다. `:8080` analog 웹은 native Electron / GPU 골든 클로즈가 아닙니다.
+기본 베이스 `Qwen/Qwen3-4B-Instruct-2507`(원본 Instruct), 방법 Heretic, 산출 merged BF16. 이미 처리된 heretic/GGUF는 **재사용 레인**이지 기본값이 아닙니다. `PRESETS[0]`는 `method-compare`(Instruct 작업), 그다음 `domain-lora`, 마지막 `local-gguf`.
+
+구성에는 카탈로그 칩과 프리셋. 탐색에는 추천과 SourceHub. 연결은 **본인** 키를 화면 메모리에만.
+
+## 하지 않는 일
+
+- 가중치 호스팅·재배포.
+- GPU를 대신 빌리기. 인스턴스 목록 ≠ 학습 실행.
+- AGPL 트리(heretic, OBLITERATUS, abliterix)를 `src/`에 vendor. pin-call만.
+- 저자 KDP PDF 출하. `public/reports/`는 저자 디스크만.
+- `npm test` 통과로 native / GPU / Electron 원장 클로즈. `:8080` analog 웹 ≠ native close.
+
+## 팩 ZIP
+
+다운로드는 레시피이지 학습된 모델이 아닙니다. 허용 목록만:
+
+`run.sh`, `run.ps1`, 빈 Azure stub, `docker-compose.yml`, `train_lora.py`, `eval.sh`, `Modelfile`, `heretic.args.txt`, `SYSTEM.txt`, `POWER.txt`, `POWER.en.txt`, `SFT.txt`, `eval.txt`, `job.json`, `README.txt`.
+
+항상 `run.sh`와 `run.ps1` 둘 다. 컴퓨트 칩: `local-cuda`, `local-rocm`, `local-metal`, `local-cpu`.
+
+## 정직
+
+`analog IMPLEMENTED` ≠ native close. 원장 합산 금지. 라이브 덤프: `npm run ledger:status`. 칸별 이유: [USER-GUIDE.ko.md](./USER-GUIDE.ko.md#아직-열린-것-원장별-분석-합산-금지).
 
 ## 빠른 시작
 
@@ -33,7 +75,7 @@ npm ci
 npm run dev
 ```
 
-`http://127.0.0.1:8080/`. 기본 베이스 `Qwen/Qwen3-4B-Instruct-2507`(원본 Instruct), 방법 Heretic, 산출 merged BF16. 이미 처리된 heretic/GGUF는 **재사용 레인**이지 기본값이 아닙니다.
+`http://127.0.0.1:8080/`.
 
 ```bash
 npm run typecheck
@@ -57,6 +99,8 @@ docker compose up -d --build
 # http://127.0.0.1:8080/
 ```
 
+몇 시간 된 healthy 컨테이너는 **이 소스**의 증거가 아닙니다. `src/`를 바꾼 뒤 `--build`.
+
 ### 데스크톱
 
 ```bash
@@ -67,20 +111,20 @@ npm run electron:build:linux  # AppImage (Linux 또는 CI)
 npm run electron:build:mac    # DMG (macOS 또는 CI)
 ```
 
-Windows NSIS는 기본 미서명입니다. SmartScreen의 **알 수 없는 게시자**는 미서명 OSS에서 정상입니다. macOS DMG는 Windows에서 만들지 않습니다.
+Windows NSIS는 기본 미서명입니다. SmartScreen의 **알 수 없는 게시자**는 미서명 OSS에서 정상입니다. macOS DMG는 Windows에서 만들지 않습니다. 미서명 analog ≠ Authenticode(E03).
 
 ## 문서
 
 | 파일 | 내용 |
 | --- | --- |
 | [USER-GUIDE.ko.md](./USER-GUIDE.ko.md) | 설치, 화면, 작업대, 팩 ZIP, 남은 OPEN을 **원장별**로 |
-| [CONTRIBUTING.ko.md](./CONTRIBUTING.ko.md) | 패치 방법. AUP를 수용하면 PR 환영 |
+| [CONTRIBUTING.ko.md](./CONTRIBUTING.ko.md) | 패치 방법. AUP를 수용하면 같이 기여 |
 | [ACCEPTABLE-USE.ko.md](./ACCEPTABLE-USE.ko.md) | 제3자 상업·불법·악용 금지 |
 | [SUPPORT.ko.md](./SUPPORT.ko.md) | 후원(기부) vs 투자 문의 |
 | [SECURITY.md](./SECURITY.md) | 취약점 신고 |
 | [LICENSE.md](./LICENSE.md) | AGPL-3.0-or-later 본문 + 추가 조건 |
 
-영어본은 각 파일 옆 `*.en.md` 입니다.
+영어본은 각 파일 옆 `*.en.md`. `docs/` 연구 덤프는 올리지 않습니다.
 
 ## 라이선스 (포크 전에 읽기)
 
@@ -95,7 +139,7 @@ Windows NSIS는 기본 미서명입니다. SmartScreen의 **알 수 없는 게�
 
 ## 같이 기여합시다
 
-이 작업대는 **끝나지 않았습니다.** `:8080` analog 웹은 쓸 수 있습니다. Native Electron, GPU 골든, 앱 안 Hub 실시간은 **OPEN**입니다. 패치·실측·리뷰·한·영 문서를 **같이** 개선하고 싶습니다.
+이 작업대는 **끝나지 않았습니다.** `:8080` analog 웹은 쓸 수 있습니다. Native Electron, GPU 골든, 앱 안 Hub 실시간은 **OPEN**입니다. 패치·실측·리뷰·모든 언어 문서를 **같이** 개선하고 싶습니다.
 
 **기여는 환영합니다.** 제3자 상업·불법·악용은 그대로 **라이선스되지 않습니다.**
 

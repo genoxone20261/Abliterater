@@ -2,14 +2,34 @@
 
 **Educational workbench** for studying refusal-suppression (*abliteration*) so researchers and defenders can **counter illegal misuse**. That purpose needs **worldwide attention**. This is not an attack runbook.
 
-Korean: [README.ko.md](./README.ko.md)
-
 [![CI](https://github.com/genoxone20261/Abliterater_public/actions/workflows/ci.yml/badge.svg)](https://github.com/genoxone20261/Abliterater_public/actions/workflows/ci.yml)
 [![License: AGPL-3.0-or-later + AUP](https://img.shields.io/badge/license-AGPL--3.0--or--later%20%2B%20AUP-1C1D1F)](./LICENSE.md)
 
 **Contributions are welcome.** Third-party **commercial use, illegal use, and abuse are not licensed** — [ACCEPTABLE-USE.en.md](./ACCEPTABLE-USE.en.md). A pull request is a grant on AGPL-3.0-or-later **and** those additional terms.
 
 ![Abliterater workbench](./workbench.png)
+
+## Languages
+
+This file is **English only**. Other landings:
+
+| Language | File |
+| --- | --- |
+| English | [README.md](./README.md) (this file) |
+| Korean | [README.ko.md](./README.ko.md) |
+| Japanese | [README.ja.md](./README.ja.md) |
+| Simplified Chinese | [README.zh-Hans.md](./README.zh-Hans.md) |
+| Traditional Chinese | [README.zh-Hant.md](./README.zh-Hant.md) |
+| Spanish | [README.es.md](./README.es.md) |
+| French | [README.fr.md](./README.fr.md) |
+| German | [README.de.md](./README.de.md) |
+| Portuguese (Brazil) | [README.pt-BR.md](./README.pt-BR.md) |
+| Russian | [README.ru.md](./README.ru.md) |
+| Arabic | [README.ar.md](./README.ar.md) |
+| Vietnamese | [README.vi.md](./README.vi.md) |
+| Indonesian | [README.id.md](./README.id.md) |
+
+The in-app UI is Korean / English via a locale toggle. Extra README files are landings, not extra UI locales. Full install and remaining OPEN: [USER-GUIDE.en.md](./USER-GUIDE.en.md).
 
 ## What it does
 
@@ -20,7 +40,29 @@ Pick an **unabliterated Instruct** base, assemble a Heretic / LoRA / quant **pac
 | Workbench (tab `1`) | Build · Explore · Connect |
 | Research (tab `2`) | arXiv and GitHub links (`target=_blank`) |
 
-It does **not** host weights. It does **not** rent GPUs for you. A passing `npm test` is not a training run. Analog web at `:8080` is not a native Electron / GPU-golden close.
+Default catalog base is `Qwen/Qwen3-4B-Instruct-2507` (work original), method Heretic, output merged BF16. Already-processed heretic/GGUF cards are a **reuse lane**, not the default. `PRESETS[0]` is `method-compare` (Instruct work), then `domain-lora`, then `local-gguf` last.
+
+Build holds catalog chips and presets. Explore holds recommendations and SourceHub search. Connect pastes **your** keys in screen memory only.
+
+## What it does not
+
+- Host or redistribute model weights.
+- Rent GPUs on your behalf. Listing an instance is not a training run.
+- Vendor AGPL trees (heretic, OBLITERATUS, abliterix) into `src/`. Pin-call only.
+- Ship author KDP PDFs. `public/reports/` stays on the author's disk.
+- Close native / GPU / Electron ledgers because `npm test` passed. Analog web at `:8080` is not a native close.
+
+## Pack ZIP
+
+The download is a recipe, not a trained model. Allowlist only:
+
+`run.sh`, `run.ps1`, empty Azure stubs, `docker-compose.yml`, `train_lora.py`, `eval.sh`, `Modelfile`, `heretic.args.txt`, `SYSTEM.txt`, `POWER.txt`, `POWER.en.txt`, `SFT.txt`, `eval.txt`, `job.json`, `README.txt`.
+
+Always both `run.sh` and `run.ps1`. Compute chips: `local-cuda`, `local-rocm`, `local-metal`, `local-cpu`.
+
+## Honesty
+
+`analog IMPLEMENTED` ≠ native close. Never sum ledgers. Live dump: `npm run ledger:status`. Why each OPEN row: [USER-GUIDE.en.md](./USER-GUIDE.en.md#still-open-per-ledger-never-sum).
 
 ## Quick start
 
@@ -33,7 +75,7 @@ npm ci
 npm run dev
 ```
 
-Open `http://127.0.0.1:8080/`. Default catalog base is `Qwen/Qwen3-4B-Instruct-2507` (work original), method Heretic, output merged BF16. Already-processed heretic/GGUF cards are a **reuse lane**, not the default.
+Open `http://127.0.0.1:8080/`.
 
 ```bash
 npm run typecheck
@@ -57,6 +99,8 @@ docker compose up -d --build
 # http://127.0.0.1:8080/
 ```
 
+A container that has been healthy for hours is not proof of **this** source. Rebuild with `--build` after you change `src/`.
+
 ### Desktop
 
 ```bash
@@ -67,20 +111,20 @@ npm run electron:build:linux  # AppImage (Linux host or CI)
 npm run electron:build:mac    # DMG (macOS host or CI)
 ```
 
-Windows NSIS is unsigned by default (`CSC_IDENTITY_AUTO_DISCOVERY=false` unless `CSC_LINK` / `WIN_CSC_LINK` is set). SmartScreen **Unknown publisher** is expected. macOS DMG is not produced on Windows.
+Windows NSIS is unsigned by default (`CSC_IDENTITY_AUTO_DISCOVERY=false` unless `CSC_LINK` / `WIN_CSC_LINK` is set). SmartScreen **Unknown publisher** is expected. macOS DMG is not produced on Windows. Unsigned analog ≠ Authenticode (E03).
 
 ## Documentation
 
 | File | Contents |
 | --- | --- |
 | [USER-GUIDE.en.md](./USER-GUIDE.en.md) | Install, chrome, workbench, pack ZIP, remaining OPEN **per ledger** (Korean: [USER-GUIDE.ko.md](./USER-GUIDE.ko.md)) |
-| [CONTRIBUTING.en.md](./CONTRIBUTING.en.md) | How to patch. PRs welcome if you accept the AUP |
+| [CONTRIBUTING.en.md](./CONTRIBUTING.en.md) | How to patch. Contribute with us if you accept the AUP |
 | [ACCEPTABLE-USE.en.md](./ACCEPTABLE-USE.en.md) | No third-party commercial / illegal / abusive use |
 | [SUPPORT.en.md](./SUPPORT.en.md) | Sponsor (donation) vs invest (inquiry) |
 | [SECURITY.md](./SECURITY.md) | How to report a vulnerability |
 | [LICENSE.md](./LICENSE.md) | AGPL-3.0-or-later body + additional terms |
 
-Korean copies sit next to each English file (`*.ko.md`).
+Korean copies sit next to each English file (`*.ko.md`). Do not upload `docs/` research dumps.
 
 ## License (read this before you ship a fork)
 
@@ -95,7 +139,7 @@ Weight, dataset, and cloud-console licenses are **separate**. A catalog row is n
 
 ## Contribute with us
 
-This workbench is **not finished.** Analog web at `:8080` is usable. Native Electron, GPU golden, and in-app Hub live are **OPEN**. We want to improve it **together** — patches, measurements, reviews, and bilingual docs.
+This workbench is **not finished.** Analog web at `:8080` is usable. Native Electron, GPU golden, and in-app Hub live are **OPEN**. We want to improve it **together** — patches, measurements, reviews, and docs in every language on this page.
 
 **Contributions are welcome.** Third-party commercial, illegal, and abusive use is still **not licensed**.
 

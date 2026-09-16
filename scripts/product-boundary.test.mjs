@@ -69,7 +69,29 @@ test("root ships bilingual user guide, contributing, and acceptable use", () => 
   assert.match(read("README.md"), /Contributions are welcome/);
   assert.match(read("README.md"), /Contribute with us/);
   assert.match(read("README.md"), /not licensed/);
+  assert.match(read("README.md"), /README\.ja\.md/);
+  assert.match(read("README.md"), /README\.zh-Hans\.md/);
   assert.match(read("README.ko.md"), /같이 기여/);
+  for (const name of [
+    "README.ja.md",
+    "README.zh-Hans.md",
+    "README.zh-Hant.md",
+    "README.es.md",
+    "README.fr.md",
+    "README.de.md",
+    "README.pt-BR.md",
+    "README.ru.md",
+    "README.ar.md",
+    "README.vi.md",
+    "README.id.md",
+  ]) {
+    const body = read(name);
+    assert.ok(body.length > 2000, name);
+    assert.match(body, /genoxone20261\/Abliterater_public/);
+    assert.match(body, /support@genox\.one/);
+    assert.match(body, /analog IMPLEMENTED/);
+    assert.match(body, /ACCEPTABLE-USE/);
+  }
   assert.match(read("CONTRIBUTING.en.md"), /Help wanted/);
   assert.match(read("CONTRIBUTING.ko.md"), /함께 기여/);
   assert.match(read("USER-GUIDE.en.md"), /C-001 and C-008/);
