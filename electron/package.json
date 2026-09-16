@@ -36,7 +36,8 @@
     "extraResources": [
       {
         "from": "../.vercel/output",
-        "to": "app/.vercel/output"
+        "to": "app/.vercel/output",
+        "filter": ["**/*", "!**/reports", "!**/reports/**"]
       },
       {
         "from": "../scripts/built-server.mjs",

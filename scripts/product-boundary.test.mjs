@@ -28,3 +28,10 @@ test("README does not point at session research dumps", () => {
   assert.doesNotMatch(read("README.md"), /research20260905_master_todo/);
   assert.doesNotMatch(read("README.md"), /docs\/research-/);
 });
+test("production build omits author KDP reports from output and extraResources", () => {
+  assert.match(read("package.json"), /omit-kdp-from-output/);
+  assert.match(read("scripts/omit-kdp-from-output.mjs"), /static\/reports/);
+  const extras = JSON.parse(read("electron/package.json")).build.extraResources;
+  const web = extras.find((e) => e.from === "../.vercel/output");
+  assert.ok(web?.filter?.some((f) => f.includes("reports")));
+});
