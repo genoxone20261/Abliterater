@@ -1,0 +1,78 @@
+{
+  "name": "abliterater-electron",
+  "version": "1.0.0",
+  "description": "Abliterater model research workbench",
+  "main": "main/main.mjs",
+  "author": "Abliterater contributors",
+  "license": "AGPL-3.0-or-later",
+  "scripts": {
+    "dev": "electron .",
+    "build:win": "electron-builder --win --x64",
+    "build:linux": "electron-builder --linux AppImage --x64",
+    "build:mac": "electron-builder --mac dmg",
+    "build": "node ../scripts/electron-build-current.mjs"
+  },
+  "devDependencies": {
+    "electron": "^35.0.0",
+    "electron-builder": "^26.0.0"
+  },
+  "build": {
+    "appId": "com.abliterater.app",
+    "productName": "Abliterater",
+    "directories": {
+      "output": "release-dist"
+    },
+    "files": [
+      "main/main.mjs",
+      "main/preload.cjs",
+      "main/policy.mjs",
+      "main/provider-gateway.mjs",
+      "main/provider-lifecycle.mjs",
+      "main/ssh-execution.mjs",
+      "main/workspace-storage.mjs",
+      "main/hardware-profile.mjs",
+      "package.json"
+    ],
+    "extraResources": [
+      {
+        "from": "../.vercel/output",
+        "to": "app/.vercel/output"
+      },
+      {
+        "from": "../scripts/built-server.mjs",
+        "to": "app/scripts/built-server.mjs"
+      },
+      {
+        "from": "../LICENSE.md",
+        "to": "LICENSE.md"
+      }
+    ],
+    "win": {
+      "target": [
+        "nsis",
+        "portable"
+      ]
+    },
+    "nsis": {
+      "oneClick": false,
+      "allowToChangeInstallationDirectory": true,
+      "createDesktopShortcut": true,
+      "createStartMenuShortcut": true
+    },
+    "portable": {
+      "artifactName": "${productName}-${version}-portable.exe"
+    },
+    "linux": {
+      "category": "Development",
+      "target": [
+        "AppImage"
+      ]
+    },
+    "mac": {
+      "category": "public.app-category.developer-tools",
+      "target": [
+        "dmg"
+      ]
+    }
+  }
+}

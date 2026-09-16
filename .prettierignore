@@ -1,0 +1,8 @@
+node_modules
+dist
+.vercel
+.output
+routeTree.gen.ts
+public/reports
+# 외부 아카이브 원문(연구 소스 스냅샷) — 손상된 중첩 태그 포함, 정규화 대상 아님
+docs/**/sources/**/*.html

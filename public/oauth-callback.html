@@ -1,0 +1,20 @@
+<!doctype html>
+<meta charset="utf-8" />
+<title>OAuth callback</title>
+<script>
+  (function () {
+    var p = new URLSearchParams(location.search);
+    var payload = {
+      type: "abliterater-oauth",
+      code: p.get("code") || "",
+      state: p.get("state") || "",
+      error: p.get("error") || "",
+    };
+    if (window.opener) {
+      window.opener.postMessage(payload, location.origin);
+      window.close();
+      return;
+    }
+    document.body.textContent = payload.error || "You can close this window.";
+  })();
+</script>

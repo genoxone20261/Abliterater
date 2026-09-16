@@ -1,0 +1,6 @@
+FROM ./model.Q4_K_M.gguf
+PARAMETER temperature 0.7
+PARAMETER num_ctx 4096
+SYSTEM """
+SYSTEM
+"""

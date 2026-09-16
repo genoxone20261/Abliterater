@@ -1,0 +1,23 @@
+# Heretic flags interpolated by Abliterater runners (src/lib/runners.ts).
+# CLI docs: https://github.com/p-e-w/heretic  |  pip install heretic-llm
+#
+# Unattended save (no TTY menu):
+#   HERETIC_MODEL_ACTION=save
+#   HERETIC_SAVE_DIRECTORY=./heretic-out
+#   HERETIC_N_TRIALS=<n_trials>
+#
+# Command written into run.sh / run.ps1:
+#   heretic ./base --n-trials 50 --model-action save --save-directory ./heretic-out \
+#     --checkpoint-action restart --export-strategy merge
+# GPU adds: --quantization bnb_4bit
+# --output / --max-weight / --direction-index are NOT flags in heretic-llm 1.4.0.
+#
+# MethodParams.heretic
+#   n_trials         --n-trials          Optuna TPE trial count. Pack default 50.
+#   max_weight       --max-weight        Peak of the tent-shaped ablation kernel. Pack default 1.
+#   direction_index  --direction-index   Refusal direction (int layer or float mix). Pack default 0.
+#
+# CPU packs run heretic only when ramGb >= 64 AND methods includes heretic.
+# Otherwise the runner prints: skip heretic: RAM<64 or method off
+#
+# GPU packs (local-cuda, azure-startup) install bitsandbytes and pass the same flags.

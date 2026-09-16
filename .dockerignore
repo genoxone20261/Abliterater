@@ -1,0 +1,20 @@
+node_modules
+**/node_modules
+.vercel
+.output
+.nitro
+dist
+coverage
+screenshots
+artifacts
+.live
+.cursor
+.git
+.gitignore
+.env
+.env.*
+! .env.example
+electron/release*
+electron/node_modules
+npm-debug.log*
+*.log
