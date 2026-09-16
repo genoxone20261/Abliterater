@@ -1,8 +1,8 @@
 # Abliterater contributing guide
 
-Patches are welcome. Do not upload keys, research dumps, or KDP PDFs. Third-party commercial use, illegal use, and abuse are **not licensed** — [ACCEPTABLE-USE.en.md](./ACCEPTABLE-USE.en.md). A PR is a grant on AGPL-3.0-or-later **and** those additional terms.
+Patches, measurements, and reviews are welcome — **contribute with us.** Do not upload keys, research dumps, or KDP PDFs. Third-party commercial use, illegal use, and abuse are **not licensed** — [ACCEPTABLE-USE.en.md](./ACCEPTABLE-USE.en.md). A PR is a grant on AGPL-3.0-or-later **and** those additional terms.
 
-This repository is **educational**. It asks for **worldwide attention** to counter illegal misuse.
+This repository is **educational**. It asks for **worldwide attention** to counter illegal misuse. analog `npm test` is not a native / GPU close. Do not flip ledger OPEN cells without the close evidence named in [USER-GUIDE.en.md](./USER-GUIDE.en.md#still-open-per-ledger-never-sum).
 
 Korean: [CONTRIBUTING.ko.md](./CONTRIBUTING.ko.md). Usage: [USER-GUIDE.en.md](./USER-GUIDE.en.md). Sponsor or invest: [SUPPORT.en.md](./SUPPORT.en.md).
 
@@ -31,6 +31,23 @@ npm run ledger:status
 - Node 24. Do not fetch tsx via `npx`. Use local `node_modules/tsx`.
 - `npm run format` (`prettier --write`) mutates the tree. Do not run it unasked.
 - analog `npm test` pass ≠ native Electron persist / GPU golden close. Do not promote ledger OPEN cells from tests alone.
+
+---
+
+## Help wanted
+
+Contribute **with us**. Pick one row. Send the close evidence. Do not analog-GREEN.
+
+| Kind | OPEN | Evidence that closes |
+| --- | --- | --- |
+| Packaged Electron | 02, 13, 14, 16, 18, 20 | installer persist-reject, source-free launch, keyboard, CRUD |
+| GPU golden (your bill) | R-004, R-005 | this-machine Heretic 4B / QLoRA log + VRAM |
+| In-app Hub live | R-009 | overlay matching the workload markdown cell |
+| Prod / Docker / a11y | W01, W08, W14, W16 | this-source compose + product-flow + keyboard |
+| SSH / cost | C-002 … C-007 | live connect, same-workload $ cited |
+| Docs / i18n | — | EN chrome leftover, first-run, AUP wording |
+
+This repository does not pay your cloud. Listing an instance is not a golden run.
 
 ---
 

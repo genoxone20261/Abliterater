@@ -392,14 +392,14 @@ OPEN/IN_PROGRESS: **W01** prod save/tabs, **W02** HF key boundary, **W06** live 
 
 ### C (`src/data/ECOSYSTEM-MASTER-TODO.md`)
 
-**C-002–C-007** OPEN: live SSH, runner submit, setup/cost compare, contract mix-up, monitor UI. C-001 only is IMPLEMENTED.
+**C-002–C-007** OPEN: live SSH, runner submit, setup/cost compare, contract mix-up, monitor UI. **C-001 and C-008** are closed. Do not analog-GREEN the rest. We want to improve the remaining rows **together** — [CONTRIBUTING.en.md](./CONTRIBUTING.en.md).
 
 External: **E01** GPU, **E02** paid account, **E03** Authenticode+clean VM. This repo does not pay for you.
 
 ## Acceptable use · contributing
 
 - No third-party **commercial** use, **illegal** use, or **abuse**: [ACCEPTABLE-USE.en.md](./ACCEPTABLE-USE.en.md)
-- Contributing: [CONTRIBUTING.en.md](./CONTRIBUTING.en.md)
+- Contribute with us: [CONTRIBUTING.en.md](./CONTRIBUTING.en.md) — patches, measurements, reviews. analog `npm test` ≠ table close.
 - License: [LICENSE.md](./LICENSE.md)
 
 ## Sponsor or invest

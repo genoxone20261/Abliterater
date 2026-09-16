@@ -392,14 +392,14 @@ OPEN/IN_PROGRESS: **W01** prod 저장/탭, **W02** HF 키 경계, **W06** 로그
 
 ### C (`src/data/ECOSYSTEM-MASTER-TODO.md`)
 
-**C-002–C-007** OPEN: SSH 실연결, runner 제출, 설정/비용 비교, 계약 혼동, 모니터 UI. C-001만 IMPLEMENTED.
+**C-002–C-007** OPEN: SSH 실연결, runner 제출, 설정/비용 비교, 계약 혼동, 모니터 UI. **C-001과 C-008**은 닫힘. 나머지를 analog-GREEN하지 않습니다. 남은 칸은 **같이 기여**해 주십시오 — [CONTRIBUTING.ko.md](./CONTRIBUTING.ko.md).
 
 외부: **E01** GPU, **E02** 유료 계정, **E03** Authenticode+clean VM. 이 저장소가 대신 결제하지 않습니다.
 
 ## 이용 제한 · 기여
 
 - 제3자 **상업 이용 금지**, **불법 이용 금지**, **악용 금지**: [ACCEPTABLE-USE.ko.md](./ACCEPTABLE-USE.ko.md)
-- 기여: [CONTRIBUTING.ko.md](./CONTRIBUTING.ko.md)
+- 같이 기여: [CONTRIBUTING.ko.md](./CONTRIBUTING.ko.md) — 패치·실측·리뷰. analog `npm test` ≠ 표 클로즈.
 - 라이선스: [LICENSE.md](./LICENSE.md)
 
 ## 후원 · 투자

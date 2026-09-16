@@ -93,13 +93,29 @@ This project is **AGPL-3.0-or-later together with** additional terms:
 
 Weight, dataset, and cloud-console licenses are **separate**. A catalog row is not a redistribution grant.
 
-## Contribute
+## Contribute with us
+
+This workbench is **not finished.** Analog web at `:8080` is usable. Native Electron, GPU golden, and in-app Hub live are **OPEN**. We want to improve it **together** — patches, measurements, reviews, and bilingual docs.
+
+**Contributions are welcome.** Third-party commercial, illegal, and abusive use is still **not licensed**.
 
 1. Read [ACCEPTABLE-USE.en.md](./ACCEPTABLE-USE.en.md) and [CONTRIBUTING.en.md](./CONTRIBUTING.en.md).
-2. Fork, patch, open a PR. No separate CLA — the PR is the grant on the same terms.
-3. Never put API keys, `.env` values, or research dumps (`docs/`) in git, issues, or chat.
+2. Pick an OPEN row. Send **evidence**, not a flipped markdown cell. analog `npm test` ≠ native close.
+3. Fork, patch, open a PR. No CLA — the PR is the grant on AGPL-3.0-or-later **and** the AUP.
+4. Never put API keys, `.env` values, or research dumps (`docs/`) in git, issues, or chat.
 
-Do not vendor AGPL tools (heretic, OBLITERATUS, abliterix) into `src/`. Pin-call only.
+Help we actually need (per ledger — **never sum**). Close conditions: [USER-GUIDE.en.md](./USER-GUIDE.en.md#still-open-per-ledger-never-sum).
+
+| You can help with | OPEN | Close needs | Not enough |
+| --- | --- | --- | --- |
+| Packaged Electron E2E | 02, 13, 14, 16, 18, 20 | installer persist / launch / keyboard / CRUD | extraResources analog |
+| GPU golden on *your* machine | R-004, R-005 | this-machine Heretic 4B / QLoRA log+VRAM | someone else's rental JSON |
+| In-app Hub live | R-009 | overlay that matches the workload cell | parent curl / snapshot |
+| Prod / Docker / a11y | W01, W08, W14, W16 | this-source compose + keyboard | hours-old healthy stack |
+| SSH / same-workload cost | C-002 … C-007 | live connect, cited $ | list/read analog |
+| Docs and i18n | — | leftover Hangul on EN chrome, first-run | analog-GREEN in the guide |
+
+Do not vendor AGPL tools (heretic, OBLITERATUS, abliterix) into `src/`. Pin-call only. Do not `git add -A`. This repository does not pay your cloud bill.
 
 ## Connect accounts (your keys)
 

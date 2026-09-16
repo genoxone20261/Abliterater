@@ -1,8 +1,8 @@
 # Abliterater 기여 가이드
 
-한 줄: 패치는 환영합니다. 키·연구 덤프·KDP PDF는 올리지 마십시오. 제3자 상업 이용과 불법·악용은 **라이선스되지 않습니다** — [ACCEPTABLE-USE.ko.md](./ACCEPTABLE-USE.ko.md). PR은 AGPL-3.0-or-later와 그 추가 조건에 대한 부여입니다.
+한 줄: 패치·실측·리뷰를 **같이 기여**해 주십시오. 키·연구 덤프·KDP PDF는 올리지 마십시오. 제3자 상업 이용과 불법·악용은 **라이선스되지 않습니다** — [ACCEPTABLE-USE.ko.md](./ACCEPTABLE-USE.ko.md). PR은 AGPL-3.0-or-later와 그 추가 조건에 대한 부여입니다.
 
-이 저장소는 **교육용**이며, 불법 이용을 막는 대응을 위해 **전 세계의 관심**을 구합니다.
+이 저장소는 **교육용**이며, 불법 이용을 막는 대응을 위해 **전 세계의 관심**을 구합니다. analog `npm test`는 native / GPU 클로즈가 아닙니다. [USER-GUIDE.ko.md](./USER-GUIDE.ko.md#아직-열린-것-원장별-분석-합산-금지)에 적힌 증거 없이 원장 OPEN 칸을 올리지 마십시오.
 
 영어본: [CONTRIBUTING.en.md](./CONTRIBUTING.en.md). 사용법: [USER-GUIDE.ko.md](./USER-GUIDE.ko.md). 후원·투자: [SUPPORT.ko.md](./SUPPORT.ko.md).
 
@@ -31,6 +31,23 @@ npm run ledger:status
 - Node 24. `npx`로 tsx를 받지 않는다. 로컬 `node_modules/tsx`.
 - `npm run format`(prettier --write)는 트리를 바꾼다. 요청 없이 돌리지 않는다.
 - analog `npm test` 통과 ≠ native Electron persist / GPU 골든 클로즈. 원장 OPEN 칸을 테스트만으로 올리지 않는다.
+
+---
+
+## 같이 기여할 일
+
+**함께 기여**해 주십시오. 칸 하나를 고르고 닫힘 증거를 보냅니다. analog-GREEN 금지.
+
+| 종류 | OPEN | 닫히는 증거 |
+| --- | --- | --- |
+| 패키지 Electron | 02, 13, 14, 16, 18, 20 | 설치본 persist-reject, 소스 없는 기동, 키보드, CRUD |
+| GPU 골든 (본인 과금) | R-004, R-005 | 이 머신 Heretic 4B / QLoRA 로그 + VRAM |
+| 앱 안 Hub 실시간 | R-009 | 워크로드 마크다운 칸과 맞는 overlay |
+| 프로덕션 / Docker / a11y | W01, W08, W14, W16 | this-source compose + product-flow + 키보드 |
+| SSH / 비용 | C-002 … C-007 | 실연결, 동일 워크로드 $ 인용 |
+| 문서 / i18n | — | EN 화면 leftover, 첫 실행, AUP 문구 |
+
+이 저장소가 클라우드 요금을 내지 않습니다. 인스턴스 목록 ≠ 골든 런.
 
 ---
 

@@ -67,7 +67,12 @@ test("root ships bilingual user guide, contributing, and acceptable use", () => 
   assert.match(read("README.ko.md"), /교육 목적/);
   assert.doesNotMatch(read("README.md"), /[가-힣]/);
   assert.match(read("README.md"), /Contributions are welcome/);
+  assert.match(read("README.md"), /Contribute with us/);
   assert.match(read("README.md"), /not licensed/);
+  assert.match(read("README.ko.md"), /같이 기여/);
+  assert.match(read("CONTRIBUTING.en.md"), /Help wanted/);
+  assert.match(read("CONTRIBUTING.ko.md"), /함께 기여/);
+  assert.match(read("USER-GUIDE.en.md"), /C-001 and C-008/);
   assert.match(read("SECURITY.md"), /support@genox.one/);
   assert.ok(read("SECURITY.md").length > 200);
   assert.match(read("README.md"), /Thank you/);

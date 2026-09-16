@@ -93,13 +93,29 @@ Windows NSIS는 기본 미서명입니다. SmartScreen의 **알 수 없는 게�
 
 가중치·데이터셋·클라우드 콘솔 라이선스는 **별도**입니다. 카탈로그 행이 재배포 허가가 아닙니다.
 
-## 기여
+## 같이 기여합시다
+
+이 작업대는 **끝나지 않았습니다.** `:8080` analog 웹은 쓸 수 있습니다. Native Electron, GPU 골든, 앱 안 Hub 실시간은 **OPEN**입니다. 패치·실측·리뷰·한·영 문서를 **같이** 개선하고 싶습니다.
+
+**기여는 환영합니다.** 제3자 상업·불법·악용은 그대로 **라이선스되지 않습니다.**
 
 1. [ACCEPTABLE-USE.ko.md](./ACCEPTABLE-USE.ko.md)와 [CONTRIBUTING.ko.md](./CONTRIBUTING.ko.md)를 읽습니다.
-2. 포크하고 패치한 뒤 PR을 엽니다. 별도 CLA는 없습니다. PR이 같은 조건의 부여입니다.
-3. API 키, `.env` 값, 연구 덤프(`docs/`)를 git·이슈·채팅에 넣지 않습니다.
+2. OPEN 칸을 고릅니다. **증거**를 보냅니다. 마크다운 칸만 올리지 않습니다. analog `npm test` ≠ native close.
+3. 포크 → 패치 → PR. 별도 CLA 없음. PR은 AGPL-3.0-or-later **와** AUP 부여입니다.
+4. API 키, `.env` 값, 연구 덤프(`docs/`)를 git·이슈·채팅에 넣지 않습니다.
 
-AGPL 도구(heretic, OBLITERATUS, abliterix)를 `src/`에 vendor하지 않습니다. pin-call만.
+실제로 필요한 도움 (원장별 — **합산 금지**). 닫힘 조건: [USER-GUIDE.ko.md](./USER-GUIDE.ko.md#아직-열린-것-원장별-분석-합산-금지).
+
+| 같이 할 일 | OPEN | 닫히려면 | 부족한 것 |
+| --- | --- | --- | --- |
+| 패키지 Electron E2E | 02, 13, 14, 16, 18, 20 | 설치본 persist / 기동 / 키보드 / CRUD | extraResources analog |
+| *본인* 머신의 GPU 골든 | R-004, R-005 | 이 머신 Heretic 4B / QLoRA 로그+VRAM | 타인 렌탈 JSON |
+| 앱 안 Hub 실시간 | R-009 | 워크로드 칸과 맞는 overlay | 부모 curl / 스냅샷 |
+| 프로덕션 / Docker / a11y | W01, W08, W14, W16 | this-source compose + 키보드 | 몇 시간 된 healthy 스택 |
+| SSH / 동일 워크로드 비용 | C-002 … C-007 | 실연결, 인용된 $ | list/read analog |
+| 문서·i18n | — | EN 화면 한글 leftover, 첫 실행 | 설명서 analog-GREEN |
+
+AGPL 도구(heretic, OBLITERATUS, abliterix)를 `src/`에 vendor하지 않습니다. pin-call만. `git add -A` 금지. 이 저장소가 클라우드 요금을 대신 내지 않습니다.
 
 ## 계정 연결 (본인 키)
 
