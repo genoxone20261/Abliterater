@@ -4,7 +4,7 @@
 
 판정: **제품 GREEN 아님.** analog IMPLEMENTED ≠ native. GPU 실측은 `E01` / `W-001`. 커밋 없음. dirty tree 유지.
 
-서브에이전트: `:18081` Connection refused, Ollama `models: []`. 죽은 `hermes3:8b` 재팬아웃 금지. 부모 직접.
+서브에이전트 팬아웃 금지. 부모 직접.
 
 ---
 

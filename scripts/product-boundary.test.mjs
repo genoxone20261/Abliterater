@@ -125,6 +125,16 @@ test("public product text does not embed personal machine SKUs or home paths", (
   assert.doesNotMatch(bodies, /RTX 5070/);
   assert.doesNotMatch(bodies, /Users\/Juno/);
   assert.doesNotMatch(bodies, /Users\\\\Juno/);
+  assert.doesNotMatch(bodies, /:18081/);
+  assert.doesNotMatch(bodies, /hermes3:8b/);
+});
+test(".env.example is comments only", () => {
+  const env = read(".env.example");
+  for (const line of env.split(/\r?\n/)) {
+    const t = line.trim();
+    if (!t) continue;
+    assert.ok(t.startsWith("#"), t);
+  }
 });
 test("production build omits author KDP reports from output and extraResources", () => {
   assert.match(read("package.json"), /omit-kdp-from-output/);
