@@ -4,7 +4,7 @@ Patches are welcome. Do not upload keys, research dumps, or KDP PDFs. Third-part
 
 This repository is **educational**. It asks for **worldwide attention** to counter illegal misuse.
 
-Korean: [CONTRIBUTING.ko.md](./CONTRIBUTING.ko.md). Usage: [USER-GUIDE.en.md](./USER-GUIDE.en.md).
+Korean: [CONTRIBUTING.ko.md](./CONTRIBUTING.ko.md). Usage: [USER-GUIDE.en.md](./USER-GUIDE.en.md). Sponsor or invest: [SUPPORT.en.md](./SUPPORT.en.md).
 
 ---
 

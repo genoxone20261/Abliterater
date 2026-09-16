@@ -4,7 +4,7 @@
 
 이 저장소는 **교육용**이며, 불법 이용을 막는 대응을 위해 **전 세계의 관심**을 구합니다.
 
-영어본: [CONTRIBUTING.en.md](./CONTRIBUTING.en.md). 사용법: [USER-GUIDE.ko.md](./USER-GUIDE.ko.md).
+영어본: [CONTRIBUTING.en.md](./CONTRIBUTING.en.md). 사용법: [USER-GUIDE.ko.md](./USER-GUIDE.ko.md). 후원·투자: [SUPPORT.ko.md](./SUPPORT.ko.md).
 
 ---
 

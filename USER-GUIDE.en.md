@@ -8,7 +8,7 @@ This app does not host weights. It does not rent GPUs for you. A passing `npm te
 
 Language toggle is KO/EN in the header. Korean: [USER-GUIDE.ko.md](./USER-GUIDE.ko.md).
 
-Acceptable use (no third-party commercial / illegal / abusive use): [ACCEPTABLE-USE.en.md](./ACCEPTABLE-USE.en.md). Contributing: [CONTRIBUTING.en.md](./CONTRIBUTING.en.md).
+Acceptable use (no third-party commercial / illegal / abusive use): [ACCEPTABLE-USE.en.md](./ACCEPTABLE-USE.en.md). Contributing: [CONTRIBUTING.en.md](./CONTRIBUTING.en.md). Sponsor or invest: [SUPPORT.en.md](./SUPPORT.en.md).
 
 ---
 
@@ -361,29 +361,59 @@ External: E01 GPU, E02 paid account, E03 Authenticode+clean VM. This repo does n
 
 ---
 
+## Still open (per ledger, never sum)
+
+This guide does not close cells. `npm run ledger:status`. analog IMPLEMENTED ≠ native close.
+
+### native 01–20 (`src/data/TODO-ROADMAP.md`)
+
+| ID | Why still OPEN | Close requires |
+| --- | --- | --- |
+| 02 | Web analog keeps keys in screen memory. **Packaged Electron** persist-reject not measured | installer E2E, localStorage 0 |
+| 13 | extraResources analog. No **source-free** install launch | clean-install start |
+| 14 | URL policy unit analog. Desktop navigation run OPEN | packaged Electron policy pass |
+| 16 | Field/Chip analog. No keyboard E2E | live tab/label E2E |
+| 18 | blur-off analog. No bundle-byte E2E | network/bundle measure |
+| 20 | Dialog analog. No search/clone/restore E2E | CRUD E2E |
+
+01, 03–12, 15, 17, 19 are analog IMPLEMENTED. Do not promote the table.
+
+### R (`src/data/TODO-WORKLOAD-SPEC-20260912.md`)
+
+| ID | Why still OPEN | Close requires |
+| --- | --- | --- |
+| R-004 | No Heretic GPU golden | this-machine 4B heretic log+VRAM |
+| R-005 | No QLoRA 7B run | 1 epoch or explicit skip |
+| R-009 | Hub snapshot analog. No in-app live refresh | in-app live fetch |
+
+### W (`src/data/WORKFLOW.md`)
+
+OPEN/IN_PROGRESS: **W01** prod save/tabs, **W02** HF key boundary, **W06** live log redaction, **W07** packaged desktop, **W08** a11y keyboard, **W09** stepper/mobile CTA, **W11** scoring UI, **W12** search/reset E2E, **W14** Docker runtime, **W16** final fail-closed acceptance.
+
+### C (`src/data/ECOSYSTEM-MASTER-TODO.md`)
+
+**C-002–C-007** OPEN: live SSH, runner submit, setup/cost compare, contract mix-up, monitor UI. C-001 only is IMPLEMENTED.
+
+External: **E01** GPU, **E02** paid account, **E03** Authenticode+clean VM. This repo does not pay for you.
+
 ## Acceptable use · contributing
 
 - No third-party **commercial** use, **illegal** use, or **abuse**: [ACCEPTABLE-USE.en.md](./ACCEPTABLE-USE.en.md)
 - Contributing: [CONTRIBUTING.en.md](./CONTRIBUTING.en.md)
-- License text: [LICENSE.md](./LICENSE.md) (AGPL-3.0-or-later + those additional terms)
+- License: [LICENSE.md](./LICENSE.md)
 
+## Sponsor or invest
 
-## Still open
+Sponsorship and GENOX investment inquiry are **separate doors**. Full text: [SUPPORT.en.md](./SUPPORT.en.md).
 
-Per-ledger OPEN (never sum): native 02, 13, 14, 16, 18, 20 · R-004, R-005 · R-009 · W01, W02, W06–W09, W11, W12, W14, W16 · C-002–C-007.
+A donation is not equity. Investment talk is email only (`support@genox.one`). This page is not an offer of securities.
 
-`npm run ledger:status`. analog IMPLEMENTED ≠ native close.
-
-## Support
-
-If this project is useful, a small donation helps us keep going. It is not required. We would receive it humbly, and keep working as carefully as we can.
-
-| Route | Value |
+| Channel | Value |
 | --- | --- |
 | Binance ID | `110474712` |
 | BSC (BEP-20) | `0xB8c48E65D440fe7Ee0025ebD88Da3094272977F4` |
 
-Funds sent on the wrong chain cannot be recovered. Use BSC only.
+BSC only. Wrong chain cannot be recovered.
 
 ---
 

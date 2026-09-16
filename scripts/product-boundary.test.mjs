@@ -40,6 +40,9 @@ test("root ships bilingual user guide, contributing, and acceptable use", () => 
     "CONTRIBUTING.en.md",
     "ACCEPTABLE-USE.ko.md",
     "ACCEPTABLE-USE.en.md",
+    "README.ko.md",
+    "SUPPORT.ko.md",
+    "SUPPORT.en.md",
   ]) {
     const body = read(name);
     assert.ok(body.length > 400, name);
@@ -57,6 +60,12 @@ test("root ships bilingual user guide, contributing, and acceptable use", () => 
   assert.match(read("ACCEPTABLE-USE.en.md"), /worldwide attention/i);
   assert.match(read("ACCEPTABLE-USE.ko.md"), /교육용/);
   assert.match(read("ACCEPTABLE-USE.ko.md"), /전 세계의 관심/);
+  assert.match(read("SUPPORT.en.md"), /Sponsor \(donation\)/);
+  assert.match(read("SUPPORT.en.md"), /Invest \(inquiry\)/);
+  assert.match(read("SUPPORT.ko.md"), /후원/);
+  assert.match(read("SUPPORT.ko.md"), /투자/);
+  assert.match(read("README.ko.md"), /교육 목적/);
+  assert.doesNotMatch(read("README.md"), /[가-힣]/);
 });
 test("public product text does not embed personal machine SKUs or home paths", () => {
   const bodies = [
@@ -67,6 +76,9 @@ test("public product text does not embed personal machine SKUs or home paths", (
     read("README.md"),
     read("USER-GUIDE.ko.md"),
     read("USER-GUIDE.en.md"),
+    read("README.ko.md"),
+    read("SUPPORT.ko.md"),
+    read("SUPPORT.en.md"),
   ].join("\n");
   assert.doesNotMatch(bodies, /14650HX/);
   assert.doesNotMatch(bodies, /RTX 5070/);

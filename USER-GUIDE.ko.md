@@ -8,7 +8,7 @@
 
 언어 전환은 헤더의 KO/EN 토글입니다. 영어본: [USER-GUIDE.en.md](./USER-GUIDE.en.md).
 
-이용 제한(제3자 상업·불법·악용 금지): [ACCEPTABLE-USE.ko.md](./ACCEPTABLE-USE.ko.md). 기여: [CONTRIBUTING.ko.md](./CONTRIBUTING.ko.md).
+이용 제한(제3자 상업·불법·악용 금지): [ACCEPTABLE-USE.ko.md](./ACCEPTABLE-USE.ko.md). 기여: [CONTRIBUTING.ko.md](./CONTRIBUTING.ko.md). 후원·투자: [SUPPORT.ko.md](./SUPPORT.ko.md).
 
 ---
 
@@ -361,29 +361,59 @@ OPEN/IN_PROGRESS로 남는 것: **W01, W02, W06, W07, W08, W09, W11, W12, W14, W
 
 ---
 
+## 아직 열린 것 (원장별 분석, 합산 금지)
+
+이 설명서가 칸을 닫지 않습니다. `npm run ledger:status`. analog IMPLEMENTED ≠ native close.
+
+### native 01–20 (`src/data/TODO-ROADMAP.md`)
+
+| ID | 왜 열려 있나 | 닫히려면 |
+| --- | --- | --- |
+| 02 | 웹·analog는 키를 화면 메모리만. **패키지 Electron**에서 localStorage/디스크 0 실측이 없음 | 설치본에서 persist-reject E2E |
+| 13 | extraResources analog. **소스 없는 경로**에서 설치본 기동 미완 | clean-install launch |
+| 14 | URL 정책 unit analog. 데스크톱 실제 내비 런 OPEN | packaged Electron에서 정책 통과 |
+| 16 | Field/Chip analog. 키보드 E2E 없음 | 실제 탭/라벨 E2E |
+| 18 | blur-off analog. 번들 바이트 E2E 없음 | 네트워크/번들 측정 |
+| 20 | Dialog analog. 검색/복제/복구 E2E 없음 | CRUD E2E |
+
+01, 03–12, 15, 17, 19는 analog IMPLEMENTED. 표로 승격하지 않음.
+
+### R (`src/data/TODO-WORKLOAD-SPEC-20260912.md`)
+
+| ID | 왜 열려 있나 | 닫히려면 |
+| --- | --- | --- |
+| R-004 | Heretic 파이프 GPU 골든 없음 | 이 머신 4B heretic 로그+VRAM |
+| R-005 | QLoRA 7B 실측 없음 | 1 epoch 또는 명시 skip |
+| R-009 | Hub 스냅샷 analog. 앱 안 실시간 갱신 없음 | in-app live fetch |
+
+### W (`src/data/WORKFLOW.md`)
+
+OPEN/IN_PROGRESS: **W01** prod 저장/탭, **W02** HF 키 경계, **W06** 로그 레드액션 라이브, **W07** 패키지 데스크톱, **W08** a11y 키보드, **W09** 스텝퍼/모바일 CTA, **W11** 채점 UI, **W12** 검색/리셋 E2E, **W14** Docker 런타임, **W16** 최종 fail-closed 수용.
+
+### C (`src/data/ECOSYSTEM-MASTER-TODO.md`)
+
+**C-002–C-007** OPEN: SSH 실연결, runner 제출, 설정/비용 비교, 계약 혼동, 모니터 UI. C-001만 IMPLEMENTED.
+
+외부: **E01** GPU, **E02** 유료 계정, **E03** Authenticode+clean VM. 이 저장소가 대신 결제하지 않습니다.
+
 ## 이용 제한 · 기여
 
 - 제3자 **상업 이용 금지**, **불법 이용 금지**, **악용 금지**: [ACCEPTABLE-USE.ko.md](./ACCEPTABLE-USE.ko.md)
 - 기여: [CONTRIBUTING.ko.md](./CONTRIBUTING.ko.md)
-- 라이선스 본문: [LICENSE.md](./LICENSE.md) (AGPL-3.0-or-later + 위 추가 조건)
+- 라이선스: [LICENSE.md](./LICENSE.md)
 
+## 후원 · 투자
 
-## 아직 열린 것
+자발적 **후원**과 GENOX **투자 문의**는 창구가 다릅니다. 전문: [SUPPORT.ko.md](./SUPPORT.ko.md).
 
-원장별 OPEN (합산 금지): native 02, 13, 14, 16, 18, 20 · R-004, R-005 · R-009 · W01, W02, W06–W09, W11, W12, W14, W16 · C-002–C-007.
-
-`npm run ledger:status`. analog IMPLEMENTED ≠ native close.
-
-## 후원
-
-이 프로젝트가 마음에 들었다면, 같은 작업을 이어 갈 수 있도록 작은 후원을 부탁드립니다. 강요가 아닙니다. 겸손한 마음으로 받겠습니다. 후원해 주시면 그 마음으로 최선을 다해, 험블하게 계속 일하겠습니다.
+후원은 지분이 아닙니다. 투자 논의는 `support@genox.one` 서면으로만. 이 페이지는 증권 공모가 아닙니다.
 
 | 경로 | 값 |
 | --- | --- |
 | Binance ID | `110474712` |
 | BSC (BEP-20) | `0xB8c48E65D440fe7Ee0025ebD88Da3094272977F4` |
 
-잘못된 체인으로 보내면 복구할 수 없습니다. BSC만 사용해 주세요.
+BSC만. 잘못된 체인은 복구 불가.
 
 ---
 

@@ -2,7 +2,7 @@
 
 **Educational.** This workbench exists so researchers and defenders can study refusal-suppression (abliteration) and **counter illegal misuse**. That purpose needs **worldwide attention** — not a product for harm.
 
-교육 목적입니다. 불법 이용을 막는 대응을 위해 전 세계의 관심을 구합니다.
+Korean README: [README.ko.md](./README.ko.md).
 
 Open-source workbench: pick an **unabliterated Instruct** base, assemble a Heretic / LoRA / quant **pack ZIP**, and connect **your** GPU-cloud keys.
 
@@ -71,14 +71,15 @@ This project is licensed under **AGPL-3.0-or-later** **together with** additiona
 - **Illegal use and abuse are forbidden** (including child-exploitation material, weapons assistance, unauthorized access, scams, malware, and using abliteration for mass harm).
 - Full AGPL text and the additional terms: `LICENSE.md`.
 
-User guide: [USER-GUIDE.ko.md](./USER-GUIDE.ko.md) · [USER-GUIDE.en.md](./USER-GUIDE.en.md).  
-Contributing: [CONTRIBUTING.ko.md](./CONTRIBUTING.ko.md) · [CONTRIBUTING.en.md](./CONTRIBUTING.en.md).
+User guide: [USER-GUIDE.en.md](./USER-GUIDE.en.md) (Korean: [USER-GUIDE.ko.md](./USER-GUIDE.ko.md)).  
+Contributing: [CONTRIBUTING.en.md](./CONTRIBUTING.en.md).  
+Sponsor or invest: [SUPPORT.en.md](./SUPPORT.en.md).
 
 ## Connect accounts (other users)
 
 Clone, `npm install`, then run `npm run dev` (web) or `npm run electron:dev` (desktop).
 
-Live list/read adapters — paste your own key in **API 연결 · 인스턴스 모니터** (Provider Connections). Each row links that provider's official docs so you can mint a key in _their_ console. The token stays in that screen’s memory only. It is not written to localStorage, packs, ZIP, or diagnostics.
+Live list/read adapters — paste your own key in **Provider Connections**. Each row links that provider's official docs so you can mint a key in _their_ console. The token stays in that screen’s memory only. It is not written to localStorage, packs, ZIP, or diagnostics.
 
 | Adapter                                                                                      | Auth                  | Where it works                                                                                                                                                    |
 | -------------------------------------------------------------------------------------------- | --------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------- |
@@ -94,7 +95,7 @@ create / stop / delete for RunPod, Lambda, and Vast.ai use **your** key after a 
 
 Do not paste API keys into GitHub issues, chat, or commit them. `.env` is gitignored. `.env.example` has no provider secrets.
 
-다른 사용자: 각자 계정 키를 앱 화면에서만 붙여넣으면 됩니다. 이 저장소에 개인 Azure/크레딧 가정은 없습니다.
+Other users paste their own keys in the app screen only. This repository does not assume a personal Azure account or credits.
 
 ## Windows installer (unsigned)
 
@@ -103,8 +104,6 @@ The NSIS and portable Windows builds are **unsigned by default**. You do not nee
 SmartScreen may show **Unknown publisher**. That is expected for unsigned open-source builds.
 
 To sign your own build after buying a certificate: set `CSC_LINK` (or `WIN_CSC_LINK`) to the PFX and rebuild. Ledger **E03** (clean-VM install + Authenticode verify + uninstall residual) stays `BLOCKED_EXTERNAL` without that purchased cert and a clean VM. This pin is not E03 verified.
-
-Windows 설치본은 기본 미서명입니다. 코드사인 인증서를 사지 않아도 빌드됩니다. SmartScreen의 ‘알 수 없는 게시자’는 미서명 OSS에서 정상입니다.
 
 ## Repository policy
 
@@ -145,15 +144,26 @@ the build when an obsolete SHA leaks back into source.
 
 ---
 
-## 라이선스 매트릭스
+## License matrix
 
-| 라이선스   | 저장소 목록                                                         | 비고                                |
-| ---------- | ------------------------------------------------------------------- | ----------------------------------- |
-| AGPL       | heretic, OBLITERATUS, abliterix                                     | subprocess 호출만, 코드 vendor 금지 |
-| MIT        | FailSpy, gabliteration, apostate, ablate, jwest, AUGMXNT, llama.cpp | -                                   |
-| Apache-2.0 | refusal_direction, nanofatdog, model-unfetter, kimi-k3              | -                                   |
-| NONE       | ricyoung                                                            | 인용만                              |
+| License | Repos | Note |
+| --- | --- | --- |
+| AGPL | heretic, OBLITERATUS, abliterix | pin-call only, no vendor |
+| MIT | FailSpy, gabliteration, apostate, ablate, jwest, AUGMXNT, llama.cpp | — |
+| Apache-2.0 | refusal_direction, nanofatdog, model-unfetter, kimi-k3 | — |
+| NONE | ricyoung | citation only |
 
-## Support
+## Sponsor or invest
 
-Voluntary. Binance ID `110474712`. BSC `0xB8c48E65D440fe7Ee0025ebD88Da3094272977F4`. Wrong chain cannot be recovered. Details in the user guide.
+Two doors, neither required to use the software. Full text: [SUPPORT.en.md](./SUPPORT.en.md).
+
+**Sponsor (donation)** — a gift, not equity.
+
+| Channel | Value |
+| --- | --- |
+| Binance ID | `110474712` |
+| BSC (BEP-20) | `0xB8c48E65D440fe7Ee0025ebD88Da3094272977F4` |
+
+BSC only. Wrong chain cannot be recovered.
+
+**Invest (inquiry)** — to discuss investing in GENOX, email `support@genox.one`. That is not a public offering of securities. Money sent to the sponsorship address does not become shares.
