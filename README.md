@@ -123,6 +123,32 @@ Analog web workbench at Vite `:8080` is usable. **Native / live / GPU golden is 
 
 A recipe in this README is not a golden GPU run and does not flip those rows.
 
+## Acknowledgments
+
+Thank you to the authors and maintainers of every repository and paper this workbench pin-calls or cites. Their licenses stay theirs. We do **not** vendor AGPL/GPL trees into `src/`. Full tables: [USER-GUIDE.en.md](./USER-GUIDE.en.md#acknowledgments--repositories).
+
+| Author / org | Repository |
+| --- | --- |
+| p-e-w | [heretic](https://github.com/p-e-w/heretic) |
+| elder-plinius | [OBLITERATUS](https://github.com/elder-plinius/OBLITERATUS) |
+| andyrdt | [refusal_direction](https://github.com/andyrdt/refusal_direction) |
+| FailSpy | [abliterator](https://github.com/FailSpy/abliterator) |
+| Goekdeniz-Guelmez | [gabliteration](https://github.com/Goekdeniz-Guelmez/gabliteration) |
+| heterodoxin | [apostate](https://github.com/heterodoxin/apostate) |
+| wuwangzhang1216 | [abliterix](https://github.com/wuwangzhang1216/abliterix) |
+| AIAnytime | [ablate](https://github.com/AIAnytime/ablate) |
+| jwest33 | [abliterator](https://github.com/jwest33/abliterator) |
+| josepha-mayo | [model-unfetter](https://github.com/josepha-mayo/model-unfetter) |
+| nanofatdog | [LLM-abliterate](https://github.com/nanofatdog/LLM-abliterate) |
+| AUGMXNT | [deccp](https://github.com/AUGMXNT/deccp) |
+| ggml-org | [llama.cpp](https://github.com/ggml-org/llama.cpp) |
+| jim-plus | [llm-abliteration](https://github.com/jim-plus/llm-abliteration) |
+| NousResearch | [llm-abliteration](https://github.com/NousResearch/llm-abliteration) |
+| ant-research | [Awesome-Refusal-Suppression](https://github.com/ant-research/Awesome-Refusal-Suppression) |
+| ricyoung | [abliteration-comparison](https://github.com/ricyoung/abliteration-comparison) (citation only) |
+
+Paper authors — Arditi, Obeso, Syed, Paleka, Panickssery, Gurnee, Nanda; Young; Fafuła; Gülmez; and everyone listed in the user-guide paper table — thank you. Academic jailbreak papers are linked for **defense and understanding**, not as attack runbooks.
+
 ## Live dependency pins
 
 Mirrored in `src/lib/runners.ts` and enforced by `pack.assert.test.ts` (stale SHA fails the build).

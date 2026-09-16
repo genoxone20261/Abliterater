@@ -206,7 +206,7 @@ Windows에서 AppImage/DMG는 이 머신에서 만들지 못합니다. 릴리스
 
 ## 감사의 말 — 리포지토리
 
-도구 저자·유지보수자에게 감사합니다. Abliterater는 대부분 **pin-call**입니다. AGPL/GPL은 src에 vendor하지 않습니다.
+도구 저자·유지보수자에게 **감사합니다.** Abliterater는 대부분 **pin-call**입니다. AGPL/GPL은 src에 vendor하지 않습니다.
 
 | Repository | Role | License | How we use it |
 | --- | --- | --- | --- |

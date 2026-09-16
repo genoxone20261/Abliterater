@@ -123,6 +123,32 @@ Vite `:8080` analog 웹은 쓸 수 있습니다. **Native / live / GPU 골든은
 
 이 README의 레시피가 GPU 골든을 닫지 않습니다.
 
+## 감사의 말
+
+이 작업대가 pin-call하거나 인용하는 모든 저장소·논문의 저자와 유지보수자에게 **감사합니다.** 라이선스는 그들 것입니다. AGPL/GPL 트리를 `src/`에 vendor하지 않습니다. 전체 표: [USER-GUIDE.ko.md](./USER-GUIDE.ko.md#감사의-말--리포지토리).
+
+| 저자 / 조직 | 저장소 |
+| --- | --- |
+| p-e-w | [heretic](https://github.com/p-e-w/heretic) |
+| elder-plinius | [OBLITERATUS](https://github.com/elder-plinius/OBLITERATUS) |
+| andyrdt | [refusal_direction](https://github.com/andyrdt/refusal_direction) |
+| FailSpy | [abliterator](https://github.com/FailSpy/abliterator) |
+| Goekdeniz-Guelmez | [gabliteration](https://github.com/Goekdeniz-Guelmez/gabliteration) |
+| heterodoxin | [apostate](https://github.com/heterodoxin/apostate) |
+| wuwangzhang1216 | [abliterix](https://github.com/wuwangzhang1216/abliterix) |
+| AIAnytime | [ablate](https://github.com/AIAnytime/ablate) |
+| jwest33 | [abliterator](https://github.com/jwest33/abliterator) |
+| josepha-mayo | [model-unfetter](https://github.com/josepha-mayo/model-unfetter) |
+| nanofatdog | [LLM-abliterate](https://github.com/nanofatdog/LLM-abliterate) |
+| AUGMXNT | [deccp](https://github.com/AUGMXNT/deccp) |
+| ggml-org | [llama.cpp](https://github.com/ggml-org/llama.cpp) |
+| jim-plus | [llm-abliteration](https://github.com/jim-plus/llm-abliteration) |
+| NousResearch | [llm-abliteration](https://github.com/NousResearch/llm-abliteration) |
+| ant-research | [Awesome-Refusal-Suppression](https://github.com/ant-research/Awesome-Refusal-Suppression) |
+| ricyoung | [abliteration-comparison](https://github.com/ricyoung/abliteration-comparison) (인용만) |
+
+논문 저자 — Arditi, Obeso, Syed, Paleka, Panickssery, Gurnee, Nanda; Young; Fafuła; Gülmez; 그리고 사용 설명서 논문 표의 전원 — 감사합니다. 학술 jailbreak 논문은 **방어·이해**용 링크이지 공격 실행 매뉴얼이 아닙니다.
+
 ## 후원 · 투자
 
 창구 두 개. 소프트웨어 사용에 필수가 아닙니다. 전문: [SUPPORT.ko.md](./SUPPORT.ko.md).

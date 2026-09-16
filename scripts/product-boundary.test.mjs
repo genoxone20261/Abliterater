@@ -70,6 +70,10 @@ test("root ships bilingual user guide, contributing, and acceptable use", () => 
   assert.match(read("README.md"), /not licensed/);
   assert.match(read("SECURITY.md"), /support@genox.one/);
   assert.ok(read("SECURITY.md").length > 200);
+  assert.match(read("README.md"), /Thank you/);
+  assert.match(read("README.ko.md"), /감사합니다/);
+  assert.match(read("USER-GUIDE.en.md"), /Acknowledgments — repositories/);
+  assert.match(read("USER-GUIDE.ko.md"), /감사의 말 — 리포지토리/);
 });
 test("public product text does not embed personal machine SKUs or home paths", () => {
   const bodies = [
