@@ -1,5 +1,9 @@
 # Abliterater
 
+**Educational.** This workbench exists so researchers and defenders can study refusal-suppression (abliteration) and **counter illegal misuse**. That purpose needs **worldwide attention** — not a product for harm.
+
+교육 목적입니다. 불법 이용을 막는 대응을 위해 전 세계의 관심을 구합니다.
+
 Open-source workbench: pick an **unabliterated Instruct** base, assemble a Heretic / LoRA / quant **pack ZIP**, and connect **your** GPU-cloud keys.
 
 It does not host weights. It does not rent GPUs for you. A passing `npm test` is not a training run.

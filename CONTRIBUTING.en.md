@@ -2,6 +2,8 @@
 
 Patches are welcome. Do not upload keys, research dumps, or KDP PDFs. Third-party commercial use, illegal use, and abuse are forbidden — [ACCEPTABLE-USE.en.md](./ACCEPTABLE-USE.en.md).
 
+This repository is **educational**. It asks for **worldwide attention** to counter illegal misuse.
+
 Korean: [CONTRIBUTING.ko.md](./CONTRIBUTING.ko.md). Usage: [USER-GUIDE.en.md](./USER-GUIDE.en.md).
 
 ---

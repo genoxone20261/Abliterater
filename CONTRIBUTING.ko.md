@@ -2,6 +2,8 @@
 
 한 줄: 패치는 환영합니다. 키·연구 덤프·KDP PDF는 올리지 마십시오. 제3자 상업 이용과 불법·악용은 [ACCEPTABLE-USE.ko.md](./ACCEPTABLE-USE.ko.md)로 금지입니다.
 
+이 저장소는 **교육용**이며, 불법 이용을 막는 대응을 위해 **전 세계의 관심**을 구합니다.
+
 영어본: [CONTRIBUTING.en.md](./CONTRIBUTING.en.md). 사용법: [USER-GUIDE.ko.md](./USER-GUIDE.ko.md).
 
 ---

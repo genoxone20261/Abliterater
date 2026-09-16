@@ -6,6 +6,10 @@ Copyright © 2026 Juno Andy Cheong / GENOX.
 
 문의: support@genox.one · https://github.com/genoxone20261
 
+## 목적
+
+이 프로젝트는 **교육용**입니다. 거절 억제(abliteration)를 연구·이해하고, 이를 통한 **불법 이용을 막는 대응**을 위해 **전 세계의 관심**을 구합니다. 공격 실행 매뉴얼이 아닙니다.
+
 ---
 
 ## 1. 누가 어떤 권리를 갖나

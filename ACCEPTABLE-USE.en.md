@@ -6,6 +6,10 @@ These terms apply **together with** AGPL-3.0-or-later. Copying, running, or dist
 
 Contact: support@genox.one · https://github.com/genoxone20261
 
+## Purpose
+
+This project is **educational**. It exists so researchers and defenders can study refusal-suppression (abliteration) and **counter illegal misuse**. That mission asks for **worldwide attention**. It is not an attack runbook.
+
 ---
 
 ## 1. Who holds which rights

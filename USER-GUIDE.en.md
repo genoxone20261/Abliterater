@@ -2,6 +2,8 @@
 
 One line: pick an **unabliterated Instruct** base, assemble a Heretic / LoRA / quant **pack ZIP**, and connect **your** GPU-cloud keys.
 
+**Educational.** This project exists to study refusal-suppression and to **counter illegal misuse**. That purpose needs **worldwide attention**. It is not a runbook for harm.
+
 This app does not host weights. It does not rent GPUs for you. A passing `npm test` is not a training run. Analog web green is not a native Electron/GPU close.
 
 Language toggle is KO/EN in the header. Korean: [USER-GUIDE.ko.md](./USER-GUIDE.ko.md).

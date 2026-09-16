@@ -51,6 +51,12 @@ test("root ships bilingual user guide, contributing, and acceptable use", () => 
   assert.match(read("README.md"), /ACCEPTABLE-USE/);
   assert.match(read("README.md"), /USER-GUIDE\.ko\.md/);
   assert.match(read("LICENSE.md"), /ACCEPTABLE-USE/);
+  assert.match(read("README.md"), /Educational/);
+  assert.match(read("README.md"), /worldwide attention/);
+  assert.match(read("ACCEPTABLE-USE.en.md"), /educational/i);
+  assert.match(read("ACCEPTABLE-USE.en.md"), /worldwide attention/i);
+  assert.match(read("ACCEPTABLE-USE.ko.md"), /교육용/);
+  assert.match(read("ACCEPTABLE-USE.ko.md"), /전 세계의 관심/);
 });
 test("production build omits author KDP reports from output and extraResources", () => {
   assert.match(read("package.json"), /omit-kdp-from-output/);

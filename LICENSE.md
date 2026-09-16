@@ -2,6 +2,8 @@
 
 Copyright (C) 2026 Juno Andy Cheong / GENOX.
 
+This repository is **educational**. It exists so researchers and defenders can study refusal-suppression (abliteration) and **counter illegal misuse**. That purpose asks for **worldwide attention**. It is not an attack runbook.
+
 This repository is licensed under the GNU Affero General Public License, version 3 or later (AGPL-3.0-or-later), **together with** the additional terms in `ACCEPTABLE-USE.ko.md` and `ACCEPTABLE-USE.en.md`:
 
 - No third-party commercial use without written permission from the copyright holder.
