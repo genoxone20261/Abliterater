@@ -1,6 +1,6 @@
 # Abliterater 기여 가이드
 
-한 줄: 패치는 환영합니다. 키·연구 덤프·KDP PDF는 올리지 마십시오. 제3자 상업 이용과 불법·악용은 [ACCEPTABLE-USE.ko.md](./ACCEPTABLE-USE.ko.md)로 금지입니다.
+한 줄: 패치는 환영합니다. 키·연구 덤프·KDP PDF는 올리지 마십시오. 제3자 상업 이용과 불법·악용은 **라이선스되지 않습니다** — [ACCEPTABLE-USE.ko.md](./ACCEPTABLE-USE.ko.md). PR은 AGPL-3.0-or-later와 그 추가 조건에 대한 부여입니다.
 
 이 저장소는 **교육용**이며, 불법 이용을 막는 대응을 위해 **전 세계의 관심**을 구합니다.
 

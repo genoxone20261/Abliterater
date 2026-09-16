@@ -13,7 +13,7 @@ const NUMERIC_PARAM_KEYS = new Set([
   "ctx",
   "coeff",
 ]);
-const STRING_PARAM_KEYS = new Set(["output_dir", "quant"]);
+const STRING_PARAM_KEYS = new Set(["output_dir", "quant", "method"]);
 const SECRET_STATE_KEYS = new Set([
   "apiKey",
   "hfToken",

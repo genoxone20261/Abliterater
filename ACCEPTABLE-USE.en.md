@@ -60,7 +60,7 @@ You may not use the software in violation of applicable law, including:
 - Mass generation for stalking, threats, or defamation
 - Sanctions or export-control violations
 
-Illegal use is not licensed by AGPL source-sharing.
+Illegal use is not licensed by AGPL source-sharing. It is still a crime.
 
 ---
 

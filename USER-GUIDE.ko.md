@@ -8,7 +8,7 @@
 
 언어 전환은 헤더의 KO/EN 토글입니다. 영어본: [USER-GUIDE.en.md](./USER-GUIDE.en.md).
 
-이용 제한(제3자 상업·불법·악용 금지): [ACCEPTABLE-USE.ko.md](./ACCEPTABLE-USE.ko.md). 기여: [CONTRIBUTING.ko.md](./CONTRIBUTING.ko.md). 후원·투자: [SUPPORT.ko.md](./SUPPORT.ko.md).
+이용 제한(제3자 상업·불법·악용 금지): [ACCEPTABLE-USE.ko.md](./ACCEPTABLE-USE.ko.md). 기여: [CONTRIBUTING.ko.md](./CONTRIBUTING.ko.md). 후원·투자: [SUPPORT.ko.md](./SUPPORT.ko.md). 보안 신고: [SECURITY.md](./SECURITY.md).
 
 ---
 

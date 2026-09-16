@@ -66,6 +66,10 @@ test("root ships bilingual user guide, contributing, and acceptable use", () => 
   assert.match(read("SUPPORT.ko.md"), /투자/);
   assert.match(read("README.ko.md"), /교육 목적/);
   assert.doesNotMatch(read("README.md"), /[가-힣]/);
+  assert.match(read("README.md"), /Contributions are welcome/);
+  assert.match(read("README.md"), /not licensed/);
+  assert.match(read("SECURITY.md"), /support@genox.one/);
+  assert.ok(read("SECURITY.md").length > 200);
 });
 test("public product text does not embed personal machine SKUs or home paths", () => {
   const bodies = [

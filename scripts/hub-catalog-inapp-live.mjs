@@ -11,6 +11,8 @@ await page.addInitScript(() => localStorage.setItem("abliterater_locale", "ko"))
 await page.goto(url, { waitUntil: "domcontentloaded" });
 await page.locator('#main[data-hydrated="true"]').waitFor();
 await page.getByRole("tab", { name: "작업대" }).click();
+await page.locator("#workspace-tab-explore").click();
+await page.waitForFunction(() => document.getElementById("workspace-explore")?.hidden === false);
 await page.locator("[data-hub-live-btn]").click();
 await page.locator("[data-hub-live-list] li").first().waitFor({ timeout: 120000 });
 const n = await page.locator("[data-hub-live-list] li").count();

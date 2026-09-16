@@ -2,7 +2,7 @@
 
 Relationship: supplemental execution queue for the historical master TODO; research/native/GPU completion semantics stay unchanged. Status must have command or UI evidence before VERIFIED. Complexity S/M/L. Priority ordering: Impact × User Value × Risk × Dependency leverage, each 1–5; P0 security first regardless of product score. Detailed evidence resides in INITIAL-ASSESSMENT and final QA report.
 
-Related 2026-09-12 (does **not** close 01–20): `docs/maximum-completion/TODO-WORKLOAD-SPEC-20260912.md` — Heretic/LoRA/QLoRA 최소·권장 GiB와 골든 워크로드. analog IMPLEMENTED, GPU 실측은 E01.
+Related 2026-09-12 (does **not** close 01–20): `src/data/TODO-WORKLOAD-SPEC-20260912.md` — Heretic/LoRA/QLoRA 최소·권장 GiB와 골든 워크로드. analog IMPLEMENTED, GPU 실측은 E01.
 
 | ID  | Category       | Priority | Severity | Problem / Why it matters                                        | Recommended solution                                                  | Files/components affected             | Dependencies | Complexity | Verification method                      | Status                                                                                                                                         | I,V,R,D |
 | --- | -------------- | -------- | -------- | --------------------------------------------------------------- | --------------------------------------------------------------------- | ------------------------------------- | ------------ | ---------- | ---------------------------------------- | ---------------------------------------------------------------------------------------------------------------------------------------------- | ------- |

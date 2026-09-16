@@ -1,6 +1,6 @@
 # Abliterater contributing guide
 
-Patches are welcome. Do not upload keys, research dumps, or KDP PDFs. Third-party commercial use, illegal use, and abuse are forbidden — [ACCEPTABLE-USE.en.md](./ACCEPTABLE-USE.en.md).
+Patches are welcome. Do not upload keys, research dumps, or KDP PDFs. Third-party commercial use, illegal use, and abuse are **not licensed** — [ACCEPTABLE-USE.en.md](./ACCEPTABLE-USE.en.md). A PR is a grant on AGPL-3.0-or-later **and** those additional terms.
 
 This repository is **educational**. It asks for **worldwide attention** to counter illegal misuse.
 

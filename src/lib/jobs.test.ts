@@ -193,3 +193,23 @@ test("hydrateJobs treats a non-array payload as dropped", () => {
   assert.deepEqual(report.jobs, []);
   assert.equal(report.dropped, 1);
 });
+
+test("default methodParams including apostate method persist", () => {
+  const full = {
+    ...state,
+    methodParams: {
+      heretic: { n_trials: 50, max_weight: 1, direction_index: 0 },
+      lora: { r: 16, alpha: 32, lr: 2e-4, epochs: 3, output_dir: "./adapter" },
+      imatrix: { quant: "Q4_K_M", ctx: 4096 },
+      cast: { coeff: 1 },
+      apostate: { method: "diode" },
+    },
+  };
+  const job = saveJob(full);
+  const params = (
+    job.state as {
+      methodParams?: { apostate?: { method?: string } };
+    }
+  ).methodParams;
+  assert.equal(params?.apostate?.method, "diode");
+});

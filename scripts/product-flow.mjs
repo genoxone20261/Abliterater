@@ -16,7 +16,7 @@ try {
     });
     await page.goto(url, { waitUntil: "domcontentloaded" });
     await page.locator('#main[data-hydrated="true"]').waitFor();
-    await page.getByRole("tab", { name: /논문/ }).click();
+    await page.getByRole("tab", { name: /연구 자료/ }).click();
     await page.waitForTimeout(50);
     await page.getByRole("tab", { name: "작업대" }).click();
     await page.waitForTimeout(50);
@@ -24,14 +24,14 @@ try {
     const project = page.getByRole("textbox", { name: "작업 이름", exact: true });
     await project.fill("QA retained configuration");
     await project.press("Tab");
-    await page.getByRole("tab", { name: /논문/ }).click();
+    await page.getByRole("tab", { name: /연구 자료/ }).click();
     await page.waitForTimeout(50);
     await page.getByRole("tab", { name: "작업대" }).click();
     await page.waitForTimeout(50);
     await page.locator("#panel-studio").waitFor();
     assert.equal(await project.inputValue(), "QA retained configuration");
-    await page.getByRole("button", { name: "현재 설정 저장", exact: true }).click();
-    await page.getByText("설정이 브라우저에 저장되었습니다.").waitFor();
+    await page.locator("#studio-summary [data-shortcut=\"save\"]").click();
+    await page.getByText(/저장 완료|설정이 브라우저에 저장되었습니다/).first().waitFor();
     const search = page.getByRole("textbox", { name: "저장된 구성 검색" });
     await search.fill("not-found");
     assert.equal(
@@ -57,12 +57,14 @@ try {
     await page.getByRole("tab", { name: "작업대" }).focus();
     await page.keyboard.press("End");
     assert.equal(
-      await page.getByRole("tab", { name: /논문/ }).getAttribute("aria-selected"),
+      await page.getByRole("tab", { name: /연구 자료/ }).getAttribute("aria-selected"),
       "true",
     );
-    await page.getByRole("tab", { name: /논문/ }).press("Home");
+    await page.getByRole("tab", { name: /연구 자료/ }).press("Home");
     await page.getByRole("tab", { name: "작업대" }).waitFor();
     await page.waitForFunction(() => document.getElementById("panel-studio")?.hidden === false);
+    await page.locator("#workspace-tab-explore").click();
+    await page.waitForFunction(() => document.getElementById("workspace-explore")?.hidden === false);
     await page.locator("#rec-manual-vram").scrollIntoViewIfNeeded();
     await page.locator("#rec-manual-vram").fill("8");
     await page.locator('[data-golden="heretic-4b"]').waitFor();
