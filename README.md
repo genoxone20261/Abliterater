@@ -13,7 +13,15 @@ npm run dev
 
 Open `http://127.0.0.1:8080/`. Default catalog base is `Qwen/Qwen3-4B-Instruct-2507` (work original), method Heretic, output merged BF16. Already-processed heretic/GGUF cards are a reuse lane.
 
-Desktop: `npm run electron:dev`. Windows NSIS pack: `npm run electron:build:win` (unsigned by default).
+Desktop: `npm run electron:dev`. Pack after `npm run build`:
+
+```bash
+npm run electron:build:win    # NSIS + portable (Windows host)
+npm run electron:build:linux  # AppImage (Linux host or CI)
+npm run electron:build:mac    # DMG (macOS host or CI)
+```
+
+Windows NSIS is unsigned by default. macOS DMG is not produced on Windows.
 
 ## Status (not done)
 
@@ -27,9 +35,28 @@ Analog web workbench at Vite `:8080` is usable. **Native / live / GPU golden is 
 | W table | W01, W02, W06, W07, W08, W09, W11, W12, W14, W16 |
 | Ecosystem table | C-002 … C-007 |
 
-`analog IMPLEMENTED` ≠ native close. Packaged Electron install, Docker this-source, and rented GPU runs are **not** implied by this README.
+`analog IMPLEMENTED` ≠ native close. A recipe in this README is not a golden GPU run and does not flip those rows.
 
 Live ledger: `npm run ledger:status`.
+
+## Deploy
+
+Web (built server, no Vite):
+
+```bash
+npm ci
+npm run build
+HOST=0.0.0.0 PORT=8080 node scripts/built-server.mjs
+```
+
+Docker (this source, production server):
+
+```bash
+docker compose up -d --build
+# http://127.0.0.1:8080/
+```
+
+GitHub Actions (`.github/workflows/`) run `npm test` on push and can pack Windows / Linux / macOS artifacts on tag or `workflow_dispatch`. Binaries belong in a **Release**, not in git.
 
 ## License
 
@@ -104,10 +131,6 @@ the build when an obsolete SHA leaks back into source.
 - `npm run test:pack` — pack + stale-SHA guard
 - `npm run test:gauntlet` — presets / auditWorkflow / StudioState
 - `npm run test:all` — all three
-
-The definitive implementation notes live in
-`docs/research20260905_master_todo/00_master_todo.md` and the audit record in
-`docs/research20260905_master_todo/02_audit_20260905.md`.
 
 ---
 

@@ -1,0 +1,67 @@
+name: package
+
+on:
+  workflow_dispatch:
+  push:
+    tags: ["v*"]
+
+permissions:
+  contents: write
+
+jobs:
+  docker:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Build image
+        run: docker build -t abliterater:${{ github.sha }} .
+      - name: Health on loopback
+        run: |
+          docker run -d --name ablit-health -p 127.0.0.1:18080:8080 abliterater:${{ github.sha }}
+          for i in $(seq 1 30); do
+            if curl -fsS http://127.0.0.1:18080/ >/dev/null; then
+              echo HEALTH_OK
+              docker inspect -f '{{.State.Health.Status}}' ablit-health || true
+              docker rm -f ablit-health
+              exit 0
+            fi
+            sleep 2
+          done
+          docker logs ablit-health || true
+          docker rm -f ablit-health
+          exit 1
+
+  electron:
+    strategy:
+      fail-fast: false
+      matrix:
+        include:
+          - os: windows-latest
+            script: electron:build:win
+            artifact: electron/release-dist
+          - os: ubuntu-latest
+            script: electron:build:linux
+            artifact: electron/release-dist
+          - os: macos-latest
+            script: electron:build:mac
+            artifact: electron/release-dist
+    runs-on: ${{ matrix.os }}
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: "24"
+          cache: npm
+      - run: npm ci
+      - run: npm --prefix electron ci
+      - run: npm run build
+      - name: Pack desktop
+        env:
+          CSC_IDENTITY_AUTO_DISCOVERY: "false"
+        run: npm run ${{ matrix.script }}
+      - uses: actions/upload-artifact@v4
+        with:
+          name: desktop-${{ matrix.os }}
+          path: ${{ matrix.artifact }}
+          if-no-files-found: error
+          retention-days: 14

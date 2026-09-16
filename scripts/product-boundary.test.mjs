@@ -16,3 +16,15 @@ test("workbench pack and chrome do not ship author KDP reports", () => {
   assert.doesNotMatch(read("src/routes/index.tsx"), /\/reports\//);
   assert.doesNotMatch(read("src/lib/pack.ts"), /abliteration-report\.pdf/);
 });
+test("dockerignore and gitignore keep research dumps and KDP reports out of image/git", () => {
+  const docker = read(".dockerignore");
+  const git = read(".gitignore");
+  assert.match(docker, /public\/reports/);
+  assert.match(docker, /docs\/research/);
+  assert.match(git, /public\/reports/);
+  assert.match(git, /docs\/research/);
+});
+test("README does not point at session research dumps", () => {
+  assert.doesNotMatch(read("README.md"), /research20260905_master_todo/);
+  assert.doesNotMatch(read("README.md"), /docs\/research-/);
+});
