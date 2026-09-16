@@ -58,6 +58,13 @@ docker compose up -d --build
 
 GitHub Actions (`.github/workflows/`) run `npm test` on push and can pack Windows / Linux / macOS artifacts on tag or `workflow_dispatch`. Binaries belong in a **Release**, not in git.
 
+## User guide
+
+- Korean: [docs/guide/USER-GUIDE.ko.md](docs/guide/USER-GUIDE.ko.md)
+- English: [docs/guide/USER-GUIDE.en.md](docs/guide/USER-GUIDE.en.md)
+
+Why the first Windows exe contained author KDP PDFs, why the live TODO ledgers are in git, every workbench surface, paper/repo thanks, and a voluntary BSC donation address are in those files. `public/reports` stays on disk and is not in git, Docker, or the installer.
+
 ## License
 
 This project is licensed under **AGPL-3.0-or-later**. See `LICENSE.md` for the
@@ -142,3 +149,7 @@ the build when an obsolete SHA leaks back into source.
 | MIT        | FailSpy, gabliteration, apostate, ablate, jwest, AUGMXNT, llama.cpp | -                                   |
 | Apache-2.0 | refusal_direction, nanofatdog, model-unfetter, kimi-k3              | -                                   |
 | NONE       | ricyoung                                                            | 인용만                              |
+
+## Support
+
+Voluntary. Binance ID `110474712`. BSC `0xB8c48E65D440fe7Ee0025ebD88Da3094272977F4`. Wrong chain cannot be recovered. Details in the user guide.
