@@ -60,8 +60,15 @@ GitHub Actions (`.github/workflows/`) run `npm test` on push and can pack Window
 
 ## License
 
-This project is licensed under **AGPL-3.0-or-later**. See `LICENSE.md` for the
-full text and per-dependency attribution.
+This project is licensed under **AGPL-3.0-or-later** **together with** additional terms:
+
+- [ACCEPTABLE-USE.ko.md](./ACCEPTABLE-USE.ko.md) / [ACCEPTABLE-USE.en.md](./ACCEPTABLE-USE.en.md)
+- Third parties may **not** use this software commercially without written permission from GENOX / Juno Andy Cheong.
+- **Illegal use and abuse are forbidden** (including child-exploitation material, weapons assistance, unauthorized access, scams, malware, and using abliteration for mass harm).
+- Full AGPL text and the additional terms: `LICENSE.md`.
+
+User guide: [USER-GUIDE.ko.md](./USER-GUIDE.ko.md) · [USER-GUIDE.en.md](./USER-GUIDE.en.md).  
+Contributing: [CONTRIBUTING.ko.md](./CONTRIBUTING.ko.md) · [CONTRIBUTING.en.md](./CONTRIBUTING.en.md).
 
 ## Connect accounts (other users)
 

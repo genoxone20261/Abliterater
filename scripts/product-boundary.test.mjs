@@ -28,6 +28,30 @@ test("README does not point at session research dumps", () => {
   assert.doesNotMatch(read("README.md"), /research20260905_master_todo/);
   assert.doesNotMatch(read("README.md"), /docs\/research-/);
 });
+test("LICENSE.md does not point at session research dumps", () => {
+  assert.doesNotMatch(read("LICENSE.md"), /research20260905_master_todo/);
+  assert.doesNotMatch(read("LICENSE.md"), /docs\/research/);
+});
+test("root ships bilingual user guide, contributing, and acceptable use", () => {
+  for (const name of [
+    "USER-GUIDE.ko.md",
+    "USER-GUIDE.en.md",
+    "CONTRIBUTING.ko.md",
+    "CONTRIBUTING.en.md",
+    "ACCEPTABLE-USE.ko.md",
+    "ACCEPTABLE-USE.en.md",
+  ]) {
+    const body = read(name);
+    assert.ok(body.length > 400, name);
+  }
+  const aup = read("ACCEPTABLE-USE.en.md");
+  assert.match(aup, /No third-party commercial use/i);
+  assert.match(aup, /illegal/i);
+  assert.match(aup, /abuse/i);
+  assert.match(read("README.md"), /ACCEPTABLE-USE/);
+  assert.match(read("README.md"), /USER-GUIDE\.ko\.md/);
+  assert.match(read("LICENSE.md"), /ACCEPTABLE-USE/);
+});
 test("production build omits author KDP reports from output and extraResources", () => {
   assert.match(read("package.json"), /omit-kdp-from-output/);
   assert.match(read("scripts/omit-kdp-from-output.mjs"), /static\/reports/);

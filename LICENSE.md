@@ -1,8 +1,14 @@
 # Abliterater
 
-This repository is licensed under the GNU Affero General Public License, version 3 or later (AGPL-3.0-or-later).
+Copyright (C) 2026 Juno Andy Cheong / GENOX.
 
-For the per-dependency license breakdown and repository-level licensing notes, see `docs/research20260905_master_todo/00_master_todo.md` and `src/lib/pack.ts` / `README.txt`.
+This repository is licensed under the GNU Affero General Public License, version 3 or later (AGPL-3.0-or-later), **together with** the additional terms in `ACCEPTABLE-USE.ko.md` and `ACCEPTABLE-USE.en.md`:
+
+- No third-party commercial use without written permission from the copyright holder.
+- No illegal use.
+- No abuse (including using abliteration for harm, scams, malware, or social engineering).
+
+Per-dependency attribution: `README.md` and pack `README.txt`. Hugging Face weight licenses are not this grant.
 
                     GNU AFFERO GENERAL PUBLIC LICENSE
                        Version 3, 19 November 2007
