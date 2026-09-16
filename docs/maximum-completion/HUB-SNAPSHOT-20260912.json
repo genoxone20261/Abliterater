@@ -1,0 +1,130 @@
+{
+  "asOf": "2026-09-12",
+  "source": "https://huggingface.co/api/models/{id}",
+  "evidence": "parent urllib this-session. Not an in-app Hub adapter. R-009 live refresh stays OPEN.",
+  "models": [
+    {
+      "id": "qwen3-06b",
+      "hub": "Qwen/Qwen3-0.6B",
+      "hubTotal": 751632384,
+      "catalogParametersB": 0.6,
+      "license": "apache-2.0",
+      "lastModified": "2025-07-26T03:46:27.000Z"
+    },
+    {
+      "id": "qwen3-4b",
+      "hub": "Qwen/Qwen3-4B-Instruct-2507",
+      "hubTotal": 4022468096,
+      "catalogParametersB": 4,
+      "license": "apache-2.0",
+      "lastModified": "2025-09-17T06:56:53.000Z"
+    },
+    {
+      "id": "qwen38-27b",
+      "hub": "Qwen/Qwen3.8-27B",
+      "hubTotal": 27781427952,
+      "catalogParametersB": 27,
+      "license": "apache-2.0",
+      "lastModified": "2026-08-14T15:00:01.000Z"
+    },
+    {
+      "id": "orcarouter-27b",
+      "hub": "orcarouter/Qwen3.8-27B-Uncensored",
+      "hubTotal": 27781427952,
+      "catalogParametersB": 27,
+      "license": "apache-2.0",
+      "lastModified": "2026-08-27T13:54:13.000Z"
+    },
+    {
+      "id": "qwen3-4b-h",
+      "hub": "p-e-w/Qwen3-4B-Instruct-2507-heretic",
+      "hubTotal": 4022468096,
+      "catalogParametersB": 4,
+      "license": "apache-2.0",
+      "lastModified": "2025-11-15T08:13:21.000Z"
+    },
+    {
+      "id": "qwen3-4b-h-gguf",
+      "hub": "bartowski/p-e-w_Qwen3-4B-Instruct-2507-heretic-GGUF",
+      "hubTotal": 4022468096,
+      "catalogParametersB": 4,
+      "license": "apache-2.0",
+      "lastModified": "2025-11-17T04:23:12.000Z"
+    },
+    {
+      "id": "gemma3-12b",
+      "hub": "p-e-w/gemma-3-12b-it-heretic",
+      "hubTotal": 12187325040,
+      "catalogParametersB": 12,
+      "license": "gemma",
+      "lastModified": "2025-11-15T06:54:52.000Z"
+    },
+    {
+      "id": "r1-14b",
+      "hub": "deepseek-ai/DeepSeek-R1-Distill-Qwen-14B",
+      "hubTotal": 14770033664,
+      "catalogParametersB": 14,
+      "license": "mit",
+      "lastModified": "2025-02-24T03:31:45.000Z"
+    },
+    {
+      "id": "r1-32b",
+      "hub": "deepseek-ai/DeepSeek-R1-Distill-Qwen-32B",
+      "hubTotal": 32763876352,
+      "catalogParametersB": 32,
+      "license": "mit",
+      "lastModified": "2025-02-24T03:31:29.000Z"
+    },
+    {
+      "id": "foundation-sec",
+      "hub": "fdtn-ai/Foundation-Sec-1.1-8B-Instruct",
+      "hubTotal": 8030326784,
+      "catalogParametersB": 8,
+      "license": "other",
+      "lastModified": "2025-11-20T02:04:32.000Z"
+    },
+    {
+      "id": "qwythos-9b",
+      "hub": "empero-ai/Qwythos-9B-v2",
+      "hubTotal": 9653104368,
+      "catalogParametersB": 9,
+      "license": "apache-2.0",
+      "lastModified": "2026-07-12T00:59:00.000Z"
+    },
+    {
+      "id": "hermes-14b",
+      "hub": "NousResearch/Hermes-4-14B",
+      "hubTotal": 424960,
+      "catalogParametersB": 14,
+      "note": "Hub safetensors.total unusable; keep catalog 14B",
+      "license": "apache-2.0",
+      "lastModified": "2026-01-09T12:26:18.000Z"
+    },
+    {
+      "id": "openbio-8b",
+      "hub": "aaditya/Llama3-OpenBioLLM-8B",
+      "hubTotal": null,
+      "catalogParametersB": 8,
+      "license": "llama3",
+      "lastModified": "2025-01-18T07:40:39.000Z"
+    },
+    {
+      "id": "qwen122b",
+      "hub": "HauhauCS/Qwen3.5-122B-A10B-Uncensored-HauhauCS-Aggressive",
+      "hubTotal": null,
+      "catalogParametersB": 122,
+      "activeParametersB": 10,
+      "license": "apache-2.0",
+      "lastModified": "2026-04-05T19:00:44.000Z"
+    },
+    {
+      "id": "v4flash",
+      "hub": "huihui-ai/Huihui-DeepSeek-V4-Flash-0731-abliterated-GGUF",
+      "hubTotal": null,
+      "gguf": true,
+      "catalogParametersB": 284,
+      "license": "mit",
+      "lastModified": "2026-08-03T14:05:07.000Z"
+    }
+  ]
+}
