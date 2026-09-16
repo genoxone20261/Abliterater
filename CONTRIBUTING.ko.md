@@ -1,6 +1,6 @@
 # Abliterater 기여 가이드
 
-한 줄: 패치·실측·리뷰를 **같이 기여**해 주십시오. 키·연구 덤프·KDP PDF는 올리지 마십시오. 제3자 상업 이용과 불법·악용은 **라이선스되지 않습니다** — [ACCEPTABLE-USE.ko.md](./ACCEPTABLE-USE.ko.md). PR은 AGPL-3.0-or-later와 그 추가 조건에 대한 부여입니다.
+한 줄: 패치·실측·리뷰를 **같이 기여**해 주십시오. 키·연구 덤프·KDP PDF는 올리지 마십시오. 제3자 상업 이용과 불법·악용은 **라이선스되지 않습니다** — [ACCEPTABLE-USE.ko.md](./ACCEPTABLE-USE.ko.md). **우리 허락을 넘는 사용은 허가되지 않습니다. 불법 이용의 책임은 그 사용자에게 있습니다.** PR은 AGPL-3.0-or-later와 그 추가 조건에 대한 부여입니다.
 
 이 저장소는 **교육용**이며, 불법 이용을 막는 대응을 위해 **전 세계의 관심**을 구합니다. analog `npm test`는 native / GPU 클로즈가 아닙니다. [USER-GUIDE.ko.md](./USER-GUIDE.ko.md#아직-열린-것-원장별-분석-합산-금지)에 적힌 증거 없이 원장 OPEN 칸을 올리지 마십시오.
 

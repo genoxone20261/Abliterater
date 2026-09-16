@@ -443,6 +443,7 @@ External: **E01** GPU, **E02** paid account, **E03** Authenticode+clean VM. This
 ## Acceptable use · contributing
 
 - No third-party **commercial** use, **illegal** use, or **abuse**: [ACCEPTABLE-USE.en.md](./ACCEPTABLE-USE.en.md)
+- Use **outside our grant** is unauthorized. **Illegal use is your responsibility** — not GENOX, not contributors.
 - Contribute with us: [CONTRIBUTING.en.md](./CONTRIBUTING.en.md) — patches, measurements, reviews. analog `npm test` ≠ table close.
 - License: [LICENSE.md](./LICENSE.md)
 

@@ -260,8 +260,10 @@ Korean copies sit next to each English file (`*.ko.md`). Do not upload `docs/` r
 This project is **AGPL-3.0-or-later together with** additional terms:
 
 - Third parties may **not** use this software commercially without **written permission** from GENOX / Juno Andy Cheong (`support@genox.one`).
+- Use **outside that grant** (this AUP and any written permission) is **unauthorized**. AGPL source-sharing does not license it.
 - **Illegal use is not licensed** (child-exploitation material, weapons assistance, unauthorized access, scams, malware, sanctions/export violations, and the rest listed in the AUP).
 - **Abuse is not licensed** (abliteration for mass harm, scams, malware, or social engineering; dumping unguarded models; stealing someone else's cloud bill).
+- **You are responsible** for illegal acts you commit with this software or with models, weights, LoRA/GGUF, or other outputs you produce with it. The copyright holder does not authorize those acts and is not liable for them.
 - AGPL source-sharing does **not** waive those bans. On conflict, the ban on illegal and abusive use always wins.
 
 Weight, dataset, and cloud-console licenses are **separate**. A catalog row is not a redistribution grant.

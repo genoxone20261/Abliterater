@@ -443,6 +443,7 @@ OPEN/IN_PROGRESS: **W01** prod 저장/탭, **W02** HF 키 경계, **W06** 로그
 ## 이용 제한 · 기여
 
 - 제3자 **상업 이용 금지**, **불법 이용 금지**, **악용 금지**: [ACCEPTABLE-USE.ko.md](./ACCEPTABLE-USE.ko.md)
+- **우리 허락을 넘는 사용은 허가되지 않습니다.** **불법 이용의 책임은 그 사용자에게 있습니다** — GENOX·기여자가 아닙니다.
 - 같이 기여: [CONTRIBUTING.ko.md](./CONTRIBUTING.ko.md) — 패치·실측·리뷰. analog `npm test` ≠ 표 클로즈.
 - 라이선스: [LICENSE.md](./LICENSE.md)
 

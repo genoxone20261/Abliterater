@@ -7,7 +7,8 @@ This repository is **educational**. It exists so researchers and defenders can s
 This repository is licensed under the GNU Affero General Public License, version 3 or later (AGPL-3.0-or-later), **together with** the additional terms in `ACCEPTABLE-USE.ko.md` and `ACCEPTABLE-USE.en.md`:
 
 - No third-party commercial use without written permission from the copyright holder.
-- No illegal use.
+- Use outside that grant is unauthorized. AGPL source-sharing does not license it.
+- No illegal use. **Illegal acts you commit with this software or with models or outputs you produce using it are your responsibility.** The copyright holder does not authorize them and is not liable for them.
 - No abuse (including using abliteration for harm, scams, malware, or social engineering).
 
 Per-dependency attribution: `README.md` and pack `README.txt`. Hugging Face weight licenses are not this grant.

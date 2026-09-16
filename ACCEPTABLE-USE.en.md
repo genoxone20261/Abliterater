@@ -77,13 +77,19 @@ This workbench does not host weights. It does not rent GPUs for you. A pack ZIP 
 
 ---
 
-## 6. Termination and liability
+## 6. Unauthorized use · your responsibility
 
-Permission ends immediately on breach. The copyright holder may demand you stop distributing, revoke keys, and seek damages. Software is provided as-is. You are responsible for the legality of model outputs.
+Use **outside the permission we grant** in this file (and any **written** commercial grant from GENOX / Juno Andy Cheong) is **unauthorized**. AGPL source-sharing does **not** license that use. Stripping these terms and keeping only AGPL does **not** create a commercial or criminal-use license.
+
+**Illegal use of this software, or of models, weights, LoRA/GGUF, or other outputs you produce with it, is your responsibility.** It is still a crime. The copyright holder does **not** authorize it and is **not** liable for what you do. Downstream harm, cloud bills, and law-enforcement outcomes fall on **you**, not on GENOX, Juno Andy Cheong, or contributors.
+
+## 7. Termination and liability
+
+Permission ends immediately on breach. The copyright holder may demand you stop distributing, revoke keys, and seek damages. Software is provided as-is. You are responsible for the legality of your runs and of model outputs.
 
 ---
 
-## 7. Relation to AGPL
+## 8. Relation to AGPL
 
 AGPL-3.0-or-later still requires source when you provide the Program over a network.
 

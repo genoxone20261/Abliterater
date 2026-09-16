@@ -49,7 +49,13 @@ test("root ships bilingual user guide, contributing, and acceptable use", () => 
   }
   const aup = read("ACCEPTABLE-USE.en.md");
   assert.match(aup, /No third-party commercial use/i);
-  assert.match(aup, /illegal/i);
+  assert.match(read("ACCEPTABLE-USE.en.md"), /your responsibility/i);
+  assert.match(read("ACCEPTABLE-USE.en.md"), /Unauthorized use/);
+  assert.match(read("ACCEPTABLE-USE.ko.md"), /그 사용자에게 있습니다/);
+  assert.match(read("ACCEPTABLE-USE.ko.md"), /허락 밖 사용/);
+  assert.match(read("README.md"), /You are responsible/);
+  assert.match(read("README.ko.md"), /그 책임은 그 사용자에게 있습니다/);
+  assert.match(read("LICENSE.md"), /your responsibility/);
   assert.match(aup, /abuse/i);
   assert.match(read("README.md"), /ACCEPTABLE-USE/);
   assert.match(read("README.md"), /USER-GUIDE\.ko\.md/);
