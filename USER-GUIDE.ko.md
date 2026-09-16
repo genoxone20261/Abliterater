@@ -6,7 +6,26 @@
 
 이 앱은 가중치를 호스팅하지 않습니다. GPU를 대신 빌려 주지 않습니다. `npm test` 통과는 학습 실행이 아닙니다. analog 웹 통과는 native Electron/GPU 클로즈가 아닙니다.
 
-언어 전환은 헤더의 KO/EN 토글입니다. 영어본: [USER-GUIDE.en.md](./USER-GUIDE.en.md).
+언어 토글은 헤더의 KO/EN. 영어: [USER-GUIDE.en.md](./USER-GUIDE.en.md).
+
+## 여기서 abliteration이 의미하는 것
+
+오픈 웨이트 채팅 모델은 안전 정렬 뒤 일부 요청을 **거절**합니다. Abliteration(Heretic 등)은 그 거절을 잔차 스트림의 방향으로 보고, 줄이거나 되돌리는 방법을 연구합니다. 이 작업대는 **연구·방어·교육**용이며 불법 이용을 **막는 대응**을 위한 것입니다. jailbreak-as-a-service가 아닙니다.
+
+여기서 “작업”은: **아직 abliteration되지 않은 공식 Instruct** 베이스(기본 `Qwen/Qwen3-4B-Instruct-2507`)에서 시작해 방법(기본 Heretic)을 고르고, pin-call 스크립트 **팩 ZIP**을 받아 **본인** 머신 또는 **본인** GPU 클라우드에서 실행하는 것입니다. 브라우저가 학습하지 않습니다. 칩을 켠다고 GPU가 시작되지 않습니다. `npm test`는 학습이 아닙니다. analog `:8080` ≠ native Electron / GPU 골든 클로즈.
+
+이미 처리된 heretic/GGUF는 **재사용 레인**이지 기본값이 아닙니다. 연구 자료 탭의 학술 jailbreak 논문은 **방어·이해**용입니다.
+
+## 첫 세션
+
+1. `npm ci && npm run dev` → `http://127.0.0.1:8080/`.
+2. 기본 칩이 공식 Instruct인지 확인. heretic GGUF가 아님. `PRESETS[0]`는 Instruct 방법 비교.
+3. 탐색을 연다. VRAM 불명은 배너 하나. 추정을 GPU 실행으로 보지 말 것.
+4. 작업대에서 팩 다운로드 (Ctrl+D). 실행 전에 `run.sh` / `run.ps1` / `job.json`.
+5. 키는 연결 화면 메모리만, 예산 Dialog 뒤. **본인** 돈을 쓸 때까지 dry-run.
+6. `npm run ledger:status` — 남은 OPEN은 **원장별**. 한 %로 합치지 말 것.
+
+긴 랜딩: [README.ko.md](./README.ko.md).
 
 이용 제한(제3자 상업·불법·악용 금지): [ACCEPTABLE-USE.ko.md](./ACCEPTABLE-USE.ko.md). 기여: [CONTRIBUTING.ko.md](./CONTRIBUTING.ko.md). 후원·투자: [SUPPORT.ko.md](./SUPPORT.ko.md). 보안 신고: [SECURITY.md](./SECURITY.md).
 

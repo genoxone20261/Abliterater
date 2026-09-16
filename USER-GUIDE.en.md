@@ -8,6 +8,25 @@ This app does not host weights. It does not rent GPUs for you. A passing `npm te
 
 Language toggle is KO/EN in the header. Korean: [USER-GUIDE.ko.md](./USER-GUIDE.ko.md).
 
+## What abliteration means here
+
+Open-weight chat models often **refuse** some requests after safety alignment. Abliteration (Heretic and related methods) studies that refusal as a direction in residual stream space and how it can be reduced or restored. This workbench is for **research, defense, and education** so illegal misuse can be **countered**. It is not a jailbreak-as-a-service.
+
+“Do work” here means: start from an **unabliterated official Instruct** base (default `Qwen/Qwen3-4B-Instruct-2507`), choose methods (default Heretic), download a **pack ZIP** of pin-call scripts, and run those scripts on **your** machine or **your** GPU cloud. The browser does not train. Turning a chip on does not start a GPU. `npm test` is not a training run. analog `:8080` ≠ native Electron / GPU golden close.
+
+Already-processed heretic/GGUF cards are a **reuse lane**, not the default. Academic jailbreak papers in the Research tab are for **defense and understanding**.
+
+## First session
+
+1. `npm ci && npm run dev` → `http://127.0.0.1:8080/`.
+2. Confirm the default chip is official Instruct, not a heretic GGUF. `PRESETS[0]` is method-compare on Instruct.
+3. Optionally open Explore. Unknown VRAM is one banner. Do not treat estimates as a GPU run.
+4. Download the pack (Ctrl+D on Workbench). Read `run.sh` / `run.ps1` / `job.json` before executing.
+5. Keys, if any, go only in Connect screen memory after a budget Dialog. Dry-run until you intend to spend **your** money.
+6. `npm run ledger:status` — remaining OPEN **per ledger**, never one percent.
+
+Longer landing: [README.md](./README.md).
+
 Acceptable use (no third-party commercial / illegal / abusive use): [ACCEPTABLE-USE.en.md](./ACCEPTABLE-USE.en.md). Contributing: [CONTRIBUTING.en.md](./CONTRIBUTING.en.md). Sponsor or invest: [SUPPORT.en.md](./SUPPORT.en.md). Security reports: [SECURITY.md](./SECURITY.md).
 
 ---
