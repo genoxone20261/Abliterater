@@ -57,12 +57,12 @@ OPEN → IN_PROGRESS → IMPLEMENTED → VERIFIED. BLOCKED_EXTERNAL은 완료가
 
 ### 연속 구현 재개: 저장소 및 하드웨어
 
-- 실제 Windows 설치 수용: 새 installer를 current-user 경로 `C:/Users/USER/AppData/Local/Programs/Abliterater`에 설치했다. 설치 파일 158개, 총 472,235,758 bytes를 열거하고 `artifacts/ecosystem/installed-manifest.json`에 SHA-256을 기록했다. HKCU uninstall 등록과 설치/제거 실행 파일 존재 확인.
+- 실제 Windows 설치 수용: 새 installer를 OS current-user Programs 폴더에 설치했다. 설치 파일 목록과 SHA-256을 기록했다. HKCU uninstall 등록과 설치/제거 실행 파일 존재 확인.
 - 설치된 `Abliterater.exe --smoke-test`: packaged=true, hidden=true, bridge/workspace/hardware/save 모두 통과. 설치된 실행 파일로 실제 추천 UI를 조회→수동 VRAM→작업 변경→모델 적용→브라우저 저장까지 수행했고 page errors 0. `screenshots/recommendations-installed/verdict.json`.
 - 설치는 실제 사용자 PC에서 완료했지만 Authenticode 서명과 uninstall 후 잔여 파일 검증은 아직 OPEN이다. 현재 요청은 설치 후 진행이므로 설치를 유지한다.
 
 - P0-02 PARTIAL: Electron 실제 directory picker IPC, OS 사용자 기본 경로, realpath 기반 repository/junction 거절, 쓰기·여유 공간 검사, atomic 설정 저장·재시작 복구를 구현했다. 실제 파일시스템 회귀 4개 통과. StorageSettings가 Studio에 연결됐다. 실제 directory picker 사용자 조작 및 NAS 수용은 OPEN.
-- P0-03 PARTIAL: CPU/RAM/disk/NVIDIA VRAM·driver/Docker/WSL bounded read-only probe와 sender 검증 IPC 구현. 실제 Electron hidden 실행에서 i7-14650HX, logical cores 24, RTX 5070 Laptop GPU가 반환됐다. CUDA runtime 성공은 주장하지 않으며 driverDetected와 unverified를 분리했다. 하드웨어 UI·추천 엔진·ROCm/Metal 실측은 OPEN.
+- P0-03 PARTIAL: CPU/RAM/disk/NVIDIA VRAM·driver/Docker/WSL bounded read-only probe와 sender 검증 IPC 구현. 실제 Electron hidden 실행에서 CPU 모델명·코어 수·GPU 이름이 반환됐다(구체 SKU는 공개 트리에 적지 않음). CUDA runtime 성공은 주장하지 않으며 driverDetected와 unverified를 분리했다. 하드웨어 UI·추천 엔진·ROCm/Metal 실측은 OPEN.
 - `npm test`, `npm run typecheck`, `npm run lint` 통과. 로그: `artifacts/ecosystem/storage-hardware-tests.log`. 저장소 UI 포함 build 통과: `artifacts/ecosystem/storage-build.log`.
 - 최신 별도 production preview에서 desktop/mobile product-flow 및 browser-smoke 통과. console/page errors 0, overflow false. `screenshots/storage-built{,-mobile}.png`를 시각 검사했다. 기존 8081 preview는 hydration timeout으로 실패했으며 성공 증거로 사용하지 않았다.
 - Electron hidden smoke는 workspace 쓰기·실제 hardware IPC·구성 저장 확인 후 exit 0. 첫 실행의 종료 timeout을 수정했다. packaged=false이므로 최신 패키지 수용 완료가 아니다.

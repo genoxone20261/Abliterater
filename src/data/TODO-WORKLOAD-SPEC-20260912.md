@@ -42,7 +42,7 @@
 
 프론트: graphite 패널, 수동 GiB, 데스크톱 `hardwareProfile`. 웹은 VRAM 없음 → `unknown`. 맞음. 작업 드롭다운에 Heretic 없음.
 
-파이프라인 실측: RTX 5070 Laptop **probe ≠** Heretic/LoRA 성공. E01 OPEN.
+파이프라인 실측: 소비자 NVIDIA 노트북 **probe ≠** Heretic/LoRA 성공. E01 OPEN.
 
 ---
 
@@ -99,7 +99,7 @@
 | heretic-8b-4bit | 16       | 24   | 불가        | 불가   | 가능   |
 | qlora-14b       | 16       | 24   | 불가        | 불가   | 가능   |
 
-RTX 5070 Laptop 8 GiB 가정 시: **4B Heretic 4-bit, 7B QLoRA, 8B Q4 추론** 을 제안. 27B Heretic/LoRA 7B는 no-fit. probe 이름만으로는 VRAM 확정 아님 → 수동 GiB 또는 `hardwareProfile`.
+소비자 8 GiB NVIDIA 노트북 가정 시: **4B Heretic 4-bit, 7B QLoRA, 8B Q4 추론** 을 제안. 27B Heretic/LoRA 7B는 no-fit. probe 이름만으로는 VRAM 확정 아님 → 수동 GiB 또는 `hardwareProfile`.
 
 ---
 
@@ -117,4 +117,4 @@ RTX 5070 Laptop 8 GiB 가정 시: **4B Heretic 4-bit, 7B QLoRA, 8B Q4 추론** �
 
 - analog close: `recommendation` unit + i18n 키 대칭 + UI 소스 매치.
 - native close 금지 조건: Heretic/QLoRA 로그, Playwright 골든 목록, clean-install, `:8080` E2E.
-- 이 문서의 표 GiB를 “우리 5070에서 측정됨”으로 인용 금지.
+- 이 문서의 표 GiB를 특정 개인 GPU 실측으로 인용 금지.

@@ -58,6 +58,21 @@ test("root ships bilingual user guide, contributing, and acceptable use", () => 
   assert.match(read("ACCEPTABLE-USE.ko.md"), /교육용/);
   assert.match(read("ACCEPTABLE-USE.ko.md"), /전 세계의 관심/);
 });
+test("public product text does not embed personal machine SKUs or home paths", () => {
+  const bodies = [
+    read("src/data/WORKFLOW.md"),
+    read("src/data/TODO-WORKLOAD-SPEC-20260912.md"),
+    read("src/data/ECOSYSTEM-MASTER-TODO.md"),
+    read("electron/main/hardware-profile.test.mjs"),
+    read("README.md"),
+    read("USER-GUIDE.ko.md"),
+    read("USER-GUIDE.en.md"),
+  ].join("\n");
+  assert.doesNotMatch(bodies, /14650HX/);
+  assert.doesNotMatch(bodies, /RTX 5070/);
+  assert.doesNotMatch(bodies, /Users\/Juno/);
+  assert.doesNotMatch(bodies, /Users\\\\Juno/);
+});
 test("production build omits author KDP reports from output and extraResources", () => {
   assert.match(read("package.json"), /omit-kdp-from-output/);
   assert.match(read("scripts/omit-kdp-from-output.mjs"), /static\/reports/);

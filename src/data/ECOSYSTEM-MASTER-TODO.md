@@ -136,6 +136,6 @@ No item is complete from source code, mocks, HTTP 200, or a vendor claim alone.
 
 - Docker image/runtime and browser flow: verified on this machine.
 - Windows packaged/install runtime: verified on this machine; trusted Authenticode identity is not verified.
-- Local CUDA: RTX 5070 matrix computation verified; this is not workload verification.
+- Local CUDA: a consumer NVIDIA GPU matrix computation verified; this is not workload verification.
 - Public source discovery: HF model/dataset and GitHub search verified.
 - Provider adapter: RunPod/Lambda list/read contract tests implemented; real account auth has not been verified.

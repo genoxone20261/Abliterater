@@ -23,7 +23,7 @@ test("hardware profile normalizes Windows CPU, memory, disks and NVIDIA GPU", as
     homedir: "C:/Users/Demo",
     run: runner({
       "nvidia-smi --query-gpu=name,memory.total,driver_version --format=csv,noheader,nounits":
-        "NVIDIA RTX 5070, 12282, 581.15\n",
+        "NVIDIA GeForce RTX 4090, 24564, 560.00\n",
       "docker version --format {{.Server.Version}}": "28.3.3\n",
       "wsl.exe --status": "Default Distribution: Ubuntu\n",
     }),
@@ -33,9 +33,9 @@ test("hardware profile normalizes Windows CPU, memory, disks and NVIDIA GPU", as
   assert.equal(profile.memory.totalBytes, 64 * 1024 ** 3);
   assert.deepEqual(profile.gpus[0], {
     vendor: "nvidia",
-    name: "NVIDIA RTX 5070",
-    memoryBytes: 12282 * 1024 ** 2,
-    driver: "581.15",
+    name: "NVIDIA GeForce RTX 4090",
+    memoryBytes: 24564 * 1024 ** 2,
+    driver: "560.00",
     memoryEvidence: "observed",
   });
   assert.equal(profile.capabilities.cuda.available, false);
