@@ -69,7 +69,11 @@ test("root ships bilingual user guide, contributing, and acceptable use", () => 
   assert.match(read("README.md"), /Contributions are welcome/);
   assert.match(read("README.md"), /Contribute with us/);
   assert.match(read("README.md"), /Why this exists/);
+  assert.match(read("README.md"), /What you should do/);
   assert.match(read("README.md"), /First session/);
+  assert.match(read("README.ko.md"), /지금 할 일/);
+  assert.match(read("USER-GUIDE.en.md"), /How to work/);
+  assert.match(read("USER-GUIDE.ko.md"), /작업 방법/);
   assert.match(read("README.md"), /What abliteration means here/);
   assert.match(read("README.ko.md"), /첫 세션/);
   assert.match(read("USER-GUIDE.en.md"), /What abliteration means here/);

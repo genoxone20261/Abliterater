@@ -100,6 +100,56 @@ Search and type filter. Papers open arXiv in a new tab. Repos open GitHub in a n
 - Close native / GPU / Electron ledgers because `npm test` passed. Analog web at `:8080` is not a native close.
 - Store API keys in git, ZIP, or localStorage.
 
+## What you should do
+
+Three jobs. Do not mix them. analog `:8080` is usable. Native Electron, GPU golden, and in-app Hub live are **not closed**.
+
+### 1. Use the workbench (no GPU required)
+
+This is the default path.
+
+1. Clone, `npm ci`, `npm run dev`, open `http://127.0.0.1:8080/` (commands below).
+2. Stay on **Workbench → Build**. Confirm the default chip is official Instruct (`Qwen/Qwen3-4B-Instruct-2507`), **not** a heretic GGUF.
+3. Leave method **Heretic** unless you mean to compare (preset 1) or reuse GGUF (preset 3, last).
+4. Fill Hugging Face `owner/name` if you leave the catalog. Empty HF **blocks** the pack.
+5. Optionally open **Explore**. VRAM numbers are **estimated**. Unknown hardware must not pretend support. A Hub pick writes `hfRepo` or `storeDataUri` — it does **not** download weights.
+6. Download the pack ZIP (**Ctrl+D**). Read `run.sh` / `run.ps1` / `job.json` **before** you execute anything.
+7. Research tab: papers and repos open in a new browser tab. That is reading, not a GPU run.
+
+You have not trained a model. You have a **recipe ZIP**.
+
+### 2. Run that recipe on your machine or your cloud
+
+The browser does not train. You run the scripts.
+
+1. Inspect the ZIP. AGPL tools are **pin-called** at pinned SHAs, not vendored into `src/`.
+2. Local: pick `local-cuda` / `rocm` / `metal` / `cpu` to match **your** GPU/CPU, then run `run.sh` or `run.ps1` on **your** disk.
+3. Cloud: **Connect** only. One password field (`#prov-api-key`). Token stays in that screen’s memory. Set max USD / minutes. Acknowledge the Dialog. Stay **dry-run** until you intend to spend **your** money. This repo does not pay.
+4. Listing an instance is not a Heretic/QLoRA golden and does **not** close R-004 / R-005.
+5. After a real run, keep the log + VRAM. That is the only evidence those GPU rows accept.
+
+Weight, dataset, and cloud-console licenses are **separate**. A catalog row is not a redistribution grant.
+
+### 3. Contribute (close an OPEN row)
+
+Read [ACCEPTABLE-USE.en.md](./ACCEPTABLE-USE.en.md) first. Third-party commercial, illegal, and abusive use is **not licensed**.
+
+1. Run `npm run ledger:status`. Remaining OPEN is **per ledger**. Never one percent.
+2. Pick **one** OPEN row in [USER-GUIDE.en.md](./USER-GUIDE.en.md#still-open-per-ledger-never-sum).
+3. Send **evidence** that matches the close column. analog `npm test` ≠ native close. Do not flip a markdown cell.
+4. Fork, patch, open a PR. No CLA — the PR is the grant on AGPL-3.0-or-later **and** the AUP.
+5. Never put API keys, `.env` values, or `docs/` dumps in git, issues, or chat.
+
+| If you have | Do this | Do not |
+| --- | --- | --- |
+| A packaged Windows/Linux/macOS install | Persist-reject, source-free launch, keyboard, CRUD (02, 13, 14, 16, 18, 20) | Cite extraResources analog |
+| A GPU and **your** bill | This-machine Heretic 4B / QLoRA log+VRAM (R-004, R-005) | Attach someone else’s rental JSON |
+| Time for UI | In-app Hub overlay that matches the workload cell (R-009); keyboard E2E (W08) | Parent curl / snapshot |
+| Docker | `docker compose up -d --build` from **this** source + product-flow (W14) | Hours-old healthy stack |
+| An SSH box | Live connect, upload, run, retrieve (C-002) | list/read analog |
+
+Full patch rules: [CONTRIBUTING.en.md](./CONTRIBUTING.en.md).
+
 ## First session
 
 Need Node 24.

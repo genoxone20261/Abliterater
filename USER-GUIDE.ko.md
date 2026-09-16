@@ -25,7 +25,32 @@
 5. 키는 연결 화면 메모리만, 예산 Dialog 뒤. **본인** 돈을 쓸 때까지 dry-run.
 6. `npm run ledger:status` — 남은 OPEN은 **원장별**. 한 %로 합치지 말 것.
 
-긴 랜딩: [README.ko.md](./README.ko.md).
+긴 랜딩: [README.ko.md](./README.ko.md). **지금 할 일**(작업대 / 팩 실행 / 기여)은 그 README에 있습니다.
+
+## 작업 방법
+
+“웹을 열었다”와 “모델을 학습했다”와 “원장 칸을 닫았다”를 섞지 마십시오.
+
+### A. 팩 만들기 (작업대)
+
+1. 탭 **1**(작업대), 워크스페이스 **구성**.
+2. §1 카탈로그: 공식 Instruct(`work` 레인). 재사용 GGUF는 다른 레인 — 기본값 아님.
+3. 방법: 다른 칩을 고르지 않으면 Heretic. 목적/도메인: 수학은 ablation을 스킬로 **보지 않습니다**.
+4. 컴퓨트 칩은 **본인** 러너에 맞춥니다 (`local-cuda` / `rocm` / `metal` / `cpu` 또는 카탈로그 클라우드).
+5. 저장: 세 열(베이스 가중치 / 데이터셋 / 산출물). UI는 ZIP에 선택만 적습니다. 바이트를 올리지 않습니다.
+6. Ctrl+D → `run.sh` / `run.ps1` / `job.json` 확인.
+
+빈 HF `owner/name`은 워크플로를 **막습니다**. 이 단계에 연결 키는 **필요 없습니다**.
+
+### B. 팩 실행 (본인 머신 또는 본인 키)
+
+1. **본인** 디스크에서 `run.sh` 또는 `run.ps1`, 또는 연결 → 예산 Dialog → 먼저 dry-run.
+2. GPU 골든(R-004 / R-005)을 주장하면 로그+VRAM을 남깁니다.
+3. 클라우드 인스턴스 목록은 그 골든이 아닙니다.
+
+### C. OPEN 칸 닫기 (기여자)
+
+`npm run ledger:status`. [아직 열린 것](#아직-열린-것-원장별-분석-합산-금지)에서 한 칸. 증거만. analog `npm test` ≠ close. [CONTRIBUTING.ko.md](./CONTRIBUTING.ko.md).
 
 이용 제한(제3자 상업·불법·악용 금지): [ACCEPTABLE-USE.ko.md](./ACCEPTABLE-USE.ko.md). 기여: [CONTRIBUTING.ko.md](./CONTRIBUTING.ko.md). 후원·투자: [SUPPORT.ko.md](./SUPPORT.ko.md). 보안 신고: [SECURITY.md](./SECURITY.md).
 

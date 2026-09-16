@@ -100,6 +100,56 @@
 - `npm test` 통과로 native / GPU / Electron 원장 클로즈. `:8080` analog 웹 ≠ native close.
 - API 키를 git·ZIP·localStorage에 저장.
 
+## 지금 할 일
+
+할 일은 세 가지입니다. 섞지 마십시오. analog `:8080`은 쓸 수 있습니다. Native Electron, GPU 골든, 앱 안 Hub 라이브는 **닫히지 않았습니다**.
+
+### 1. 작업대만 쓰기 (GPU 불필요)
+
+기본 경로입니다.
+
+1. 클론, `npm ci`, `npm run dev`, `http://127.0.0.1:8080/` (명령은 아래).
+2. **작업대 → 구성**에 둡니다. 기본 칩이 공식 Instruct(`Qwen/Qwen3-4B-Instruct-2507`)인지 확인합니다. heretic GGUF가 **아닙니다**.
+3. 방법을 바꾸지 않으면 **Heretic**입니다. 비교는 프리셋 1, GGUF 재사용은 프리셋 3(마지막).
+4. 카탈로그를 떠나면 Hugging Face `owner/name`을 채웁니다. 빈 HF는 팩을 **막습니다**.
+5. **탐색**은 선택입니다. VRAM 숫자는 **추정**입니다. 하드웨어 불명은 지원을 가장하지 않습니다. Hub에서 고르면 `hfRepo` 또는 `storeDataUri`만 씁니다. 가중치를 **받지 않습니다**.
+6. 팩 ZIP을 받습니다 (**Ctrl+D**). 실행 전에 `run.sh` / `run.ps1` / `job.json`을 읽습니다.
+7. 연구 자료 탭: 논문·리포는 새 브라우저 탭입니다. 읽는 것이지 GPU 런이 아닙니다.
+
+모델을 학습한 것이 아닙니다. **레시피 ZIP**입니다.
+
+### 2. 그 레시피를 본인 머신 또는 본인 클라우드에서 실행
+
+브라우저가 학습하지 않습니다. 스크립트는 본인이 돌립니다.
+
+1. ZIP을 확인합니다. AGPL 도구는 핀된 SHA에서 **pin-call**합니다. `src/`에 vendor하지 않습니다.
+2. 로컬: **본인** GPU/CPU에 맞게 `local-cuda` / `rocm` / `metal` / `cpu`를 고르고, **본인** 디스크에서 `run.sh` 또는 `run.ps1`을 실행합니다.
+3. 클라우드: **연결** 화면만. 비밀번호 칸 하나(`#prov-api-key`). 토큰은 그 화면 메모리만. 최대 USD/분을 넣고 Dialog를 확인합니다. **본인** 돈을 쓸 때까지 **dry-run**. 이 저장소는 요금을 내지 않습니다.
+4. 인스턴스 목록은 Heretic/QLoRA 골든이 아닙니다. R-004 / R-005를 **닫지 않습니다**.
+5. 실제 런 뒤에는 로그+VRAM을 남깁니다. GPU 칸이 받는 증거는 그것뿐입니다.
+
+가중치·데이터셋·클라우드 콘솔 라이선스는 **별도**입니다. 카탈로그 행이 재배포 허가가 아닙니다.
+
+### 3. 기여 (OPEN 칸을 닫기)
+
+먼저 [ACCEPTABLE-USE.ko.md](./ACCEPTABLE-USE.ko.md)를 읽으십시오. 제3자 상업·불법·악용은 **라이선스되지 않습니다**.
+
+1. `npm run ledger:status`를 돌립니다. 남은 OPEN은 **원장별**입니다. 한 %로 합치지 마십시오.
+2. [USER-GUIDE.ko.md](./USER-GUIDE.ko.md#아직-열린-것-원장별-분석-합산-금지)에서 OPEN **한 칸**을 고릅니다.
+3. 닫기 열과 맞는 **증거**를 보냅니다. analog `npm test` ≠ native close. 마크다운 칸만 뒤집지 마십시오.
+4. 포크, 패치, PR. CLA 없음 — PR이 AGPL-3.0-or-later **와** AUP에 대한 허가입니다.
+5. API 키, `.env` 값, `docs/` 덤프를 git·이슈·채팅에 넣지 마십시오.
+
+| 있는 것 | 할 일 | 하지 말 것 |
+| --- | --- | --- |
+| 패키지 Windows/Linux/macOS 설치본 | persist-reject, 소스 없는 기동, 키보드, CRUD (02, 13, 14, 16, 18, 20) | extraResources analog를 증거로 |
+| GPU와 **본인** 요금 | 이 머신 Heretic 4B / QLoRA 로그+VRAM (R-004, R-005) | 타인 렌탈 JSON |
+| UI 시간 | 워크로드 칸과 맞는 앱 안 Hub overlay (R-009); 키보드 E2E (W08) | 부모 curl / 스냅샷 |
+| Docker | **이 소스** `docker compose up -d --build` + product-flow (W14) | 몇 시간 된 healthy 스택 |
+| SSH 박스 | 실연결, 업로드, 실행, 회수 (C-002) | list/read analog |
+
+패치 규칙 전문: [CONTRIBUTING.ko.md](./CONTRIBUTING.ko.md).
+
 ## 첫 세션
 
 Node 24가 필요합니다.

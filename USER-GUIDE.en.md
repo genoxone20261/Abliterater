@@ -25,7 +25,32 @@ Already-processed heretic/GGUF cards are a **reuse lane**, not the default. Acad
 5. Keys, if any, go only in Connect screen memory after a budget Dialog. Dry-run until you intend to spend **your** money.
 6. `npm run ledger:status` — remaining OPEN **per ledger**, never one percent.
 
-Longer landing: [README.md](./README.md).
+Longer landing: [README.md](./README.md). **What you should do** (workbench / run pack / contribute) is in that README.
+
+## How to work
+
+Do not mix “I opened the web UI” with “I trained a model” with “I closed a ledger cell.”
+
+### A. Assemble a pack (Workbench)
+
+1. Tab **1** (Workbench), workspace **Build**.
+2. §1 catalog: official Instruct (`work` lane). Reuse GGUF is the other lane — not the default.
+3. Methods: Heretic unless you chose another chip. Purpose/domain: math does **not** treat ablation as a skill.
+4. Compute chip matches **your** runner (`local-cuda` / `rocm` / `metal` / `cpu` or a catalog cloud).
+5. Storage: three columns (base weights / dataset / artifacts). The UI writes the choice into the ZIP; it does not upload bytes.
+6. Ctrl+D → inspect `run.sh` / `run.ps1` / `job.json`.
+
+Empty HF `owner/name` **blocks** the workflow. Connect keys are **not** required for this step.
+
+### B. Run the pack (your machine or your key)
+
+1. Execute `run.sh` or `run.ps1` on **your** disk, or Connect → budget Dialog → dry-run first.
+2. Keep log + VRAM if you claim a GPU golden (R-004 / R-005).
+3. Listing cloud instances is not that golden.
+
+### C. Close an OPEN row (contributors)
+
+`npm run ledger:status`. Pick one row in [Still open](#still-open-per-ledger-never-sum). Evidence only. analog `npm test` ≠ close. [CONTRIBUTING.en.md](./CONTRIBUTING.en.md).
 
 Acceptable use (no third-party commercial / illegal / abusive use): [ACCEPTABLE-USE.en.md](./ACCEPTABLE-USE.en.md). Contributing: [CONTRIBUTING.en.md](./CONTRIBUTING.en.md). Sponsor or invest: [SUPPORT.en.md](./SUPPORT.en.md). Security reports: [SECURITY.md](./SECURITY.md).
 
