@@ -137,6 +137,7 @@ test("public product text does not embed personal machine SKUs or home paths", (
   assert.doesNotMatch(bodies, /Users\\\\Juno/);
   assert.doesNotMatch(bodies, /:18081/);
   assert.doesNotMatch(bodies, /hermes3:8b/);
+  assert.doesNotMatch(read("src/data/ECOSYSTEM-MASTER-TODO.md"), /docs\/research-2026/);
 });
 test(".env.example is comments only", () => {
   const env = read(".env.example");

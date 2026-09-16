@@ -3,7 +3,7 @@
 Date: 2026-09-09
 Status source: `providers-current.md`, `methods-current.md`, `datasets-current.md` after source verification. This ledger never promotes catalog entries to integration without evidence.
 
-- [x] C-008 P1: raw 수집과 canonical index를 분리하고 deterministic merge/dedupe + SHA manifest 구현. 1,041개 index, failures=0, unknown-license 208개. `docs/research-20260909/public-ecosystem-index-20260910.md`.
+- [x] C-008 P1: raw 수집과 canonical index를 분리하고 deterministic merge/dedupe + SHA manifest 구현. 1,041개 index, failures=0, unknown-license 208개. Evidence stayed local (not in this git tree).
 - [ ] C-009 P1: OpenML/Zenodo 및 GPU/SaaS 공식 metadata adapter 추가.
 
 ## 경쟁 우위·지속 발견 원장 (2026-09-10 KST)
@@ -34,7 +34,7 @@ No item is complete from source code, mocks, HTTP 200, or a vendor claim alone.
 
 ## PHASE 0 — Evidence and contracts
 
-- [x] E-001 P0: ingest the three dated reports; trace every recommendation to an official source. `docs/research-20260909/{providers,datasets,methods}-current.md`; methods report is explicitly partial because the worker was interrupted.
+- [x] E-001 P0: ingest the three dated reports; trace every recommendation to an official source. Local research dumps are not in this git tree; methods report is explicitly partial because the worker was interrupted.
 - [ ] E-002 P0: build provider capability schema: auth, regions, hardware, lifecycle, logs, artifacts, webhooks, spot, idle shutdown.
 - [ ] E-003 P0: build per-provider support matrix with tier and last verified timestamp.
 - [ ] E-004 P0: define normalized job states and preserve raw provider states.
@@ -129,7 +129,7 @@ No item is complete from source code, mocks, HTTP 200, or a vendor claim alone.
 
 - `job.json.lineage`에 model/dataset/method 선택 정보를 포함. 모델 revision이 40자리 SHA인지 구분하며 configuration-only로 표시한다. checksum/license 및 실제 실행 provenance가 없으면 unknown/null을 유지한다. D-002 전체 완료는 아니다.
 - 회귀: manifest 테스트 RED→GREEN 3개 통과, 전체 npm test 통과, typecheck/lint/build 통과. 브라우저·실계정·workload 검증과 구분한다.
-- 공개 수집기: 875개 고유 metadata, 20개 query 성공, 실패 0. `docs/research-20260909/public-harvest-20260910.md` 참조. evaluator 전용 분류·추가 허브·pagination·증분 갱신·UI import는 미완료.
+- 공개 수집기: 875개 고유 metadata, 20개 query 성공, 실패 0. Local harvest dump is not in this git tree. evaluator 전용 분류·추가 허브·pagination·증분 갱신·UI import는 미완료.
 - [ ] D-009 P1: 수집 metadata의 evaluator/tool 분류, query별 lineage, schema validation, SHA 아닌 branch 필드 구분.
 - [ ] D-010 P1: OpenML/Zenodo 및 GPU/SaaS 공식 discovery 연결, pagination/증분 갱신과 429 Retry-After 준수.
 - [ ] D-011 P0: dataset revision/license/checksum 선택에서 execution pack까지 보존, 실제 다운로드 해시 검증.
