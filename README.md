@@ -9,7 +9,7 @@ This repository does not host model weights. It is not an attack runbook and not
 [![License: AGPL-3.0-or-later + AUP](https://img.shields.io/badge/license-AGPL--3.0--or--later%20%2B%20AUP-1C1D1F)](./LICENSE.md)
 [![Abliterater on Product Hunt](https://img.shields.io/badge/Product%20Hunt-18%20Sep%202026-FF6154)](https://www.producthunt.com/products/abliterater)
 
-[Product Hunt — 18 September 2026, 16:01 KST](https://www.producthunt.com/products/abliterater)
+[Product Hunt — 18 September 2026, 12:01 AM PT / 07:01 UTC](https://www.producthunt.com/products/abliterater)
 
 The local web interface is usable. Packaged Electron, GPU golden tests, and the in-app Hub are still open. **Contributions are welcome.** A contribution is not a commercial license. Third-party commercial, illegal, and abusive use is not licensed — [ACCEPTABLE-USE.en.md](./ACCEPTABLE-USE.en.md).
 
