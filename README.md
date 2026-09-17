@@ -28,8 +28,8 @@ Need **Node 24** and npm. Then open `http://127.0.0.1:8080/`.
 ### Windows (PowerShell)
 
 ```powershell
-git clone https://github.com/genoxone20261/Abliterater_public.git
-cd Abliterater_public
+git clone https://github.com/genoxone20261/Abliterater.git
+cd Abliterater
 npm ci
 npm run dev
 ```
@@ -46,8 +46,8 @@ SmartScreen may say **Unknown publisher**. That is expected for an unsigned buil
 ### macOS (Terminal)
 
 ```bash
-git clone https://github.com/genoxone20261/Abliterater_public.git
-cd Abliterater_public
+git clone https://github.com/genoxone20261/Abliterater.git
+cd Abliterater
 npm ci
 npm run dev
 ```
@@ -62,8 +62,8 @@ npm run electron:build:mac
 ### Linux (bash)
 
 ```bash
-git clone https://github.com/genoxone20261/Abliterater_public.git
-cd Abliterater_public
+git clone https://github.com/genoxone20261/Abliterater.git
+cd Abliterater
 npm ci
 npm run dev
 ```
