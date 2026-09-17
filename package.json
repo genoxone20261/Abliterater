@@ -2,6 +2,7 @@
   "name": "abliterater",
   "private": true,
   "license": "AGPL-3.0-or-later",
+  "author": "Juno Andy Cheong / GENOX",
   "sideEffects": false,
   "type": "module",
   "overrides": {

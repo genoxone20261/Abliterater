@@ -4,11 +4,13 @@ Copyright © 2026 Juno Andy Cheong / GENOX.
 
 These terms apply **together with** AGPL-3.0-or-later. Copying, running, or distributing the code does not waive them. Breach ends permission immediately. Korean: [ACCEPTABLE-USE.ko.md](./ACCEPTABLE-USE.ko.md).
 
+The AGPL text lives in [LICENSE](./LICENSE). This file is the additional use policy (no third-party commercial use without written permission; no illegal or abusive use).
+
 Contact: support@genox.one · https://github.com/genoxone20261
 
 ## Purpose
 
-This project is **educational**. It exists so researchers and defenders can study refusal-suppression (abliteration) and **counter illegal misuse**. That mission asks for **worldwide attention**. It is not an attack runbook.
+This project is **educational**. It exists so researchers and defenders can study refusal-suppression (abliteration) and **counter illegal misuse**. It is not an attack runbook.
 
 ---
 
@@ -30,7 +32,9 @@ Without written permission you may:
 - Personal research, education, evaluation, non-profit experiments
 - Read the source, fix bugs, and meet AGPL source-offer duties
 - Non-commercial runs on your machine or **your** GPU keys
-- Issues/PRs if you accept the contributor guide and this file
+- Issues/PRs/measurements/docs/translations if you accept the contributor guide and this file
+
+Contributions (issues, PRs, measurements, docs) are allowed only inside this personal research and education grant. **A contribution is not a commercial grant and is not a license for illegal or abusive use.**
 
 ---
 
@@ -44,6 +48,7 @@ Without **prior written permission** you may not:
 - Put it in a production or paid API pipeline (internal evaluation excepted)
 - Use Abliterater / GENOX names or logos on a product without permission
 - Strip these terms, keep only AGPL, and claim a commercial license
+- Claim a third-party commercial license because you sent a PR, patch, or measurement
 
 Ask `support@genox.one` for a commercial grant.
 
@@ -93,4 +98,4 @@ Permission ends immediately on breach. The copyright holder may demand you stop 
 
 AGPL-3.0-or-later still requires source when you provide the Program over a network.
 
-This file states rights the copyright holder **does not grant to third parties** (commercial use; illegal and abusive use). On conflict, **the ban on illegal and abusive use always wins**. Commercial use is only for the copyright holder or a written grant.
+The file [LICENSE](./LICENSE) is the AGPL-3.0-or-later text only. This file states rights the copyright holder **does not grant to third parties** (commercial use; illegal and abusive use). On conflict, **the ban on illegal and abusive use always wins**. Commercial use is only for the copyright holder or a written grant.

@@ -49,3 +49,6 @@ docs/research-*/connection-list-read*.json
 docs/
 public/reports/
 src/lib/runners.ts.export.txt
+# Keep .grok/app-env.json committed (VITE_AUTH_ENABLED flags only).
+# Do not re-add Grok PWA chrome assets.
+public/__grok/
