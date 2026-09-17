@@ -56,21 +56,6 @@
 
 ---
 
-## 왜 KDP PDF가 설치본에 들어갔나
-
-저자가 쓰는 책 PDF는 디스크의 `public/reports/`에 둡니다. 제품 탭에 나열하지 않고, PACK ZIP에도 넣지 않습니다. **삭제하지 않습니다.**
-
-실수 경로:
-
-1. Vite/Nitro 프로덕션 빌드는 `public/` 전체를 `.vercel/output/static/`으로 복사합니다.
-2. Electron `extraResources`는 그 `.vercel/output` 전체를 설치본에 넣습니다.
-3. 그래서 호스트에서 `npm run build` 후 친 **첫 Windows exe**에 KDP PDF가 들어갔습니다. 용량이 약 185MB였습니다.
-4. Docker 이미지는 `.dockerignore`가 `public/reports`를 이미 빼고 있어서 **처음부터 깨끗했습니다.**
-
-고친 것: `scripts/omit-kdp-from-output.mjs`가 빌드 직후 `static/reports`를 지우고, Electron `extraResources.filter`가 `reports`를 한 번 더 막습니다. 재패킹 exe는 약 88MB이고 unpacked `reports`는 0입니다. `public/reports`는 로컬 디스크에 그대로 있습니다.
-
-Vite 개발 서버가 URL을 알면 `/reports/….pdf`를 줄 수 있는 것은 의도된 로컬 예외입니다. 공개 git · Docker · 설치본에는 넣지 않습니다.
-
 ## 왜 TODO가 제품에 있나
 
 세션 스크래치(`docs/research-*`, CHILD 메모, Vast JSON)는 **올리지 않습니다.** `docs/` 폴더는 공개 git에서 제외입니다.
@@ -136,7 +121,7 @@ Windows에서 AppImage/DMG는 이 머신에서 만들지 못합니다. 릴리스
 
 ## 화면
 
-탭은 두 개뿐입니다. 문서 라이브러리/KDP 탭은 없습니다.
+탭은 두 개뿐입니다. 문서 라이브러리 탭은 없습니다.
 
 | 키 | 탭 | 하는 일 |
 | --- | --- | --- |

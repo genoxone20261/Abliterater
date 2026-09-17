@@ -44,7 +44,7 @@ Basis bawaan: `Qwen/Qwen3-4B-Instruct-2507`. Kartu heretic/GGUF yang sudah dipro
 
 ## Apa yang tidak dilakukannya
 
-Tidak menghost bobot, tidak menyewa GPU untuk Anda, tidak vendor pohon AGPL ke `src/`, tidak mengemas PDF KDP penulis, tidak menutup buku native/GPU karena `npm test` lulus. analog `:8080` ≠ native close.
+Tidak menghost bobot, tidak menyewa GPU untuk Anda, tidak vendor pohon AGPL ke `src/`, tidak menutup buku native/GPU karena `npm test` lulus. analog `:8080` ≠ native close.
 
 ## Mulai cepat
 

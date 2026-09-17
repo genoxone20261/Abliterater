@@ -44,7 +44,7 @@
 
 ## しないこと
 
-重みのホスティング、代理 GPU レンタル、AGPL ツリーの `src/` vendor、著者 KDP PDF の同梱、`npm test` による native/GPU クローズ。`:8080` analog ≠ native close。
+重みのホスティング、代理 GPU レンタル、AGPL ツリーの `src/` vendor、`npm test` による native/GPU クローズ。`:8080` analog ≠ native close。
 
 ## クイックスタート
 

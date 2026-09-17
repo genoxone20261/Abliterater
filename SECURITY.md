@@ -17,5 +17,5 @@ We will answer from that address. Do not expect a bounty unless we write one dow
 ## Product boundary
 
 - Keys stay in screen memory. They must not land in localStorage, pack ZIPs, logs, or git.
-- `docs/` session dumps and `public/reports/` author PDFs are not part of the public tree.
+- `docs/` session dumps are not part of the public tree.
 - analog `npm test` pass is not a native Electron or GPU-golden close.

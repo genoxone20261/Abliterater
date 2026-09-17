@@ -44,7 +44,7 @@ English: [README.md](./README.md) · 한국어: [README.ko.md](./README.ko.md)
 
 ## 不做什麼
 
-不託管權重、不代租 GPU、不把 AGPL 樹 vendor 進 `src/`、不隨包裝載作者 KDP PDF、不以 `npm test` 關閉 native/GPU 帳本。`:8080` analog ≠ native close。
+不託管權重、不代租 GPU、不把 AGPL 樹 vendor 進 `src/`、不以 `npm test` 關閉 native/GPU 帳本。`:8080` analog ≠ native close。
 
 ## 快速開始
 

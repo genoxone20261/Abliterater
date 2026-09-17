@@ -44,7 +44,7 @@ Nền mặc định: `Qwen/Qwen3-4B-Instruct-2507`. Thẻ heretic/GGUF đã xử
 
 ## Việc nó không làm
 
-Không host trọng số, không thuê GPU hộ, không vendor cây AGPL vào `src/`, không đóng gói PDF KDP của tác giả, không đóng sổ native/GPU vì `npm test` đạt. analog `:8080` ≠ native close.
+Không host trọng số, không thuê GPU hộ, không vendor cây AGPL vào `src/`, không đóng sổ native/GPU vì `npm test` đạt. analog `:8080` ≠ native close.
 
 ## Bắt đầu nhanh
 

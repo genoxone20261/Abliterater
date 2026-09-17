@@ -44,7 +44,7 @@ Base por defecto: `Qwen/Qwen3-4B-Instruct-2507`. Las tarjetas heretic/GGUF ya pr
 
 ## Qué no hace
 
-No aloja pesos, no alquila GPU por ti, no vende árboles AGPL en `src/`, no empaqueta PDF KDP del autor, no cierra ledgers native/GPU porque `npm test` pasó. analog `:8080` ≠ native close.
+No aloja pesos, no alquila GPU por ti, no vende árboles AGPL en `src/`, no cierra ledgers native/GPU porque `npm test` pasó. analog `:8080` ≠ native close.
 
 ## Inicio rápido
 

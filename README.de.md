@@ -44,7 +44,7 @@ Standardbasis: `Qwen/Qwen3-4B-Instruct-2507`. Fertige heretic/GGUF-Karten sind e
 
 ## Was es nicht tut
 
-Keine Gewichte hosten, keine GPUs für Sie mieten, keine AGPL-Bäume in `src/` vendorn, keine Autor-KDP-PDFs ausliefern, keine native/GPU-Ledger schließen, weil `npm test` grün ist. analog `:8080` ≠ native close.
+Keine Gewichte hosten, keine GPUs für Sie mieten, keine AGPL-Bäume in `src/` vendorn, keine native/GPU-Ledger schließen, weil `npm test` grün ist. analog `:8080` ≠ native close.
 
 ## Schnellstart
 

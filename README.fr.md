@@ -44,7 +44,7 @@ Base par défaut : `Qwen/Qwen3-4B-Instruct-2507`. Les cartes heretic/GGUF déjà
 
 ## Ce que ça ne fait pas
 
-Pas d’hébergement de poids, pas de location GPU à votre place, pas de vendor AGPL dans `src/`, pas de PDF KDP auteur dans le produit, pas de clôture native/GPU parce que `npm test` passe. analog `:8080` ≠ native close.
+Pas d’hébergement de poids, pas de location GPU à votre place, pas de vendor AGPL dans `src/`, pas de clôture native/GPU parce que `npm test` passe. analog `:8080` ≠ native close.
 
 ## Démarrage rapide
 

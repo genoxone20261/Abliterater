@@ -56,21 +56,6 @@ Acceptable use (no third-party commercial / illegal / abusive use): [ACCEPTABLE-
 
 ---
 
-## Author PDFs stay on disk
-
-Author book PDFs live on disk at `public/reports/`. They are not listed in the product tabs and not packed into the workbench ZIP. **They are not deleted.**
-
-What went wrong:
-
-1. The Vite/Nitro production build copies all of `public/` into `.vercel/output/static/`.
-2. Electron `extraResources` copies that whole `.vercel/output` into the installer.
-3. So the **first Windows exe** built on the host after `npm run build` contained KDP PDFs (~185MB).
-4. The Docker image was already clean: `.dockerignore` excludes `public/reports`.
-
-Fix: `scripts/omit-kdp-from-output.mjs` removes `static/reports` after build, and Electron `extraResources.filter` drops `reports` again. The rebuilt exe is ~88MB with zero unpacked `reports`. `public/reports` stays on the local disk.
-
-Vite dev may still serve `/reports/….pdf` if someone knows the URL. That local exception is accepted. Public git, Docker, and installers must not ship those files.
-
 ## Why TODOs are in the product
 
 Session scratch (`docs/research-*`, child memos, Vast JSON) was **not** published.
@@ -136,7 +121,7 @@ Do not commit keys. Paste them only in the Connect screen memory. `.env.example`
 
 ## Chrome
 
-Two tabs only. No document library / KDP tab.
+Two tabs only. No document-library tab.
 
 | Key | Tab | What it is |
 | --- | --- | --- |

@@ -44,7 +44,7 @@ Base padrão: `Qwen/Qwen3-4B-Instruct-2507`. Cartões heretic/GGUF já processad
 
 ## O que não faz
 
-Não hospeda pesos, não aluga GPU por você, não vendor AGPL em `src/`, não envia PDF KDP do autor, não fecha ledgers native/GPU porque `npm test` passou. analog `:8080` ≠ native close.
+Não hospeda pesos, não aluga GPU por você, não vendor AGPL em `src/`, não fecha ledgers native/GPU porque `npm test` passou. analog `:8080` ≠ native close.
 
 ## Início rápido
 

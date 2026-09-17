@@ -44,7 +44,7 @@ English: [README.md](./README.md) · 한국어: [README.ko.md](./README.ko.md)
 
 ## ماذا لا يفعل
 
-لا يستضيف الأوزان، لا يستأجر GPU نيابة عنك، لا يضمّن أشجار AGPL في `src/`، لا يضمّن PDF مؤلف KDP، لا يغلق دفاتر native/GPU لأن `npm test` نجح. analog `:8080` ≠ native close.
+لا يستضيف الأوزان، لا يستأجر GPU نيابة عنك، لا يضمّن أشجار AGPL في `src/`، لا يغلق دفاتر native/GPU لأن `npm test` نجح. analog `:8080` ≠ native close.
 
 ## بداية سريعة
 
