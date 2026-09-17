@@ -17,8 +17,7 @@ The local web interface is usable. Packaged Electron, GPU golden tests, and the 
   <a href="https://www.youtube.com/watch?v=lp8uupbZn5c">
     <img src="./workbench.png" alt="Abliterater workbench — watch on YouTube" width="900" />
   </a><br />
-  <a href="https://www.youtube.com/watch?v=lp8uupbZn5c"><img src="https://img.shields.io/badge/YouTube-Watch%20the%20workbench-FF0000?logo=youtube&logoColor=white" alt="Watch on YouTube" /></a><br />
-  <a href="https://www.youtube.com/watch?v=lp8uupbZn5c">Watch on YouTube — workbench in use</a>
+  <a href="https://www.youtube.com/watch?v=lp8uupbZn5c"><img src="https://img.shields.io/badge/YouTube-Watch%20the%20workbench-FF0000?logo=youtube&logoColor=white" alt="Watch on YouTube" /></a>
 </p>
 
 | You get | You do not get |
