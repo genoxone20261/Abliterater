@@ -14,12 +14,8 @@ This repository does not host model weights. It is not an attack runbook and not
 The local web interface is usable. Packaged Electron, GPU golden tests, and the in-app Hub are still open. **Contributions are welcome.** A contribution is not a commercial license. Third-party commercial, illegal, and abusive use is not licensed — [ACCEPTABLE-USE.en.md](./ACCEPTABLE-USE.en.md).
 
 <p align="center">
-  <img src="./workbench.png" alt="Abliterater workbench" width="900" />
-</p>
-
-<p align="center">
   <a href="https://www.youtube.com/watch?v=lp8uupbZn5c">
-    <img src="https://img.youtube.com/vi/lp8uupbZn5c/hqdefault.jpg" alt="Watch the workbench in use" width="640" />
+    <img src="./workbench.png" alt="Abliterater workbench — watch the walkthrough" width="900" />
   </a><br />
   <a href="https://www.youtube.com/watch?v=lp8uupbZn5c">Watch the workbench in use</a>
 </p>
