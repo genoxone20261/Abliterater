@@ -28,8 +28,8 @@
 ### Windows (PowerShell)
 
 ```powershell
-git clone https://github.com/genoxone20261/Abliterater_public.git
-cd Abliterater_public
+git clone https://github.com/genoxone20261/Abliterater.git
+cd Abliterater
 npm ci
 npm run dev
 ```
@@ -46,8 +46,8 @@ SmartScreen이 **Unknown publisher**를 볼 수 있습니다. 미서명 빌드�
 ### macOS (터미널)
 
 ```bash
-git clone https://github.com/genoxone20261/Abliterater_public.git
-cd Abliterater_public
+git clone https://github.com/genoxone20261/Abliterater.git
+cd Abliterater
 npm ci
 npm run dev
 ```
@@ -62,13 +62,13 @@ npm run electron:build:mac
 ### Linux (bash)
 
 ```bash
-git clone https://github.com/genoxone20261/Abliterater_public.git
-cd Abliterater_public
+git clone https://github.com/genoxone20261/Abliterater.git
+cd Abliterater
 npm ci
 npm run dev
 ```
 
-팩 스크립트: `run.sh`. CUDA / ROCm / CPU: `local-cuda`, `local-rocm`, `local-cpu`. 데스크톱 미리보기: `npm run electron:dev`. AppImage (Linux 호스트 또는 CI):
+팩 스크립트: `run.sh`. CUDA / ROCm / CPU: `local-cuda`, `local-rocm`, `local-cpu`. 데스크톱 미리보기: `npm run electron:dev`. AppImage(Linux 호스트 또는 CI):
 
 ```bash
 npm run build
@@ -135,7 +135,7 @@ npm run typecheck && npm run lint && npm test && npm run ledger:status
 
 ## 첫 세션
 
-클론, `npm ci`, `npm run dev`, `http://127.0.0.1:8080/` 열기.
+클론, `npm ci`, `npm run dev`, `http://127.0.0.1:8080/` 을 엽니다.
 
 기본 칩이 공식 Instruct인지 확인하십시오. 팩 ZIP을 받은 뒤 `run.sh` / `run.ps1` / `job.json`을 읽고 실행하십시오.
 
@@ -146,7 +146,7 @@ npm run typecheck && npm run lint && npm test && npm run ledger:status
 - GENOX / Juno Andy Cheong(`support@genox.one`)의 서면 허가 없이 제3자 상업 이용 불가.
 - 불법·악용은 라이선스되지 않음. AGPL 소스 공개가 그 금지를 풀지 않음.
 - PR은 *이* 프로젝트에 대한 부여입니다. **제3자 상업 허가를 만들지 않습니다.**
-- 이 소프트웨어, 또는 그것으로 만든 모델·산출물을 법률에 어깃나게 쓰면 불법이며, **그 책임은 그 사용자에게 있습니다.**
+- 이 소프트웨어, 또는 그것으로 만든 모델·산출물을 법률에 어긋나게 쓰면 불법이며, **그 책임은 그 사용자에게 있습니다.**
 
 가중치·데이터셋·클라우드 콘솔 라이선스는 별도입니다.
 
@@ -173,7 +173,7 @@ API 키, `.env`, `docs/` 연구 덤프를 git에 넣지 마십시오.
 
 ## 감사의 말
 
-피니호할 도구와 인용 논문의 저자·유지보수에게 **감사합니다.** AGPL/GPL 트리를 `src/`에 vendor하지 않습니다.
+핀호출한 도구와 인용 논문의 저자·유지보수에게 **감사합니다.** AGPL/GPL 트리를 `src/`에 vendor하지 않습니다.
 
 ---
 
