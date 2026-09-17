@@ -5,6 +5,9 @@
 This is not an attack runbook and not an uncensored-model storefront.
 
 [![License: AGPL-3.0-or-later + AUP](https://img.shields.io/badge/license-AGPL--3.0--or--later%20%2B%20AUP-1C1D1F)](./LICENSE.md)
+[![Abliterater on Product Hunt](https://img.shields.io/badge/Product%20Hunt-18%20Sep%202026-FF6154)](https://www.producthunt.com/products/abliterater)
+
+Launching on Product Hunt, 18 September 2026, 16:01 KST: [Abliterater](https://www.producthunt.com/products/abliterater)
 
 **Completeness is not high yet.** The analog web workbench is usable. Packaged Electron, GPU golden, and in-app Hub live are still OPEN. **Contributions are welcome.** A contribution is **not** a commercial license. Third-party commercial, illegal, and abusive use is **not licensed** — [ACCEPTABLE-USE.en.md](./ACCEPTABLE-USE.en.md).
 
