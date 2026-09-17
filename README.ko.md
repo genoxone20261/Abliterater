@@ -1,11 +1,11 @@
 # Abliterater
 
-거절 억제(*abliteration*)를 연구·측정하는 **교육용 로컬 작업대**. 연구자·방어자가 같은 파이프라인을 보고 **불법 이용을 막는 대응**을 하도록 만들었습니다. 공격 매뉴얼이 아니고, 탈검열 모델 상점도 아닙니다.
+**교육 목적**의 로컬 작업대. 거절 억제(*abliteration*)를 연구·측정하고, 연구자·방어자가 **불법 이용을 막는 대응**을 할 수 있게 만들었습니다. 공격 매뉴얼이 아니고, 탈검열 모델 상점도 아닙니다.
 
 [![CI](https://github.com/genoxone20261/Abliterater_public/actions/workflows/ci.yml/badge.svg)](https://github.com/genoxone20261/Abliterater_public/actions/workflows/ci.yml)
-[![License: AGPL-3.0-or-later + AUP](https://img.shields.io/badge/license-AGPL--3.0--or-later%20%2B%20AUP-1C1D1F)](./LICENSE.md)
+[![License: AGPL-3.0-or-later + AUP](https://img.shields.io/badge/license-AGPL--3.0--or--later%20%2B%20AUP-1C1D1F)](./LICENSE.md)
 
-기여 환영. **기여했다고 제3자 상업권이 생기지는 않습니다.** 제3자 상업·불법·악용은 **라이선스되지 않습니다** — [ACCEPTABLE-USE.ko.md](./ACCEPTABLE-USE.ko.md).
+**완성도는 아직 높지 않습니다.** 기여 환영. **기여했다고 제3자 상업권이 생기지는 않습니다.** 제3자 상업·불법·악용은 **라이선스되지 않습니다** — [ACCEPTABLE-USE.ko.md](./ACCEPTABLE-USE.ko.md).
 
 ![Abliterater 작업대](./workbench.png)
 
@@ -66,6 +66,18 @@ Docker: `docker compose up -d --build`.
 
 출발 논문: Arditi 등, *Refusal in Language Models Is Mediated by a Single Direction* ([arXiv:2406.11717](https://arxiv.org/abs/2406.11717)). 연구 자료 탭의 학술 jailbreak 논문은 **방어·이해**용이지 공격 매뉴얼이 아닙니다.
 
+## 지금 할 일
+
+세 가지를 섞지 마십시오.
+
+1. `:8080` analog 작업대를 쓤 것 (귀 GPU 불필요).
+2. ZIP을 본인 머신 또는 본인 클라우드에서 돌릴 것.
+3. 기여: OPEN 원장 한 줄에 대한 **증거**를 보내실 것. analog `npm test` ≠ native close.
+
+## 첫 세션
+
+클론, `npm ci`, `npm run dev`, `http://127.0.0.1:8080/` 열기. 기본 칩이 공식 Instruct인지 확인하십시오. 팩 ZIP(Ctrl+D)을 받은 뒤 `run.sh` / `run.ps1` / `job.json`을 읽고 실행하십시오.
+
 ## 라이선스
 
 **AGPL-3.0-or-later + 추가 조건** — [LICENSE.md](./LICENSE.md), [ACCEPTABLE-USE.ko.md](./ACCEPTABLE-USE.ko.md).
@@ -73,10 +85,11 @@ Docker: `docker compose up -d --build`.
 - GENOX / Juno Andy Cheong(`support@genox.one`)의 서면 허가 없이 제3자 상업 이용 불가.
 - 불법·악용은 라이선스되지 않음. AGPL 소스 공개가 그 금지를 풀지 않음.
 - PR은 *이* 프로젝트에 대한 부여입니다. **제3자 상업 허가를 만들지 않습니다.**
+- 이 소프트웨어, 또는 그것으로 만든 모델·산출물을 법률에 어깃나게 쓰면 불법이며, **그 책임은 그 사용자에게 있습니다.**
 
 가중치·데이터셋·클라우드 콘솔 라이선스는 별도입니다.
 
-## 기여
+## 같이 기여
 
 완성도는 아직 높지 않습니다. `:8080` analog 웹은 쓤 수 있습니다. 패키지 Electron, GPU 골든, 앱 안 Hub 실시간은 **OPEN**입니다. 마크다운 칸이 아니라 **증거**를 보내십시오. analog `npm test` ≠ native close.
 
@@ -87,6 +100,10 @@ API 키, `.env`, `docs/` 연구 덤프를 git에 넣지 마십시오.
 ## 후원 · 협업
 
 선택 선물이며 지분이 아닙니다. Binance `110474712` / BSC `0xB8c48E65D440fe7Ee0025ebD88Da3094272977F4` (**BSC만**). 협업: `support@genox.one`. 증권 공모가 아닙니다. 전문: [SUPPORT.ko.md](./SUPPORT.ko.md).
+
+## 감사의 말
+
+핀호출한 도구와 인용 논문의 저자·유지보수에게 **감사합니다.** AGPL/GPL 트리를 `src/`에 vendor하지 않습니다.
 
 ---
 
