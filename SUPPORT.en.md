@@ -1,33 +1,33 @@
-# Sponsor or invest
+# Sponsor · collaboration
 
-Abliterater is an **educational** workbench. GENOX / Juno Andy Cheong builds it so researchers and defenders can study refusal-suppression (abliteration) and **counter illegal misuse**. That purpose needs **worldwide attention** — and it also needs compute, time, and the next public release.
+Abliterater is an **educational** workbench. GENOX / Juno Andy Cheong builds it so researchers and defenders can study refusal-suppression (abliteration) and **counter illegal misuse**. That purpose needs **worldwide attention**.
 
-Two doors. **Neither is required** to use the software.
+You do **not** have to pay, sponsor, or write to us to use the software. If you still want to help, two quiet doors:
 
 Korean: [SUPPORT.ko.md](./SUPPORT.ko.md).
 
 ---
 
-## 1. Sponsor (donation)
+## 1. A small gift (optional)
 
-A voluntary gift. It does not buy equity, a product, or a vote. It pays for continued educational work.
+If this work was useful and you would like to buy us a little compute time, a gift is welcome. It does **not** buy equity, a product, or a vote. It is not required.
 
 | Channel | Value |
 | --- | --- |
 | Binance ID | `110474712` |
 | BNB Smart Chain (BEP-20) | `0xB8c48E65D440fe7Ee0025ebD88Da3094272977F4` |
 
-Send **BEP-20 on BSC only**. Funds on the wrong chain cannot be recovered.
+Please send **BEP-20 on BSC only**. Funds on the wrong chain cannot be recovered.
 
-Sponsorship is not required. If you send some, we will keep working.
+Thank you if you send something. Thank you if you do not.
 
 ---
 
-## 2. Invest (inquiry)
+## 2. Collaboration inquiry
 
-If you want to **discuss investing in GENOX** — the company that builds this workbench — write to `support@genox.one` with who you are and what you have in mind.
+If you would like to **work together** — research, compute, documentation, or building next to us — write to `support@genox.one` with who you are and what you have in mind.
 
-This page is **not an offer to sell securities**. Any investment would be a **separate written agreement**. Money sent to the sponsorship address does not become equity.
+This page is **not an offer to sell securities**. Any later commercial or investment talk would be a **separate written agreement**. Money sent to the gift address does not become equity.
 
 ---
 

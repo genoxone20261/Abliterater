@@ -249,7 +249,7 @@ Windows NSIS는 기본 미서명입니다. SmartScreen의 **알 수 없는 게�
 | [USER-GUIDE.ko.md](./USER-GUIDE.ko.md) | 설치, 화면, 작업대, 팩 ZIP, 남은 OPEN을 **원장별**로 |
 | [CONTRIBUTING.ko.md](./CONTRIBUTING.ko.md) | 패치 방법. AUP를 수용하면 같이 기여 |
 | [ACCEPTABLE-USE.ko.md](./ACCEPTABLE-USE.ko.md) | 제3자 상업·불법·악용 금지 |
-| [SUPPORT.ko.md](./SUPPORT.ko.md) | 후원(기부) vs 투자 문의 |
+| [SUPPORT.ko.md](./SUPPORT.ko.md) | 선택 선물 vs 협업 문의 |
 | [SECURITY.md](./SECURITY.md) | 취약점 신고 |
 | [LICENSE.md](./LICENSE.md) | AGPL-3.0-or-later 본문 + 추가 조건 |
 
@@ -340,11 +340,11 @@ Vite `:8080` analog 웹은 쓸 수 있습니다. **Native / live / GPU 골든은
 
 논문 저자 — Arditi, Obeso, Syed, Paleka, Panickssery, Gurnee, Nanda; Young; Fafuła; Gülmez; 그리고 사용 설명서 논문 표의 전원 — 감사합니다. 학술 jailbreak 논문은 **방어·이해**용 링크이지 공격 실행 매뉴얼이 아닙니다.
 
-## 후원 · 투자
+## 후원 · 협업 문의
 
-창구 두 개. 소프트웨어 사용에 필수가 아닙니다. 전문: [SUPPORT.ko.md](./SUPPORT.ko.md).
+소프트웨어를 쓰려면 후원이 필수가 아닙니다. 전문: [SUPPORT.ko.md](./SUPPORT.ko.md).
 
-**후원(기부)** — 선물이지 지분이 아닙니다.
+**작은 선물 (선택)** — 지분이 아닙니다. 보내 주셔도 고맙고, 안 보내 주셔도 고맙습니다.
 
 | 경로 | 값 |
 | --- | --- |
@@ -353,7 +353,7 @@ Vite `:8080` analog 웹은 쓸 수 있습니다. **Native / live / GPU 골든은
 
 BSC만. 잘못된 체인은 복구 불가.
 
-**투자 문의** — GENOX 투자 논의는 `support@genox.one`. 증권 공모가 아닙니다. 후원 주소로 보낸 돈은 지분이 되지 않습니다.
+**협업 문의** — 같이 일하고 싶으시면 `support@genox.one`. 증권 공모가 아닙니다. 선물 주소로 보낸 돈은 지분이 되지 않습니다.
 
 ---
 

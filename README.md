@@ -249,7 +249,7 @@ Compute chips: `local-cuda`, `local-rocm`, `local-metal`, `local-cpu`. AGPL CLIs
 | [USER-GUIDE.en.md](./USER-GUIDE.en.md) | Install, chrome, workbench, pack ZIP, remaining OPEN **per ledger** (Korean: [USER-GUIDE.ko.md](./USER-GUIDE.ko.md)) |
 | [CONTRIBUTING.en.md](./CONTRIBUTING.en.md) | How to patch. Contribute with us if you accept the AUP |
 | [ACCEPTABLE-USE.en.md](./ACCEPTABLE-USE.en.md) | No third-party commercial / illegal / abusive use |
-| [SUPPORT.en.md](./SUPPORT.en.md) | Sponsor (donation) vs invest (inquiry) |
+| [SUPPORT.en.md](./SUPPORT.en.md) | Optional gift vs collaboration inquiry |
 | [SECURITY.md](./SECURITY.md) | How to report a vulnerability |
 | [LICENSE.md](./LICENSE.md) | AGPL-3.0-or-later body + additional terms |
 
@@ -369,11 +369,11 @@ Mirrored in `src/lib/runners.ts` and enforced by `pack.assert.test.ts` (stale SH
 | Apache-2.0 | refusal_direction, nanofatdog, model-unfetter, kimi-k3 | pin-call |
 | NONE | ricyoung | citation only |
 
-## Sponsor or invest
+## Sponsor · collaboration
 
-Two doors, neither required to use the software. Full text: [SUPPORT.en.md](./SUPPORT.en.md).
+You do not have to pay to use this software. Full text: [SUPPORT.en.md](./SUPPORT.en.md).
 
-**Sponsor (donation)** — a gift, not equity.
+**A small gift (optional)** — not equity. Thank you if you send something; thank you if you do not.
 
 | Channel | Value |
 | --- | --- |
@@ -382,7 +382,7 @@ Two doors, neither required to use the software. Full text: [SUPPORT.en.md](./SU
 
 BSC only. Wrong chain cannot be recovered.
 
-**Invest (inquiry)** — to discuss investing in GENOX, email `support@genox.one`. That is not a public offering of securities. Money sent to the sponsorship address does not become shares.
+**Collaboration inquiry** — if you would like to work together, email `support@genox.one`. That is not a public offering of securities. Money sent to the gift address does not become shares.
 
 ---
 

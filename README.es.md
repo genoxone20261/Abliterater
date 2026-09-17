@@ -89,7 +89,7 @@ No subas claves, `.env` ni volcados `docs/`. Herramientas AGPL: solo pin-call.
 
 ## Patrocinio · inversión
 
-**Sponsor (donation)** es un regalo, no capital. Binance `110474712` / BSC `0xB8c48E65D440fe7Ee0025ebD88Da3094272977F4` (solo BSC). **Invest (inquiry)**: `support@genox.one`. No es una oferta pública de valores. [SUPPORT.en.md](./SUPPORT.en.md).
+**Sponsor (donation)** es un regalo, no capital. Binance `110474712` / BSC `0xB8c48E65D440fe7Ee0025ebD88Da3094272977F4` (solo BSC). **Collaboration inquiry**: `support@genox.one`. No es una oferta pública de valores. [SUPPORT.en.md](./SUPPORT.en.md).
 
 ---
 

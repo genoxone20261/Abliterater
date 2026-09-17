@@ -66,8 +66,11 @@ test("reuse catalog pick sets purpose from recommendPath", () => {
 
 test("document title is Abliterater not Unc / Ablit", () => {
   const src = readFileSync("src/routes/__root.tsx", "utf8");
+  const og = readFileSync("src/lib/og/site.json", "utf8");
   assert.match(src, /Abliterater/);
-  assert.doesNotMatch(src, /Unc \/ Ablit Workbench/);
+  assert.ok(!src.includes("Unc / Ablit"));
+  assert.match(og, /"title":\s*"Abliterater"/);
+  assert.ok(!og.includes("Unc / Ablit"));
 });
 
 test("KO heretic param labels are words, not raw flag names", () => {

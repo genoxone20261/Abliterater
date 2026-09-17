@@ -6,7 +6,8 @@ test("built server renders app and serves JS with correct MIME", async () => {
   const { server, url } = await startBuiltServer({ root: process.cwd() });
   try {
     const html = await (await fetch(url)).text();
-    assert.match(html, /Unc \/ Ablit/);
+    assert.match(html, /Abliterater/);
+    assert.doesNotMatch(html, /Unc \/ Ablit/);
     const asset = html.match(/src="([^"]+\.js)"/)?.[1];
     assert.ok(asset);
     const response = await fetch(new URL(asset, url));

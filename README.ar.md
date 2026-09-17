@@ -89,7 +89,7 @@ npm run dev
 
 ## رعاية · استثمار
 
-**Sponsor (donation)** هدية وليست حصة. Binance `110474712` / BSC `0xB8c48E65D440fe7Ee0025ebD88Da3094272977F4` (BSC فقط). **Invest (inquiry)**: `support@genox.one`. ليست طرحًا عامًا لأوراق مالية. [SUPPORT.en.md](./SUPPORT.en.md).
+**Sponsor (donation)** هدية وليست حصة. Binance `110474712` / BSC `0xB8c48E65D440fe7Ee0025ebD88Da3094272977F4` (BSC فقط). **Collaboration inquiry**: `support@genox.one`. ليست طرحًا عامًا لأوراق مالية. [SUPPORT.en.md](./SUPPORT.en.md).
 
 ---
 

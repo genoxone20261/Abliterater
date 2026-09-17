@@ -82,6 +82,13 @@ export function isHfRepoId(id: string): boolean {
   return /^[A-Za-z0-9._-]+\/[A-Za-z0-9._-]+(\/[A-Za-z0-9._-]+)*$/.test(id);
 }
 
+/** Catalog card `name` is the Hub id (owner/name). Empty if the card is not a repo. */
+export function hfRepoFromCatalog(baseId: string): string {
+  const card = BASES.find((b) => b.id === baseId);
+  const repo = normalizeHfRepo(card?.name ?? "");
+  return isHfRepoId(repo) ? repo : "";
+}
+
 export function baseVramGb(s: StudioState): number {
   const n = parseFloat(s.baseVram || "");
   if (Number.isFinite(n) && n > 0) return n;

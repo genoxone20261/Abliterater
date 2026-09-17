@@ -49,4 +49,14 @@ test("empty HF repo shows a block banner instead of painting BASE_MODEL", () => 
   assert.match(src, /ms_hf_empty_catalog/);
   assert.match(src, /ms_hf_empty_paste/);
   assert.match(src, /src === "hf" && !s\.hfRepo\.trim\(\)/);
+  assert.match(src, /hfRepoFromCatalog/);
+  assert.match(src, /clipboard/);
+});
+
+test("catalog pick writes the Hub owner/name into hfRepo", () => {
+  const src = readFileSync("src/components/ModelSource.tsx", "utf8");
+  assert.match(src, /hfRepo: repo/);
+  assert.match(src, /storeBaseUri: repo/);
+  const lib = readFileSync("src/lib/model-source.ts", "utf8");
+  assert.match(lib, /export function hfRepoFromCatalog/);
 });

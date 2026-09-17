@@ -87,9 +87,9 @@ Keine Schlüssel, `.env` oder `docs/`-Dumps in git. AGPL-Tools nur pin-call.
 
 **Danke** an Autorinnen und Maintainer jedes Repos und Papers, das wir pin-callen oder zitieren. Kein AGPL/GPL-Vendor in `src/`. Tabellen: [USER-GUIDE.en.md](./USER-GUIDE.en.md#acknowledgments--repositories). p-e-w/heretic, elder-plinius/OBLITERATUS, andyrdt/refusal_direction, FailSpy, Goekdeniz-Guelmez, heterodoxin, wuwangzhang1216, AIAnytime, jwest33, josepha-mayo, nanofatdog, AUGMXNT, ggml-org/llama.cpp, jim-plus, NousResearch, ant-research, ricyoung (nur Zitat). Papers: Arditi et al. Akademische Jailbreak-Papers dienen **Abwehr und Verständnis**, nicht als Angriffsmanual.
 
-## Sponsoring · Investition
+## Sponsor · collaboration
 
-**Sponsor (donation)** ist ein Geschenk, kein Eigenkapital. Binance `110474712` / BSC `0xB8c48E65D440fe7Ee0025ebD88Da3094272977F4` (nur BSC). **Invest (inquiry)**: `support@genox.one`. Kein öffentliches Wertpapierangebot. [SUPPORT.en.md](./SUPPORT.en.md).
+**Sponsor (donation)** ist ein Geschenk, kein Eigenkapital. Binance `110474712` / BSC `0xB8c48E65D440fe7Ee0025ebD88Da3094272977F4` (nur BSC). **Collaboration inquiry**: `support@genox.one`. Kein öffentliches Wertpapierangebot. [SUPPORT.en.md](./SUPPORT.en.md).
 
 ---
 

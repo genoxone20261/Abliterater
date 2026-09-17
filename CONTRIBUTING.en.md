@@ -4,7 +4,7 @@ Patches, measurements, and reviews are welcome — **contribute with us.** Do no
 
 This repository is **educational**. It asks for **worldwide attention** to counter illegal misuse. analog `npm test` is not a native / GPU close. Do not flip ledger OPEN cells without the close evidence named in [USER-GUIDE.en.md](./USER-GUIDE.en.md#still-open-per-ledger-never-sum).
 
-Korean: [CONTRIBUTING.ko.md](./CONTRIBUTING.ko.md). Usage: [USER-GUIDE.en.md](./USER-GUIDE.en.md). Sponsor or invest: [SUPPORT.en.md](./SUPPORT.en.md).
+Korean: [CONTRIBUTING.ko.md](./CONTRIBUTING.ko.md). Usage: [USER-GUIDE.en.md](./USER-GUIDE.en.md). Gift or collaboration: [SUPPORT.en.md](./SUPPORT.en.md).
 
 ---
 

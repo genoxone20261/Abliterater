@@ -89,7 +89,7 @@ Não coloque chaves, `.env` nem dumps `docs/` no git. Ferramentas AGPL: só pin-
 
 ## Patrocínio · investimento
 
-**Sponsor (donation)** é um presente, não equity. Binance `110474712` / BSC `0xB8c48E65D440fe7Ee0025ebD88Da3094272977F4` (somente BSC). **Invest (inquiry)**: `support@genox.one`. Não é oferta pública de valores. [SUPPORT.en.md](./SUPPORT.en.md).
+**Sponsor (donation)** é um presente, não equity. Binance `110474712` / BSC `0xB8c48E65D440fe7Ee0025ebD88Da3094272977F4` (somente BSC). **Collaboration inquiry**: `support@genox.one`. Não é oferta pública de valores. [SUPPORT.en.md](./SUPPORT.en.md).
 
 ---
 

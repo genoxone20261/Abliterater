@@ -89,7 +89,7 @@ npm run dev
 
 ## 贊助 · 投資
 
-**Sponsor (donation)** 是贈與，不是股權。Binance `110474712` / BSC `0xB8c48E65D440fe7Ee0025ebD88Da3094272977F4`（僅 BSC）。**Invest (inquiry)**：`support@genox.one`。不是證券公開發行。[SUPPORT.en.md](./SUPPORT.en.md)。
+**Sponsor (donation)** 是贈與，不是股權。Binance `110474712` / BSC `0xB8c48E65D440fe7Ee0025ebD88Da3094272977F4`（僅 BSC）。**Collaboration inquiry**：`support@genox.one`。不是證券公開發行。[SUPPORT.en.md](./SUPPORT.en.md)。
 
 ---
 

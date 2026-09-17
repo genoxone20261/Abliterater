@@ -52,7 +52,7 @@
 
 `npm run ledger:status`. [아직 열린 것](#아직-열린-것-원장별-분석-합산-금지)에서 한 칸. 증거만. analog `npm test` ≠ close. [CONTRIBUTING.ko.md](./CONTRIBUTING.ko.md).
 
-이용 제한(제3자 상업·불법·악용 금지): [ACCEPTABLE-USE.ko.md](./ACCEPTABLE-USE.ko.md). 기여: [CONTRIBUTING.ko.md](./CONTRIBUTING.ko.md). 후원·투자: [SUPPORT.ko.md](./SUPPORT.ko.md). 보안 신고: [SECURITY.md](./SECURITY.md).
+이용 제한(제3자 상업·불법·악용 금지): [ACCEPTABLE-USE.ko.md](./ACCEPTABLE-USE.ko.md). 기여: [CONTRIBUTING.ko.md](./CONTRIBUTING.ko.md). 후원·협업 문의: [SUPPORT.ko.md](./SUPPORT.ko.md). 보안 신고: [SECURITY.md](./SECURITY.md).
 
 ---
 
@@ -447,11 +447,11 @@ OPEN/IN_PROGRESS: **W01** prod 저장/탭, **W02** HF 키 경계, **W06** 로그
 - 같이 기여: [CONTRIBUTING.ko.md](./CONTRIBUTING.ko.md) — 패치·실측·리뷰. analog `npm test` ≠ 표 클로즈.
 - 라이선스: [LICENSE.md](./LICENSE.md)
 
-## 후원 · 투자
+## 후원 · 협업 문의
 
-자발적 **후원**과 GENOX **투자 문의**는 창구가 다릅니다. 전문: [SUPPORT.ko.md](./SUPPORT.ko.md).
+작은 선물과 **협업 문의**는 창구가 다릅니다. 어느 쪽도 필수가 아닙니다. 전문: [SUPPORT.ko.md](./SUPPORT.ko.md).
 
-후원은 지분이 아닙니다. 투자 논의는 `support@genox.one` 서면으로만. 이 페이지는 증권 공모가 아닙니다.
+선물은 지분이 아닙니다. 같이 일하고 싶으시면 `support@genox.one`. 이 페이지는 증권 공모가 아닙니다.
 
 | 경로 | 값 |
 | --- | --- |

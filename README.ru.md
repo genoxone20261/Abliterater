@@ -89,7 +89,7 @@ npm run dev
 
 ## Спонсорство · инвестиции
 
-**Sponsor (donation)** — дар, не доля. Binance `110474712` / BSC `0xB8c48E65D440fe7Ee0025ebD88Da3094272977F4` (только BSC). **Invest (inquiry)**: `support@genox.one`. Это не публичное предложение ценных бумаг. [SUPPORT.en.md](./SUPPORT.en.md).
+**Sponsor (donation)** — дар, не доля. Binance `110474712` / BSC `0xB8c48E65D440fe7Ee0025ebD88Da3094272977F4` (только BSC). **Collaboration inquiry**: `support@genox.one`. Это не публичное предложение ценных бумаг. [SUPPORT.en.md](./SUPPORT.en.md).
 
 ---
 

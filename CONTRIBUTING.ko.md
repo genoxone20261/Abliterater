@@ -4,7 +4,7 @@
 
 이 저장소는 **교육용**이며, 불법 이용을 막는 대응을 위해 **전 세계의 관심**을 구합니다. analog `npm test`는 native / GPU 클로즈가 아닙니다. [USER-GUIDE.ko.md](./USER-GUIDE.ko.md#아직-열린-것-원장별-분석-합산-금지)에 적힌 증거 없이 원장 OPEN 칸을 올리지 마십시오.
 
-영어본: [CONTRIBUTING.en.md](./CONTRIBUTING.en.md). 사용법: [USER-GUIDE.ko.md](./USER-GUIDE.ko.md). 후원·투자: [SUPPORT.ko.md](./SUPPORT.ko.md).
+영어본: [CONTRIBUTING.en.md](./CONTRIBUTING.en.md). 사용법: [USER-GUIDE.ko.md](./USER-GUIDE.ko.md). 후원·협업 문의: [SUPPORT.ko.md](./SUPPORT.ko.md).
 
 ---
 

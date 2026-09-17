@@ -89,7 +89,7 @@ pin-call / 引用しているすべてのリポジトリと論文の著者に **
 
 ## 後援 · 投資
 
-**Sponsor (donation)** は贈与であり持分ではありません。Binance `110474712` / BSC `0xB8c48E65D440fe7Ee0025ebD88Da3094272977F4`（BSC のみ）。**Invest (inquiry)** は `support@genox.one`。証券の公募ではありません。全文: [SUPPORT.en.md](./SUPPORT.en.md)。
+**Sponsor (donation)** は贈与であり持分ではありません。Binance `110474712` / BSC `0xB8c48E65D440fe7Ee0025ebD88Da3094272977F4`（BSC のみ）。**Collaboration inquiry** は `support@genox.one`。証券の公募ではありません。全文: [SUPPORT.en.md](./SUPPORT.en.md)。
 
 ---
 

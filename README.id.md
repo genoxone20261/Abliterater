@@ -87,9 +87,9 @@ Jangan taruh kunci, `.env`, atau dump `docs/` di git. Alat AGPL: pin-call saja.
 
 **Terima kasih** kepada penulis dan pemelihara setiap repositori dan makalah yang kami pin-call atau kutip. Tidak vendor AGPL/GPL ke `src/`. Tabel: [USER-GUIDE.en.md](./USER-GUIDE.en.md#acknowledgments--repositories). p-e-w/heretic, elder-plinius/OBLITERATUS, andyrdt/refusal_direction, FailSpy, Goekdeniz-Guelmez, heterodoxin, wuwangzhang1216, AIAnytime, jwest33, josepha-mayo, nanofatdog, AUGMXNT, ggml-org/llama.cpp, jim-plus, NousResearch, ant-research, ricyoung (kutipan saja). Makalah: Arditi dkk. Makalah jailbreak akademik untuk **pertahanan dan pemahaman**, bukan buku serangan.
 
-## Sponsor · investasi
+## Sponsor · collaboration
 
-**Sponsor (donation)** adalah hadiah, bukan ekuitas. Binance `110474712` / BSC `0xB8c48E65D440fe7Ee0025ebD88Da3094272977F4` (hanya BSC). **Invest (inquiry)**: `support@genox.one`. Bukan penawaran sekuritas publik. [SUPPORT.en.md](./SUPPORT.en.md).
+**Sponsor (donation)** adalah hadiah, bukan ekuitas. Binance `110474712` / BSC `0xB8c48E65D440fe7Ee0025ebD88Da3094272977F4` (hanya BSC). **Collaboration inquiry**: `support@genox.one`. Bukan penawaran sekuritas publik. [SUPPORT.en.md](./SUPPORT.en.md).
 
 ---
 

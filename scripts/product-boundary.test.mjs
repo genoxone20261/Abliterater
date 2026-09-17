@@ -66,10 +66,12 @@ test("root ships bilingual user guide, contributing, and acceptable use", () => 
   assert.match(read("ACCEPTABLE-USE.en.md"), /worldwide attention/i);
   assert.match(read("ACCEPTABLE-USE.ko.md"), /교육용/);
   assert.match(read("ACCEPTABLE-USE.ko.md"), /전 세계의 관심/);
-  assert.match(read("SUPPORT.en.md"), /Sponsor \(donation\)/);
-  assert.match(read("SUPPORT.en.md"), /Invest \(inquiry\)/);
+  assert.match(read("SUPPORT.en.md"), /A small gift \(optional\)/);
+  assert.match(read("SUPPORT.en.md"), /Collaboration inquiry/);
+  assert.doesNotMatch(read("SUPPORT.en.md"), /Invest \(inquiry\)/);
   assert.match(read("SUPPORT.ko.md"), /후원/);
-  assert.match(read("SUPPORT.ko.md"), /투자/);
+  assert.match(read("SUPPORT.ko.md"), /협업 문의/);
+  assert.doesNotMatch(read("SUPPORT.ko.md"), /## 2\. 투자/);
   assert.match(read("README.ko.md"), /교육 목적/);
   assert.doesNotMatch(read("README.md"), /[가-힣]/);
   assert.match(read("README.md"), /Contributions are welcome/);

@@ -89,7 +89,7 @@ Không đưa khóa, `.env`, dump `docs/` vào git. Công cụ AGPL: chỉ pin-ca
 
 ## Tài trợ · đầu tư
 
-**Sponsor (donation)** là quà, không phải cổ phần. Binance `110474712` / BSC `0xB8c48E65D440fe7Ee0025ebD88Da3094272977F4` (chỉ BSC). **Invest (inquiry)**: `support@genox.one`. Không phải chào bán chứng khoán ra công chúng. [SUPPORT.en.md](./SUPPORT.en.md).
+**Sponsor (donation)** là quà, không phải cổ phần. Binance `110474712` / BSC `0xB8c48E65D440fe7Ee0025ebD88Da3094272977F4` (chỉ BSC). **Collaboration inquiry**: `support@genox.one`. Không phải chào bán chứng khoán ra công chúng. [SUPPORT.en.md](./SUPPORT.en.md).
 
 ---
 

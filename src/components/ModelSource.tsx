@@ -5,6 +5,7 @@ import { BASES, type StudioState } from "@/lib/studio";
 import {
   MODEL_SOURCES,
   baseVramGb,
+  hfRepoFromCatalog,
   isHfRepoId,
   modelSourceOf,
   normalizeHfRepo,
@@ -94,11 +95,14 @@ export function ModelSource({
   function setSource(id: ModelSourceId) {
     setS((prev) => {
       if (id === "hf") {
+        const seeded =
+          prev.hfRepo.trim() || hfRepoFromCatalog(prev.base) || normalizeHfRepo(prev.storeBaseUri || "");
         return {
           ...prev,
           modelSource: id,
           storeBase: "hf",
-          storeBaseUri: prev.hfRepo || prev.storeBaseUri,
+          hfRepo: seeded,
+          storeBaseUri: seeded || prev.storeBaseUri,
         };
       }
       if (id === "local") {
@@ -129,12 +133,14 @@ export function ModelSource({
       derived,
       gguf: /gguf/i.test(`${id} ${card?.name ?? ""}`),
     });
+    const repo = hfRepoFromCatalog(id);
     setS((prev) => ({
       ...prev,
       modelSource: "catalog",
       base: id,
       storeBase: "hf",
-      storeBaseUri: "",
+      storeBaseUri: repo,
+      hfRepo: repo,
       methods: reuse ? path.methods : prev.methods.length ? prev.methods : path.methods,
       outputs: reuse ? path.outputs : prev.outputs,
       purpose: reuse ? path.purpose : prev.purpose,
@@ -263,7 +269,28 @@ export function ModelSource({
             <button
               type="button"
               className="btn-secondary inline-flex min-h-11 items-center px-3 text-sm"
-              onClick={() => document.getElementById("hfRepo")?.focus()}
+              onClick={() => {
+                const el = document.getElementById("hfRepo") as HTMLInputElement | null;
+                el?.scrollIntoView({ block: "nearest" });
+                el?.focus();
+                void navigator.clipboard
+                  ?.readText?.()
+                  .then((text) => {
+                    const repo = normalizeHfRepo(text);
+                    if (!repo) return;
+                    setS((prev) => ({
+                      ...prev,
+                      modelSource: "hf",
+                      hfRepo: repo,
+                      storeBase: "hf",
+                      storeBaseUri: repo,
+                      base: "custom",
+                    }));
+                  })
+                  .catch(() => {
+                    /* focus only when the clipboard is blocked */
+                  });
+              }}
             >
               {t("ms_hf_empty_paste", locale)}
             </button>

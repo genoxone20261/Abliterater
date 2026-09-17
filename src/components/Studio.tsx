@@ -53,7 +53,7 @@ import { catalogIsReuse, classifyDerived, recommendPath } from "@/lib/size-bands
 import { DEFAULT_METHOD_PARAMS, type MethodParams } from "@/lib/runners";
 import { zipUtf8Files, ZIP_ERROR } from "@/lib/zip";
 import { type SearchSource, type SourceHit } from "@/lib/source-search";
-import { auditWorkflow, flowHasBlock, resolveBasePull } from "@/lib/model-source";
+import { auditWorkflow, flowHasBlock, hfRepoFromCatalog, resolveBasePull } from "@/lib/model-source";
 import { ModelSource } from "@/components/ModelSource";
 import { WorkflowAudit } from "@/components/WorkflowAudit";
 import { BenchRunner } from "@/components/BenchRunner";
@@ -1422,6 +1422,9 @@ export function Studio() {
                 base,
                 modelSource: "catalog",
                 baseVram: "",
+                hfRepo: hfRepoFromCatalog(base),
+                storeBase: "hf",
+                storeBaseUri: hfRepoFromCatalog(base),
                 methods: reuse ? path.methods : prev.methods,
                 outputs: reuse ? path.outputs : prev.outputs,
                 purpose: reuse ? path.purpose : prev.purpose,

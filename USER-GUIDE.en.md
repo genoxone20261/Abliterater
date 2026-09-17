@@ -52,7 +52,7 @@ Empty HF `owner/name` **blocks** the workflow. Connect keys are **not** required
 
 `npm run ledger:status`. Pick one row in [Still open](#still-open-per-ledger-never-sum). Evidence only. analog `npm test` ≠ close. [CONTRIBUTING.en.md](./CONTRIBUTING.en.md).
 
-Acceptable use (no third-party commercial / illegal / abusive use): [ACCEPTABLE-USE.en.md](./ACCEPTABLE-USE.en.md). Contributing: [CONTRIBUTING.en.md](./CONTRIBUTING.en.md). Sponsor or invest: [SUPPORT.en.md](./SUPPORT.en.md). Security reports: [SECURITY.md](./SECURITY.md).
+Acceptable use (no third-party commercial / illegal / abusive use): [ACCEPTABLE-USE.en.md](./ACCEPTABLE-USE.en.md). Contributing: [CONTRIBUTING.en.md](./CONTRIBUTING.en.md). Gift or collaboration: [SUPPORT.en.md](./SUPPORT.en.md). Security reports: [SECURITY.md](./SECURITY.md).
 
 ---
 
@@ -447,11 +447,11 @@ External: **E01** GPU, **E02** paid account, **E03** Authenticode+clean VM. This
 - Contribute with us: [CONTRIBUTING.en.md](./CONTRIBUTING.en.md) — patches, measurements, reviews. analog `npm test` ≠ table close.
 - License: [LICENSE.md](./LICENSE.md)
 
-## Sponsor or invest
+## Sponsor · collaboration
 
-Sponsorship and GENOX investment inquiry are **separate doors**. Full text: [SUPPORT.en.md](./SUPPORT.en.md).
+A small gift and a collaboration inquiry are **separate doors**. Neither is required. Full text: [SUPPORT.en.md](./SUPPORT.en.md).
 
-A donation is not equity. Investment talk is email only (`support@genox.one`). This page is not an offer of securities.
+A gift is not equity. If you would like to work together, email `support@genox.one`. This page is not an offer of securities.
 
 | Channel | Value |
 | --- | --- |
