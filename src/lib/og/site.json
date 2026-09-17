@@ -1,4 +1,5 @@
 {
   "title": "Abliterater",
-  "card": "custom"
+  "card": "custom",
+  "description": "Educational model workbench for refusal-suppression research. Local, AWS, GCP, Azure."
 }
