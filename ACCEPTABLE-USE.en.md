@@ -10,7 +10,7 @@ Contact: support@genox.one · https://github.com/genoxone20261
 
 ## Purpose
 
-This project is **educational**. It exists so researchers and defenders can study refusal-suppression (abliteration) and **counter illegal misuse**. It is not an attack runbook.
+This project is **educational**. It exists so researchers and defenders can study refusal-suppression (abliteration) and **counter illegal misuse**. That purpose needs **worldwide attention**. It is not an attack runbook.
 
 ---
 
