@@ -1,15 +1,17 @@
 # Abliterater
 
-**Educational workbench** for refusal-suppression research (*abliteration*). Researchers and defenders can measure the same pipeline and **counter illegal misuse**. That purpose needs **worldwide attention**.
+Educational workbench from GENOX in Seoul for local and self-managed AI.
 
-This is not an attack runbook and not an uncensored-model storefront.
+Study how official open-weight Instruct models refuse certain requests. Select a checkpoint, choose a method, download a pack ZIP, and run it on your computer, a GPU you rent, or a cloud API you pay for. Researchers, educators, and defenders can measure the same pipeline and **counter illegal misuse**. That purpose needs **worldwide attention**.
+
+This repository does not host model weights. It is not an attack runbook and not an uncensored-model storefront.
 
 [![License: AGPL-3.0-or-later + AUP](https://img.shields.io/badge/license-AGPL--3.0--or--later%20%2B%20AUP-1C1D1F)](./LICENSE.md)
 [![Abliterater on Product Hunt](https://img.shields.io/badge/Product%20Hunt-18%20Sep%202026-FF6154)](https://www.producthunt.com/products/abliterater)
 
-Launching on Product Hunt, 18 September 2026, 16:01 KST: [Abliterater](https://www.producthunt.com/products/abliterater)
+[Product Hunt — 18 September 2026, 16:01 KST](https://www.producthunt.com/products/abliterater)
 
-**Completeness is not high yet.** The analog web workbench is usable. Packaged Electron, GPU golden, and in-app Hub live are still OPEN. **Contributions are welcome.** A contribution is **not** a commercial license. Third-party commercial, illegal, and abusive use is **not licensed** — [ACCEPTABLE-USE.en.md](./ACCEPTABLE-USE.en.md).
+The local web interface is usable. Packaged Electron, GPU golden tests, and the in-app Hub are still open. **Contributions are welcome.** A contribution is not a commercial license. Third-party commercial, illegal, and abusive use is not licensed — [ACCEPTABLE-USE.en.md](./ACCEPTABLE-USE.en.md).
 
 <p align="center">
   <img src="./workbench.png" alt="Abliterater workbench" width="900" />
