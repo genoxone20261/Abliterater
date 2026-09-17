@@ -1,54 +1,31 @@
 # Abliterater
 
-**Educational workbench** for refusal-suppression research (*abliteration*).
-
-Researchers and defenders can measure the same pipeline and **counter illegal misuse**. That purpose needs **worldwide attention**.
+**Educational workbench** for refusal-suppression research (*abliteration*). Researchers and defenders can measure the same pipeline and **counter illegal misuse**. That purpose needs **worldwide attention**.
 
 This is not an attack runbook and not an uncensored-model storefront.
 
 [![License: AGPL-3.0-or-later + AUP](https://img.shields.io/badge/license-AGPL--3.0--or--later%20%2B%20AUP-1C1D1F)](./LICENSE.md)
 
-**Completeness is not high yet.** Analog web is usable. Packaged Electron, GPU golden, and in-app Hub live are OPEN.
+**Completeness is not high yet.** The analog web workbench is usable. Packaged Electron, GPU golden, and in-app Hub live are still OPEN. **Contributions are welcome.** A contribution is **not** a commercial license. Third-party commercial, illegal, and abusive use is **not licensed** — [ACCEPTABLE-USE.en.md](./ACCEPTABLE-USE.en.md).
 
-**Contributions are welcome.** A contribution is **not** a commercial license. Third-party commercial, illegal, and abusive use is **not licensed** — [ACCEPTABLE-USE.en.md](./ACCEPTABLE-USE.en.md).
-
-<img src="./workbench.png" alt="Abliterater workbench" width="900">
+<p align="center">
+  <img src="./workbench.png" alt="Abliterater workbench" width="900" />
+</p>
 
 | You get | You do not get |
 | --- | --- |
 | Official Instruct catalog → method chips → pack ZIP | Weights hosted in this repo |
-| HF search + estimated VRAM | A jailbreak SaaS |
+| Hugging Face search + estimated VRAM | A jailbreak SaaS |
 | Connect with *your* cloud key (dry-run default) | This repo paying the GPU bill |
-| Research tab: papers / repos | An attack cookbook |
+| Research tab: papers and repositories | An attack cookbook |
 
-Default base: `Qwen/Qwen3-4B-Instruct-2507`. Default method: Heretic.
-
-Already-processed heretic/GGUF cards are a **reuse lane**, not the default. The browser does not train. You run the ZIP on your machine or your cloud.
+Default base: `Qwen/Qwen3-4B-Instruct-2507`. Default method: Heretic. Already-processed heretic/GGUF cards are a **reuse lane**, not the default. The browser does not train. You run the ZIP on your machine or your cloud.
 
 ## Quick start
 
-You need **Node.js 24** and Git.
+Need **Node 24** and npm. Then open `http://127.0.0.1:8080/`.
 
-```bash
-git clone https://github.com/genoxone20261/Abliterater_public.git
-cd Abliterater_public
-npm ci && npm run dev
-```
-
-Open `http://127.0.0.1:8080/`.
-
-```bash
-npm run typecheck && npm run lint && npm test && npm run ledger:status
-```
-
-## Windows, macOS, Linux
-
-The workbench UI is the same on every OS. The pack ZIP is what you run on hardware.
-
-### Windows
-
-1. Install [Node.js 24 LTS](https://nodejs.org/) and Git for Windows.
-2. In PowerShell:
+### Windows (PowerShell)
 
 ```powershell
 git clone https://github.com/genoxone20261/Abliterater_public.git
@@ -57,42 +34,61 @@ npm ci
 npm run dev
 ```
 
-3. Open `http://127.0.0.1:8080/` in your browser.
-4. After you download a pack ZIP, read `run.ps1` and `job.json` before you execute anything.
-5. Optional desktop shell: `npm run electron:dev` (packaged Electron E2E is still OPEN).
+Pack scripts in the ZIP: `run.ps1`. Desktop preview: `npm run electron:dev`. Windows installer (unsigned NSIS + portable):
 
-If `npm` is not found, close and reopen PowerShell after installing Node, or use “Node.js command prompt”.
+```powershell
+npm run build
+npm run electron:build:win
+```
 
-### macOS
+SmartScreen may say **Unknown publisher**. That is expected for an unsigned build.
 
-1. Install Node.js 24 from [nodejs.org](https://nodejs.org/) or `nvm`.
-2. In Terminal:
+### macOS (Terminal)
 
 ```bash
 git clone https://github.com/genoxone20261/Abliterater_public.git
 cd Abliterater_public
-npm ci && npm run dev
+npm ci
+npm run dev
 ```
 
-3. Open `http://127.0.0.1:8080/`.
-4. After you download a pack ZIP, read `run.sh` and `job.json` before you execute anything.
-5. Optional desktop shell: `npm run electron:dev`.
+Local Apple GPU: pick the `local-metal` compute chip, then run `run.sh` from the ZIP. Desktop preview: `npm run electron:dev`. DMG (must be built on macOS or CI):
 
-### Linux
+```bash
+npm run build
+npm run electron:build:mac
+```
 
-1. Install Node.js 24 (nvm, NodeSource, or your distro package if it is actually 24).
-2. In a terminal:
+### Linux (bash)
 
 ```bash
 git clone https://github.com/genoxone20261/Abliterater_public.git
 cd Abliterater_public
-npm ci && npm run dev
+npm ci
+npm run dev
 ```
 
-3. Open `http://127.0.0.1:8080/`.
-4. After you download a pack ZIP, read `run.sh` and `job.json` before you execute anything.
-5. Production web: `npm run build` then `HOST=0.0.0.0 PORT=8080 node scripts/built-server.mjs`.
-6. Docker: `docker compose up -d --build`.
+Pack scripts in the ZIP: `run.sh`. CUDA / ROCm / CPU chips: `local-cuda`, `local-rocm`, `local-cpu`. Desktop preview: `npm run electron:dev`. AppImage (Linux host or CI):
+
+```bash
+npm run build
+npm run electron:build:linux
+```
+
+Docker (any OS with Docker Engine):
+
+```bash
+docker compose up -d --build
+# http://127.0.0.1:8080/
+```
+
+Checks on every OS:
+
+```bash
+npm run typecheck && npm run lint && npm test && npm run ledger:status
+```
+
+Production web (no Vite): `npm run build` then `HOST=0.0.0.0 PORT=8080 node scripts/built-server.mjs`.
 
 Install, chrome, methods, remaining OPEN: [USER-GUIDE.en.md](./USER-GUIDE.en.md) · [USER-GUIDE.ko.md](./USER-GUIDE.ko.md).
 
@@ -118,9 +114,7 @@ In-app UI is Korean / English. Extra README files are landings, not extra UI loc
 
 ## Why this exists
 
-Open-weight chat models often refuse some requests. Abliteration studies how that refusal is represented and how it can be reduced or restored.
-
-Criminals already misuse those methods. This workbench exists so **researchers, defenders, and educators** can see the same pipeline and counter illegal misuse.
+Open-weight chat models often refuse some requests. Abliteration studies how that refusal is represented and how it can be reduced or restored. Criminals already misuse those methods. This workbench exists so **researchers, defenders, and educators** can see the same pipeline and counter illegal misuse.
 
 Starting paper: Arditi et al., *Refusal in Language Models Is Mediated by a Single Direction* ([arXiv:2406.11717](https://arxiv.org/abs/2406.11717)). Academic jailbreak papers linked in the Research tab are for **defense and understanding**, not attack runbooks.
 
@@ -143,7 +137,7 @@ Three jobs. Do not mix them.
 
 Clone, `npm ci`, `npm run dev`, open `http://127.0.0.1:8080/`.
 
-Confirm the default chip is official Instruct, not a heretic GGUF. Download the pack ZIP (Ctrl+D) and read `run.sh` / `run.ps1` / `job.json` before you execute anything.
+Confirm the default chip is official Instruct, not a heretic GGUF. Download the pack ZIP and read `run.sh` / `run.ps1` / `job.json` before you execute anything.
 
 ## License
 
@@ -166,18 +160,16 @@ Do not put API keys, `.env`, or `docs/` research dumps in git.
 
 ## Sponsor · collaboration
 
-Please use the workbench without paying anything. Time, careful issues, and evidence already help more than money.
+Please use the workbench without paying. If it still helped you and you would like to send a small gift for compute time, we would be grateful. A gift is optional. It does not buy equity, a product, or a vote. Please do not feel obliged.
 
-If the project was useful and you still wish to send a small optional gift, it is received with thanks. It is a gift, not equity, and not a product purchase. Please do not feel obliged.
-
-| Channel | Address |
+| Channel | Value |
 | --- | --- |
 | Binance ID | `110474712` |
 | BNB Smart Chain (BEP-20) | `0xB8c48E65D440fe7Ee0025ebD88Da3094272977F4` |
 
-Please send **BSC / BEP-20 only**. Tokens on another chain cannot be recovered.
+If you send anything, please use **BEP-20 on BSC only**. Funds on another chain cannot be recovered. Thank you if you send something. Thank you just as much if you do not.
 
-Collaboration or partnership inquiries are welcome at `support@genox.one` when it is convenient. This is **not a securities offering**. Full text: [SUPPORT.en.md](./SUPPORT.en.md).
+To work together — research, compute, documentation — write to `support@genox.one` when it is convenient. This is not a securities offering. Full text: [SUPPORT.en.md](./SUPPORT.en.md).
 
 ## Acknowledgments
 
