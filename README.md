@@ -17,11 +17,12 @@ The local web interface is usable. Packaged Electron, GPU golden tests, and the 
   <img src="./workbench.png" alt="Abliterater workbench" width="900" />
 </p>
 
-Workbench in use (recording of the current interface):
-
-[![Abliterater workbench demo](https://img.youtube.com/vi/lp8uupbZn5c/maxresdefault.jpg)](https://www.youtube.com/watch?v=lp8uupbZn5c)
-
-https://www.youtube.com/watch?v=lp8uupbZn5c
+<p align="center">
+  <a href="https://www.youtube.com/watch?v=lp8uupbZn5c">
+    <img src="https://img.youtube.com/vi/lp8uupbZn5c/hqdefault.jpg" alt="Watch the workbench in use" width="640" />
+  </a><br />
+  <a href="https://www.youtube.com/watch?v=lp8uupbZn5c">Watch the workbench in use</a>
+</p>
 
 | You get | You do not get |
 | --- | --- |
