@@ -5,7 +5,7 @@
 [![CI](https://github.com/genoxone20261/Abliterater_public/actions/workflows/ci.yml/badge.svg)](https://github.com/genoxone20261/Abliterater_public/actions/workflows/ci.yml)
 [![License: AGPL-3.0-or-later + AUP](https://img.shields.io/badge/license-AGPL--3.0--or--later%20%2B%20AUP-1C1D1F)](./LICENSE.md)
 
-**Contributions are welcome.** Third-party **commercial use, illegal use, and abuse are not licensed** — [ACCEPTABLE-USE.en.md](./ACCEPTABLE-USE.en.md). A pull request is a grant on AGPL-3.0-or-later **and** those additional terms.
+**Completeness is not high yet.** The analog web workbench is usable; packaged Electron, GPU golden, and in-app Hub live are still OPEN. **Contributions are welcome** — please join us if you have time. Third-party **commercial use, illegal use, and abuse are not licensed** — [ACCEPTABLE-USE.en.md](./ACCEPTABLE-USE.en.md). A pull request is a grant on AGPL-3.0-or-later **and** those additional terms.
 
 ![Abliterater workbench](./workbench.png)
 
@@ -270,9 +270,9 @@ Weight, dataset, and cloud-console licenses are **separate**. A catalog row is n
 
 ## Contribute with us
 
-This workbench is **not finished.** Analog web at `:8080` is usable. Native Electron, GPU golden, and in-app Hub live are **OPEN**. We want to improve it **together** — patches, measurements, reviews, and docs.
+This workbench is **not finished**, and **completeness is not high yet**. Analog web at `:8080` is usable. Native Electron, GPU golden, and in-app Hub live are **OPEN**. We would be grateful if you helped us improve it — patches, measurements, reviews, and docs are all welcome.
 
-**Contributions are welcome.** Third-party commercial, illegal, and abusive use is still **not licensed**.
+**Please contribute with us** if you can. Third-party commercial, illegal, and abusive use is still **not licensed**.
 
 1. Read [ACCEPTABLE-USE.en.md](./ACCEPTABLE-USE.en.md) and [CONTRIBUTING.en.md](./CONTRIBUTING.en.md).
 2. Pick an OPEN row. Send **evidence**, not a flipped markdown cell. analog `npm test` ≠ native close.
@@ -302,7 +302,7 @@ Do not paste keys into GitHub issues. `.env` is gitignored. `.env.example` has n
 
 ## Status (not done)
 
-Analog web workbench at Vite `:8080` is usable. **Native / live / GPU golden is not closed.** `analog IMPLEMENTED` ≠ native close. Per-ledger why: [USER-GUIDE.en.md](./USER-GUIDE.en.md). Live dump: `npm run ledger:status`.
+**Completeness is not high yet.** Analog web at Vite `:8080` is usable. **Native / live / GPU golden is not closed.** `analog IMPLEMENTED` ≠ native close. That is why we ask for contributions rather than calling this a ship. Per-ledger why: [USER-GUIDE.en.md](./USER-GUIDE.en.md). Live dump: `npm run ledger:status`.
 
 | Ledger | Still OPEN |
 | --- | --- |
@@ -371,18 +371,18 @@ Mirrored in `src/lib/runners.ts` and enforced by `pack.assert.test.ts` (stale SH
 
 ## Sponsor · collaboration
 
-You do not have to pay to use this software. Full text: [SUPPORT.en.md](./SUPPORT.en.md).
+Please use the software freely. A gift or a note is **never required**. Full text: [SUPPORT.en.md](./SUPPORT.en.md).
 
-**A small gift (optional)** — not equity. Thank you if you send something; thank you if you do not.
+**A small gift (optional)** — if this work helped you and you would like to send a little compute time, we would be grateful. It is not equity. Please do not feel obliged.
 
 | Channel | Value |
 | --- | --- |
 | Binance ID | `110474712` |
 | BSC (BEP-20) | `0xB8c48E65D440fe7Ee0025ebD88Da3094272977F4` |
 
-BSC only. Wrong chain cannot be recovered.
+BSC only, if you send anything. Wrong chain cannot be recovered.
 
-**Collaboration inquiry** — if you would like to work together, email `support@genox.one`. That is not a public offering of securities. Money sent to the gift address does not become shares.
+**Collaboration inquiry** — if you would like to work together, please write to `support@genox.one` at your convenience. That is not a public offering of securities. Money sent to the gift address does not become shares.
 
 ---
 

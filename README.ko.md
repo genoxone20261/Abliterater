@@ -5,7 +5,7 @@
 [![CI](https://github.com/genoxone20261/Abliterater_public/actions/workflows/ci.yml/badge.svg)](https://github.com/genoxone20261/Abliterater_public/actions/workflows/ci.yml)
 [![License: AGPL-3.0-or-later + AUP](https://img.shields.io/badge/license-AGPL--3.0--or--later%20%2B%20AUP-1C1D1F)](./LICENSE.md)
 
-**기여는 환영합니다.** 제3자 **상업 이용, 불법 이용, 악용은 라이선스되지 않습니다** — [ACCEPTABLE-USE.ko.md](./ACCEPTABLE-USE.ko.md). PR은 AGPL-3.0-or-later **와** 그 추가 조건에 대한 부여입니다.
+**완성도는 아직 높지 않습니다.** analog 웹 작업대는 쓸 수 있지만, 패키지 Electron·GPU 골든·앱 안 Hub 실시간은 아직 OPEN입니다. **기여를 진심으로 환영합니다.** 시간이 되시면 함께해 주십시오. 제3자 **상업 이용, 불법 이용, 악용은 라이선스되지 않습니다** — [ACCEPTABLE-USE.ko.md](./ACCEPTABLE-USE.ko.md). PR은 AGPL-3.0-or-later **와** 그 추가 조건에 대한 부여입니다.
 
 ![Abliterater 작업대](./workbench.png)
 
@@ -270,9 +270,9 @@ Windows NSIS는 기본 미서명입니다. SmartScreen의 **알 수 없는 게�
 
 ## 같이 기여합시다
 
-이 작업대는 **끝나지 않았습니다.** `:8080` analog 웹은 쓸 수 있습니다. Native Electron, GPU 골든, 앱 안 Hub 실시간은 **OPEN**입니다. 패치·실측·리뷰·문서를 **같이** 개선하고 싶습니다.
+이 작업대는 **끝나지 않았고, 완성도는 아직 높지 않습니다.** `:8080` analog 웹은 쓸 수 있습니다. Native Electron, GPU 골든, 앱 안 Hub 실시간은 **OPEN**입니다. 패치·실측·리뷰·문서로 함께 고쳐 주시면 감사하겠습니다.
 
-**기여는 환영합니다.** 제3자 상업·불법·악용은 그대로 **라이선스되지 않습니다.**
+**같이 기여해 주시면 고맙겠습니다.** 제3자 상업·불법·악용은 그대로 **라이선스되지 않습니다.**
 
 1. [ACCEPTABLE-USE.ko.md](./ACCEPTABLE-USE.ko.md)와 [CONTRIBUTING.ko.md](./CONTRIBUTING.ko.md)를 읽습니다.
 2. OPEN 칸을 고릅니다. **증거**를 보냅니다. 마크다운 칸만 올리지 않습니다. analog `npm test` ≠ native close.
@@ -302,7 +302,7 @@ GitHub 이슈에 키를 붙이지 마십시오. `.env`는 gitignore. `.env.examp
 
 ## 상태 (완료 아님)
 
-Vite `:8080` analog 웹은 쓸 수 있습니다. **Native / live / GPU 골든은 닫히지 않았습니다.** `analog IMPLEMENTED` ≠ native close. 원장별 이유: [USER-GUIDE.ko.md](./USER-GUIDE.ko.md). 라이브 덤프: `npm run ledger:status`.
+**완성도는 아직 높지 않습니다.** Vite `:8080` analog 웹은 쓸 수 있습니다. **Native / live / GPU 골든은 닫히지 않았습니다.** `analog IMPLEMENTED` ≠ native close. 그래서 출하라고 하지 않고 기여를 청합니다. 원장별 이유: [USER-GUIDE.ko.md](./USER-GUIDE.ko.md). 라이브 덤프: `npm run ledger:status`.
 
 | 원장 | 아직 OPEN |
 | --- | --- |
@@ -342,18 +342,18 @@ Vite `:8080` analog 웹은 쓸 수 있습니다. **Native / live / GPU 골든은
 
 ## 후원 · 협업 문의
 
-소프트웨어를 쓰려면 후원이 필수가 아닙니다. 전문: [SUPPORT.ko.md](./SUPPORT.ko.md).
+소프트웨어는 그대로 쓰셔도 됩니다. 선물이나 메일은 **필수가 아닙니다.** 전문: [SUPPORT.ko.md](./SUPPORT.ko.md).
 
-**작은 선물 (선택)** — 지분이 아닙니다. 보내 주셔도 고맙고, 안 보내 주셔도 고맙습니다.
+**작은 선물 (선택)** — 이 작업이 도움이 되어 컴퓨트 한 줌을 보태고 싶으시면 감사히 받겠습니다. 지분이 아닙니다. 부담 갖지 않으셔도 됩니다.
 
 | 경로 | 값 |
 | --- | --- |
 | Binance ID | `110474712` |
 | BSC (BEP-20) | `0xB8c48E65D440fe7Ee0025ebD88Da3094272977F4` |
 
-BSC만. 잘못된 체인은 복구 불가.
+보내실 때는 BSC만. 잘못된 체인은 복구 불가.
 
-**협업 문의** — 같이 일하고 싶으시면 `support@genox.one`. 증권 공모가 아닙니다. 선물 주소로 보낸 돈은 지분이 되지 않습니다.
+**협업 문의** — 같이 일하고 싶으시면 편하실 때 `support@genox.one`으로 적어 주십시오. 증권 공모가 아닙니다. 선물 주소로 보낸 돈은 지분이 되지 않습니다.
 
 ---
 

@@ -1,6 +1,6 @@
 # Abliterater contributing guide
 
-Patches, measurements, and reviews are welcome — **contribute with us.** Do not upload keys, research dumps, or KDP PDFs. Third-party commercial use, illegal use, and abuse are **not licensed** — [ACCEPTABLE-USE.en.md](./ACCEPTABLE-USE.en.md). Use **outside our grant** is unauthorized. **Illegal acts you commit with this software or with models or outputs you produce using it are your responsibility.** A PR is a grant on AGPL-3.0-or-later **and** those additional terms.
+Patches, measurements, and reviews are welcome — **please contribute with us.** Completeness is not high yet. Do not upload keys, research dumps, or KDP PDFs. Third-party commercial use, illegal use, and abuse are **not licensed** — [ACCEPTABLE-USE.en.md](./ACCEPTABLE-USE.en.md). Use **outside our grant** is unauthorized. **Illegal acts you commit with this software or with models or outputs you produce using it are your responsibility.** A PR is a grant on AGPL-3.0-or-later **and** those additional terms.
 
 This repository is **educational**. It asks for **worldwide attention** to counter illegal misuse. analog `npm test` is not a native / GPU close. Do not flip ledger OPEN cells without the close evidence named in [USER-GUIDE.en.md](./USER-GUIDE.en.md#still-open-per-ledger-never-sum).
 

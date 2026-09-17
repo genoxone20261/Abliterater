@@ -76,6 +76,10 @@ test("root ships bilingual user guide, contributing, and acceptable use", () => 
   assert.doesNotMatch(read("README.md"), /[가-힣]/);
   assert.match(read("README.md"), /Contributions are welcome/);
   assert.match(read("README.md"), /Contribute with us/);
+  assert.match(read("README.md"), /completeness is not high yet/i);
+  assert.match(read("README.ko.md"), /완성도는 아직 높지 않습니다/);
+  assert.match(read("SUPPORT.en.md"), /grateful/);
+  assert.match(read("SUPPORT.ko.md"), /감사히 받겠습니다/);
   assert.match(read("README.md"), /Why this exists/);
   assert.match(read("README.md"), /What you should do/);
   assert.match(read("README.md"), /First session/);
