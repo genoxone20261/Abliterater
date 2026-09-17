@@ -1,6 +1,6 @@
 # Abliterater
 
-**에듀 목적**의 로컬 작업대입니다. 거절 억제(*abliteration*)를 연구·측정하고, 연구자·방어자가 **불법 이용을 막는 대응**을 할 수 있게 만들었습니다. 그 목적은 **전 세계의 관심**이 필요합니다.
+**교육 목적**의 로컬 작업대입니다. 거절 억제(*abliteration*)를 연구·측정하고, 연구자·방어자가 **불법 이용을 막는 대응**을 할 수 있게 만들었습니다. 그 목적은 **전 세계의 관심**이 필요합니다.
 
 공격 매뉴얼이 아니고, 탈검열 모델 상점도 아닙니다.
 
@@ -68,16 +68,14 @@ npm ci
 npm run dev
 ```
 
-팩 스크립트: `run.sh`. CUDA / ROCm / CPU: `local-cuda`, `local-rocm`, `local-cpu`. 데스크톱 미리보기: `npm run electron:dev`. AppImage(
-Linux 호스트 또는 CI):
+팩 스크립트: `run.sh`. CUDA / ROCm / CPU: `local-cuda`, `local-rocm`, `local-cpu`. 데스크톱 미리보기: `npm run electron:dev`. AppImage (Linux 호스트 또는 CI):
 
 ```bash
 npm run build
 npm run electron:build:linux
 ```
 
-Docker (
-Docker Engine이 있는 모든 OS):
+Docker (Docker Engine이 있는 모든 OS):
 
 ```bash
 docker compose up -d --build
